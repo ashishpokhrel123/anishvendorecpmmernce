@@ -41,7 +41,7 @@
                        
                         <li>
                             <a href="category">
-                                <i class="fas fa-tachometer-alt"></i>Category</a>
+                                <i class="fas fa-tachometer-alt"></i>Customers</a>
                         </li>
                     </ul>
                 </div>

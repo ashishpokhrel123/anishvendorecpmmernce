@@ -68,7 +68,7 @@
                                 <button class="au-btn au-btn--block au-btn--green m-b-20" type="submit">sign in</button>
                                 <div class="register-link">
                                 <p>
-                                    Login as vendor
+                                    Login as user
                                     <a href="#">Here</a>
                                 </p>
                             </div>

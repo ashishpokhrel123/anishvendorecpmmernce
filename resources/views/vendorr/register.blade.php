@@ -36,53 +36,63 @@
 </head>
 
 <body class="animsition">
-<div class="page-wrapper">
+    <div class="page-wrapper">
         <div class="page-content--bge5">
             <div class="container">
                 <div class="login-wrap">
                     <div class="login-content">
                         <div class="login-logo">
                             <a href="#">
-                                <img src="" alt="Login">
+                               Registration
                             </a>
                         </div>
                         <div class="login-form">
                             <form action="" method="post">
                                 @csrf
                                 <div class="form-group">
+                                    <label>Fullname</label>
+                                    <input class="au-input au-input--full" type="text" name="vendor_name" placeholder="Username">
+                                </div>
+                                <div class="form-group">
                                     <label>Email Address</label>
-                                    <input class="au-input au-input--full" type="email" name="lemail" placeholder="Email">
+                                    <input class="au-input au-input--full" type="email" name="email" placeholder="Email">
                                 </div>
                                 <div class="form-group">
                                     <label>Password</label>
-                                    <input class="au-input au-input--full" type="password" name="lpassword" placeholder="Password">
+                                    <input class="au-input au-input--full" type="password" name="password" placeholder="Password">
                                 </div>
+                                <div class="form-group">
+                                    <label>Address</label>
+                                    <input class="au-input au-input--full" type="text" name="address" placeholder="Address">
+                                </div>
+                                <div class="form-group">
+                                    <label>Mobile Number</label>
+                                    <input class="au-input au-input--full" type="text" name="phone" placeholder="Mobile Number">
+                                </div>
+                               
                                 <div class="login-checkbox">
                                     <label>
-                                        <input type="checkbox" name="remember">Remember Me
-                                    </label>
-                                    <label>
-                                        <a href="#">Forgotten Password?</a>
+                                        <input type="checkbox" name="aggree">Agree the terms and policy
                                     </label>
                                 </div>
-                                <button class="au-btn au-btn--block au-btn--green m-b-20" type="submit">sign in</button>
-                                <div class="register-link">
+                                     <button class="au-btn au-btn--block au-btn--green m-b-20" type="submit">register</button>
+                                     <div class="register-link">
                                 <p>
-                                    Login as vendor
+                                    Register as a vendor
                                     <a href="#">Here</a>
                                 </p>
                             </div>
                                 <div class="social-login-content">
                                     <div class="social-button">
-                                        <button class="au-btn au-btn--block au-btn--blue m-b-20">sign in with facebook</button>
-                                        <button class="au-btn au-btn--block au-btn--blue2">sign in with twitter</button>
+                                        <button class="au-btn au-btn--block au-btn--blue m-b-20">register with facebook</button>
+                                        <button class="au-btn au-btn--block au-btn--blue2">register with twitter</button>
                                     </div>
                                 </div>
                             </form>
                             <div class="register-link">
                                 <p>
-                                    Don't you have account?
-                                    <a href="#">Sign Up Here</a>
+                                    Already have account?
+                                    <a href="#">Sign In</a>
                                 </p>
                             </div>
                         </div>
