@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\vendor;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 use App\Http\Controllers\Redirect;
 use Illuminate\Support\Facades\Validator;
 use Crypt;
@@ -27,6 +28,10 @@ class VendorController extends Controller
     public function reg()
     {
         return view('vendorr.register');
+    }
+    public function dashboard()
+    {
+        return view('vendorr.vendordash');
     }
     public function status(Request $request,$id)
     {
@@ -77,6 +82,46 @@ class VendorController extends Controller
                 ]);
             }
         }
+    }
+    public function login(Request $request)
+    {
+        
+        $result = DB::table('vendors')->where(['email'=>$request->email])->get();
+       
+        if(isset($result[0]))
+        {
+            $db_pwd=Crypt::decrypt($result[0]->password);
+            if($db_pwd==$request->password)
+            {
+                $request->session()->put('VENDOR_LOGIN',true);
+                $request->session()->put('VENDOR_ID',$result['0']->id);
+                return redirect('vendor/vendordash');
+            }
+            else
+            {
+                $request->session()->flash('error','Please enter valid login credentials');
+                return redirect('vendor');
+            }
+            
+
+        }
+        else
+        {
+            $request->session()->flash('error','Please enter valid login credentials');
+                return redirect('vendor');
+        }
+        // return response()->json([
+        //     'status'=>$status,
+        //     'msg'=>$msg
+        // ]);
+
+    }
+    public function logout()
+    {
+        session()->forget('VENDOR_LOGIN');
+        session()->forget('VENDOR_ID');
+        session()->flash('error','Logged Out');
+        return redirect('vendor');
     }
     /**
      * Show the form for creating a new resource.

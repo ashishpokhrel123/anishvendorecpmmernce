@@ -29,18 +29,33 @@ Route::group(['middleware'=>'admin_auth'],function()
     Route::get('admin/banner',[BannerController::class,'index']);
     Route::get('admin/vendor',[VendorController::class,'adminvendor']);
         Route::get('status/{id}',[VendorController::class,'status'])->name('status');
-    Route::get('admin/logout', function () {
-        session()->forget('ADMIN_LOGIN');
-        session()->forget('ADMIN_ID');
-        session()->flash('error','Logged Out');
-        return redirect('admin');
-    });
+    Route::get('admin/logout',[AdminController::class,'logout']);
+       
+  
 });
 
 Route::get('register',[UserController::class,'index']);
 Route::post('register',[UserController::class,'register'])->name('register');
-Route::get('login',[UserController::class,'log']);
-Route::post('login',[UserController::class,'login'])->name('login');
+Route::get('user',[UserController::class,'log']);
+Route::post('user',[UserController::class,'login'])->name('login');
+Route::group(['middleware'=>'user_auth'],function()
+{
+    Route::get('user/userdash',[UserController::class,'dashboard']);
+    Route::get('user/logout',[UserController::class,'logout']);
+    
+   
+});
+
+
 Route::get('vendor',[VendorController::class,'index']);
 Route::get('vendor/register',[VendorController::class,'reg']);
 Route::post('vendor/register',[VendorController::class,'register'])->name('register');
+Route::post('vendor',[VendorController::class,'login'])->name('login');
+Route::group(['middleware'=>'vendor_auth'],function ()
+{
+    Route::get('vendor/vendordash',[VendorController::class,'dashboard']);
+    Route::get('vendor/logout',[VendorController::class,'logout'] );
+       
+ 
+});
+

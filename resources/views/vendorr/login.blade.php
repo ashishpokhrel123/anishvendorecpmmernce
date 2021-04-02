@@ -51,11 +51,11 @@
                                 @csrf
                                 <div class="form-group">
                                     <label>Email Address</label>
-                                    <input class="au-input au-input--full" type="email" name="lemail" placeholder="Email">
+                                    <input class="au-input au-input--full" type="email" name="email" placeholder="Email">
                                 </div>
                                 <div class="form-group">
                                     <label>Password</label>
-                                    <input class="au-input au-input--full" type="password" name="lpassword" placeholder="Password">
+                                    <input class="au-input au-input--full" type="password" name="password" placeholder="Password">
                                 </div>
                                 <div class="login-checkbox">
                                     <label>
@@ -63,9 +63,14 @@
                                     </label>
                                     <label>
                                         <a href="#">Forgotten Password?</a>
-                                    </label>
+                                    </label> 
                                 </div>
                                 <button class="au-btn au-btn--block au-btn--green m-b-20" type="submit">sign in</button>
+                                @if(session()->has('error'))
+                                <div class="alert alert-danger" role="alert">
+                                {{session('error')}}
+                                </div>
+                                @endif
                                 <div class="register-link">
                                 <p>
                                     Login as user

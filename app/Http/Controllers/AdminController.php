@@ -43,6 +43,13 @@ class AdminController extends Controller
     {
         return view('admin.dashboard');
     }
+    public function logout()
+    {
+        session()->forget('ADMIN_LOGIN');
+        session()->forget('ADMIN_ID');
+        session()->flash('error','Logged Out');
+        return redirect('admin');
+    }
 
     /**
      * Show the form for creating a new resource.

@@ -20,6 +20,10 @@ class UserController extends Controller
     {
         return view('user.login');
     }
+    public function dashboard()
+    {
+        return view('user.userdash');
+    }
     public function register(Request $request)
     {
         $valid=Validator::make($request->all(),[
@@ -65,25 +69,33 @@ class UserController extends Controller
             $db_pwd=Crypt::decrypt($result[0]->password);
             if($db_pwd==$request->password)
             {
-                $status ="success";
-                $msg="Logged in";
+                $request->session()->put('USER_LOGIN',true);
+                $request->session()->put('USER_ID',$result['0']->id);
+                return redirect('user/userdash');
             }
             else
             {
-                $status ="error";
-                $msg="Please enter valid password";
+                $request->session()->flash('error','Please enter valid login credentials');
+                return redirect('user');
             }
         }
         else
         {
-            $status ="error";
-            $msg="Please enter valid email";
+            $request->session()->flash('error','Please enter valid login credentials');
+                return redirect('user');
         }
-        return response()->json([
-            'status'=>$status,
-            'msg'=>$msg
-        ]);
+        // return response()->json([
+        //     'status'=>$status,
+        //     'msg'=>$msg
+        // ]);
 
+    }
+    public function logout()
+    {
+        session()->forget('USER_LOGIN');
+        session()->forget('USER_ID');
+        session()->flash('error','Logged Out');
+        return redirect('user');
     }
 
 }

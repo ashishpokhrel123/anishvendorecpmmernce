@@ -21,7 +21,7 @@
                 <div class="container-fluid">
                     <div class="header-mobile-inner">
                         <a class="logo" href="index.html">
-                            <img src="{{asset('admin_assets/images/icon/logo.png')}}" alt="CoolAdmin" />
+                            <img src="{{asset('admin_assets/images/icon/logo.png')}}" alt="Vendor" />
                         </a>
                         <button class="hamburger hamburger--slider" type="button">
                             <span class="hamburger-box">
@@ -53,7 +53,7 @@
         <aside class="menu-sidebar d-none d-lg-block">
             <div class="logo">
                 <a href="#">
-                    <img src="{{asset('admin-assets/images/icon/logo.png')}}" alt="Cool Admin" />
+                    <img src="" alt="Vendor" />
                 </a>
             </div>
             <div class="menu-sidebar__content js-scrollbar1">
@@ -66,12 +66,9 @@
                        
                         <li>
                             <a href="banner">
-                                <i class="fas fa-tachometer-alt"></i>Banner</a>
+                                <i class="fas fa-tachometer-alt"></i>Products</a>
                         </li>
-                        <li>
-                            <a href="vendor">
-                                <i class="fas fa-tachometer-alt"></i>Vendor</a>
-                        </li>
+                      
                     </ul>
                 </nav>
             </div>
