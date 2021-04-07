@@ -35,13 +35,17 @@
                 <div class="container-fluid">
                     <ul class="navbar-mobile__list list-unstyled">
                         <li>
-                            <a href="dashboard">
+                            <a href="vendordash">
                                 <i class="fas fa-tachometer-alt"></i>Dashboard</a>
                         </li>
                        
                         <li>
-                            <a href="category">
-                                <i class="fas fa-tachometer-alt"></i>Customers</a>
+                            <a href="products">
+                                <i class="fas fa-tachometer-alt"></i>Products</a>
+                        </li>
+                        <li>
+                            <a href="showproducts">
+                                <i class="fas fa-tachometer-alt"></i>Edit Products</a>
                         </li>
                     </ul>
                 </div>
@@ -53,22 +57,25 @@
         <aside class="menu-sidebar d-none d-lg-block">
             <div class="logo">
                 <a href="#">
-                    <img src="" alt="Vendor" />
+                <h3>Vendor</h3>
                 </a>
             </div>
             <div class="menu-sidebar__content js-scrollbar1">
                 <nav class="navbar-sidebar">
                     <ul class="list-unstyled navbar__list">
                         <li>
-                            <a href="dashboard">
+                            <a href="vendordash">
                                 <i class="fas fa-tachometer-alt"></i>Dashboard</a>
                         </li>
                        
                         <li>
-                            <a href="banner">
+                            <a href="products">
                                 <i class="fas fa-tachometer-alt"></i>Products</a>
                         </li>
-                      
+                        <li>
+                            <a href="showproducts">
+                                <i class="fas fa-tachometer-alt"></i>Edit Products</a>
+                        </li>
                     </ul>
                 </nav>
             </div>

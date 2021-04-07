@@ -86,6 +86,11 @@
                             <a href="vendor">
                                 <i class="fas fa-tachometer-alt"></i>Vendor</a>
                         </li>
+                        <li>
+                        <a href="category">
+                        Category
+                        </a>
+                        </li>
                     </ul>
                 </nav>
             </div>

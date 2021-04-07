@@ -1,132 +1,4325 @@
+
 <!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+<html lang="en">
 
-        <title>Laravel</title>
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+    
+    <!-- Basic page needs
+    ============================================ -->
+    <title>Nonestop Ad</title>
+    <meta charset="utf-8">
+    <meta name="keywords" content="html5 template, best html5 template, best html template, html5 basic template, multipurpose html5 template, multipurpose html template, creative html templates, creative html5 templates" />
+    <meta name="description" content="SuperMarket is a powerful Multi-purpose HTML5 Template with clean and user friendly design. It is definite a great starter for any eCommerce web project." />
+    <meta name="author" content="Magentech">
+    <meta name="robots" content="index, follow" />
+   
+    <!-- Mobile specific metas
+    ============================================ -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    
+    <!-- Favicon
+    ============================================ -->
+    <link rel="shortcut icon" type="image/png" href="{{asset('user-assets/ico/favicon-16x16.png')}}"/>
+     
+    <!-- Libs CSS
+    ============================================ -->
+    <link rel="stylesheet" href="{{asset('user-assets/css/bootstrap/css/bootstrap.min.css')}}">
+    <link href="{{asset('user-assets/css/font-awesome/css/font-awesome.min.css')}}" rel="stylesheet">
+    <link href="{{asset('user-assets/js/datetimepicker/bootstrap-datetimepicker.min.css')}}" rel="stylesheet">
+    <link href="{{asset('user-assets/js/owl-carousel/owl.carousel.css')}}" rel="stylesheet">
+    <link href="{{asset('user-assets/css/themecss/lib.css')}}" rel="stylesheet">
+    <link href="{{asset('user-assets/js/jquery-ui/jquery-ui.min.css')}}" rel="stylesheet">
+    <link href="{{asset('user-assets/js/minicolors/miniColors.css')}}" rel="stylesheet">
+    
+    <!-- Theme CSS
+    ============================================ -->
+    <link href="{{asset('user-assets/css/themecss/so_searchpro.css')}}" rel="stylesheet">
+    <link href="{{asset('user-assets/css/themecss/so_megamenu.css')}}" rel="stylesheet">
+    <link href="{{asset('user-assets/css/themecss/so-categories.css')}}" rel="stylesheet">
+    <link href="{{asset('user-assets/css/themecss/so-listing-tabs.css')}}" rel="stylesheet">
+    <link href="{{asset('user-assets/css/themecss/so-category-slider.css')}}" rel="stylesheet">
+    <link href="{{asset('user-assets/css/themecss/so-newletter-popup.css')}}" rel="stylesheet">
 
-        <!-- Fonts -->
-        <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="{{asset('user-assets/css/footer/footer1.css')}}" rel="stylesheet">
+    <link href="{{asset('user-assets/css/header/header1.css')}}" rel="stylesheet">
+    <link id="color_scheme" href="{{asset('user-assets/css/theme.css')}}" rel="stylesheet"> 
+    <link href="{{asset('user-assets/css/responsive.css')}}" rel="stylesheet">
 
-        <!-- Styles -->
-        <style>
-            /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */html{line-height:1.15;-webkit-text-size-adjust:100%}body{margin:0}a{background-color:transparent}[hidden]{display:none}html{font-family:system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;line-height:1.5}*,:after,:before{box-sizing:border-box;border:0 solid #e2e8f0}a{color:inherit;text-decoration:inherit}svg,video{display:block;vertical-align:middle}video{max-width:100%;height:auto}.bg-white{--bg-opacity:1;background-color:#fff;background-color:rgba(255,255,255,var(--bg-opacity))}.bg-gray-100{--bg-opacity:1;background-color:#f7fafc;background-color:rgba(247,250,252,var(--bg-opacity))}.border-gray-200{--border-opacity:1;border-color:#edf2f7;border-color:rgba(237,242,247,var(--border-opacity))}.border-t{border-top-width:1px}.flex{display:flex}.grid{display:grid}.hidden{display:none}.items-center{align-items:center}.justify-center{justify-content:center}.font-semibold{font-weight:600}.h-5{height:1.25rem}.h-8{height:2rem}.h-16{height:4rem}.text-sm{font-size:.875rem}.text-lg{font-size:1.125rem}.leading-7{line-height:1.75rem}.mx-auto{margin-left:auto;margin-right:auto}.ml-1{margin-left:.25rem}.mt-2{margin-top:.5rem}.mr-2{margin-right:.5rem}.ml-2{margin-left:.5rem}.mt-4{margin-top:1rem}.ml-4{margin-left:1rem}.mt-8{margin-top:2rem}.ml-12{margin-left:3rem}.-mt-px{margin-top:-1px}.max-w-6xl{max-width:72rem}.min-h-screen{min-height:100vh}.overflow-hidden{overflow:hidden}.p-6{padding:1.5rem}.py-4{padding-top:1rem;padding-bottom:1rem}.px-6{padding-left:1.5rem;padding-right:1.5rem}.pt-8{padding-top:2rem}.fixed{position:fixed}.relative{position:relative}.top-0{top:0}.right-0{right:0}.shadow{box-shadow:0 1px 3px 0 rgba(0,0,0,.1),0 1px 2px 0 rgba(0,0,0,.06)}.text-center{text-align:center}.text-gray-200{--text-opacity:1;color:#edf2f7;color:rgba(237,242,247,var(--text-opacity))}.text-gray-300{--text-opacity:1;color:#e2e8f0;color:rgba(226,232,240,var(--text-opacity))}.text-gray-400{--text-opacity:1;color:#cbd5e0;color:rgba(203,213,224,var(--text-opacity))}.text-gray-500{--text-opacity:1;color:#a0aec0;color:rgba(160,174,192,var(--text-opacity))}.text-gray-600{--text-opacity:1;color:#718096;color:rgba(113,128,150,var(--text-opacity))}.text-gray-700{--text-opacity:1;color:#4a5568;color:rgba(74,85,104,var(--text-opacity))}.text-gray-900{--text-opacity:1;color:#1a202c;color:rgba(26,32,44,var(--text-opacity))}.underline{text-decoration:underline}.antialiased{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}.w-5{width:1.25rem}.w-8{width:2rem}.w-auto{width:auto}.grid-cols-1{grid-template-columns:repeat(1,minmax(0,1fr))}@media (min-width:640px){.sm\:rounded-lg{border-radius:.5rem}.sm\:block{display:block}.sm\:items-center{align-items:center}.sm\:justify-start{justify-content:flex-start}.sm\:justify-between{justify-content:space-between}.sm\:h-20{height:5rem}.sm\:ml-0{margin-left:0}.sm\:px-6{padding-left:1.5rem;padding-right:1.5rem}.sm\:pt-0{padding-top:0}.sm\:text-left{text-align:left}.sm\:text-right{text-align:right}}@media (min-width:768px){.md\:border-t-0{border-top-width:0}.md\:border-l{border-left-width:1px}.md\:grid-cols-2{grid-template-columns:repeat(2,minmax(0,1fr))}}@media (min-width:1024px){.lg\:px-8{padding-left:2rem;padding-right:2rem}}@media (prefers-color-scheme:dark){.dark\:bg-gray-800{--bg-opacity:1;background-color:#2d3748;background-color:rgba(45,55,72,var(--bg-opacity))}.dark\:bg-gray-900{--bg-opacity:1;background-color:#1a202c;background-color:rgba(26,32,44,var(--bg-opacity))}.dark\:border-gray-700{--border-opacity:1;border-color:#4a5568;border-color:rgba(74,85,104,var(--border-opacity))}.dark\:text-white{--text-opacity:1;color:#fff;color:rgba(255,255,255,var(--text-opacity))}.dark\:text-gray-400{--text-opacity:1;color:#cbd5e0;color:rgba(203,213,224,var(--text-opacity))}}
-        </style>
+     <!-- Google web fonts
+    ============================================ -->
+    <link href='https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700' rel='stylesheet' type='text/css'>     
+    <style type="text/css">
+         body{font-family:'Poppins', sans-serif;}
+    </style>
 
-        <style>
-            body {
-                font-family: 'Nunito', sans-serif;
-            }
-        </style>
-    </head>
-    <body class="antialiased">
-        <div class="relative flex items-top justify-center min-h-screen bg-gray-100 dark:bg-gray-900 sm:items-center py-4 sm:pt-0">
-            @if (Route::has('login'))
-                <div class="hidden fixed top-0 right-0 px-6 py-4 sm:block">
-                    @auth
-                        <a href="{{ url('/home') }}" class="text-sm text-gray-700 underline">Home</a>
-                    @else
-                        <a href="{{ route('login') }}" class="text-sm text-gray-700 underline">Log in</a>
+</head>
 
-                        @if (Route::has('register'))
-                            <a href="{{ route('register') }}" class="ml-4 text-sm text-gray-700 underline">Register</a>
-                        @endif
-                    @endauth
-                </div>
-            @endif
+<body class="common-home res layout-1">
+    
+    <div id="wrapper" class="wrapper-fluid banners-effect-3">
+    
 
-            <div class="max-w-6xl mx-auto sm:px-6 lg:px-8">
-                <div class="flex justify-center pt-8 sm:justify-start sm:pt-0">
-                    <svg viewBox="0 0 651 192" fill="none" xmlns="http://www.w3.org/2000/svg" class="h-16 w-auto text-gray-700 sm:h-20">
-                        <g clip-path="url(#clip0)" fill="#EF3B2D">
-                            <path d="M248.032 44.676h-16.466v100.23h47.394v-14.748h-30.928V44.676zM337.091 87.202c-2.101-3.341-5.083-5.965-8.949-7.875-3.865-1.909-7.756-2.864-11.669-2.864-5.062 0-9.69.931-13.89 2.792-4.201 1.861-7.804 4.417-10.811 7.661-3.007 3.246-5.347 6.993-7.016 11.239-1.672 4.249-2.506 8.713-2.506 13.389 0 4.774.834 9.26 2.506 13.459 1.669 4.202 4.009 7.925 7.016 11.169 3.007 3.246 6.609 5.799 10.811 7.66 4.199 1.861 8.828 2.792 13.89 2.792 3.913 0 7.804-.955 11.669-2.863 3.866-1.908 6.849-4.533 8.949-7.875v9.021h15.607V78.182h-15.607v9.02zm-1.431 32.503c-.955 2.578-2.291 4.821-4.009 6.73-1.719 1.91-3.795 3.437-6.229 4.582-2.435 1.146-5.133 1.718-8.091 1.718-2.96 0-5.633-.572-8.019-1.718-2.387-1.146-4.438-2.672-6.156-4.582-1.719-1.909-3.032-4.152-3.938-6.73-.909-2.577-1.36-5.298-1.36-8.161 0-2.864.451-5.585 1.36-8.162.905-2.577 2.219-4.819 3.938-6.729 1.718-1.908 3.77-3.437 6.156-4.582 2.386-1.146 5.059-1.718 8.019-1.718 2.958 0 5.656.572 8.091 1.718 2.434 1.146 4.51 2.674 6.229 4.582 1.718 1.91 3.054 4.152 4.009 6.729.953 2.577 1.432 5.298 1.432 8.162-.001 2.863-.479 5.584-1.432 8.161zM463.954 87.202c-2.101-3.341-5.083-5.965-8.949-7.875-3.865-1.909-7.756-2.864-11.669-2.864-5.062 0-9.69.931-13.89 2.792-4.201 1.861-7.804 4.417-10.811 7.661-3.007 3.246-5.347 6.993-7.016 11.239-1.672 4.249-2.506 8.713-2.506 13.389 0 4.774.834 9.26 2.506 13.459 1.669 4.202 4.009 7.925 7.016 11.169 3.007 3.246 6.609 5.799 10.811 7.66 4.199 1.861 8.828 2.792 13.89 2.792 3.913 0 7.804-.955 11.669-2.863 3.866-1.908 6.849-4.533 8.949-7.875v9.021h15.607V78.182h-15.607v9.02zm-1.432 32.503c-.955 2.578-2.291 4.821-4.009 6.73-1.719 1.91-3.795 3.437-6.229 4.582-2.435 1.146-5.133 1.718-8.091 1.718-2.96 0-5.633-.572-8.019-1.718-2.387-1.146-4.438-2.672-6.156-4.582-1.719-1.909-3.032-4.152-3.938-6.73-.909-2.577-1.36-5.298-1.36-8.161 0-2.864.451-5.585 1.36-8.162.905-2.577 2.219-4.819 3.938-6.729 1.718-1.908 3.77-3.437 6.156-4.582 2.386-1.146 5.059-1.718 8.019-1.718 2.958 0 5.656.572 8.091 1.718 2.434 1.146 4.51 2.674 6.229 4.582 1.718 1.91 3.054 4.152 4.009 6.729.953 2.577 1.432 5.298 1.432 8.162 0 2.863-.479 5.584-1.432 8.161zM650.772 44.676h-15.606v100.23h15.606V44.676zM365.013 144.906h15.607V93.538h26.776V78.182h-42.383v66.724zM542.133 78.182l-19.616 51.096-19.616-51.096h-15.808l25.617 66.724h19.614l25.617-66.724h-15.808zM591.98 76.466c-19.112 0-34.239 15.706-34.239 35.079 0 21.416 14.641 35.079 36.239 35.079 12.088 0 19.806-4.622 29.234-14.688l-10.544-8.158c-.006.008-7.958 10.449-19.832 10.449-13.802 0-19.612-11.127-19.612-16.884h51.777c2.72-22.043-11.772-40.877-33.023-40.877zm-18.713 29.28c.12-1.284 1.917-16.884 18.589-16.884 16.671 0 18.697 15.598 18.813 16.884h-37.402zM184.068 43.892c-.024-.088-.073-.165-.104-.25-.058-.157-.108-.316-.191-.46-.056-.097-.137-.176-.203-.265-.087-.117-.161-.242-.265-.345-.085-.086-.194-.148-.29-.223-.109-.085-.206-.182-.327-.252l-.002-.001-.002-.002-35.648-20.524a2.971 2.971 0 00-2.964 0l-35.647 20.522-.002.002-.002.001c-.121.07-.219.167-.327.252-.096.075-.205.138-.29.223-.103.103-.178.228-.265.345-.066.089-.147.169-.203.265-.083.144-.133.304-.191.46-.031.085-.08.162-.104.25-.067.249-.103.51-.103.776v38.979l-29.706 17.103V24.493a3 3 0 00-.103-.776c-.024-.088-.073-.165-.104-.25-.058-.157-.108-.316-.191-.46-.056-.097-.137-.176-.203-.265-.087-.117-.161-.242-.265-.345-.085-.086-.194-.148-.29-.223-.109-.085-.206-.182-.327-.252l-.002-.001-.002-.002L40.098 1.396a2.971 2.971 0 00-2.964 0L1.487 21.919l-.002.002-.002.001c-.121.07-.219.167-.327.252-.096.075-.205.138-.29.223-.103.103-.178.228-.265.345-.066.089-.147.169-.203.265-.083.144-.133.304-.191.46-.031.085-.08.162-.104.25-.067.249-.103.51-.103.776v122.09c0 1.063.568 2.044 1.489 2.575l71.293 41.045c.156.089.324.143.49.202.078.028.15.074.23.095a2.98 2.98 0 001.524 0c.069-.018.132-.059.2-.083.176-.061.354-.119.519-.214l71.293-41.045a2.971 2.971 0 001.489-2.575v-38.979l34.158-19.666a2.971 2.971 0 001.489-2.575V44.666a3.075 3.075 0 00-.106-.774zM74.255 143.167l-29.648-16.779 31.136-17.926.001-.001 34.164-19.669 29.674 17.084-21.772 12.428-43.555 24.863zm68.329-76.259v33.841l-12.475-7.182-17.231-9.92V49.806l12.475 7.182 17.231 9.92zm2.97-39.335l29.693 17.095-29.693 17.095-29.693-17.095 29.693-17.095zM54.06 114.089l-12.475 7.182V46.733l17.231-9.92 12.475-7.182v74.537l-17.231 9.921zM38.614 7.398l29.693 17.095-29.693 17.095L8.921 24.493 38.614 7.398zM5.938 29.632l12.475 7.182 17.231 9.92v79.676l.001.005-.001.006c0 .114.032.221.045.333.017.146.021.294.059.434l.002.007c.032.117.094.222.14.334.051.124.088.255.156.371a.036.036 0 00.004.009c.061.105.149.191.222.288.081.105.149.22.244.314l.008.01c.084.083.19.142.284.215.106.083.202.178.32.247l.013.005.011.008 34.139 19.321v34.175L5.939 144.867V29.632h-.001zm136.646 115.235l-65.352 37.625V148.31l48.399-27.628 16.953-9.677v33.862zm35.646-61.22l-29.706 17.102V66.908l17.231-9.92 12.475-7.182v33.841z"/>
-                        </g>
-                    </svg>
-                </div>
-
-                <div class="mt-8 bg-white dark:bg-gray-800 overflow-hidden shadow sm:rounded-lg">
-                    <div class="grid grid-cols-1 md:grid-cols-2">
-                        <div class="p-6">
-                            <div class="flex items-center">
-                                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" class="w-8 h-8 text-gray-500"><path d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path></svg>
-                                <div class="ml-4 text-lg leading-7 font-semibold"><a href="https://laravel.com/docs" class="underline text-gray-900 dark:text-white">Documentation</a></div>
-                            </div>
-
-                            <div class="ml-12">
-                                <div class="mt-2 text-gray-600 dark:text-gray-400 text-sm">
-                                    Laravel has wonderful, thorough documentation covering every aspect of the framework. Whether you are new to the framework or have previous experience with Laravel, we recommend reading all of the documentation from beginning to end.
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="p-6 border-t border-gray-200 dark:border-gray-700 md:border-t-0 md:border-l">
-                            <div class="flex items-center">
-                                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" class="w-8 h-8 text-gray-500"><path d="M3 9a2 2 0 012-2h.93a2 2 0 001.664-.89l.812-1.22A2 2 0 0110.07 4h3.86a2 2 0 011.664.89l.812 1.22A2 2 0 0018.07 7H19a2 2 0 012 2v9a2 2 0 01-2 2H5a2 2 0 01-2-2V9z"></path><path d="M15 13a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
-                                <div class="ml-4 text-lg leading-7 font-semibold"><a href="https://laracasts.com" class="underline text-gray-900 dark:text-white">Laracasts</a></div>
-                            </div>
-
-                            <div class="ml-12">
-                                <div class="mt-2 text-gray-600 dark:text-gray-400 text-sm">
-                                    Laracasts offers thousands of video tutorials on Laravel, PHP, and JavaScript development. Check them out, see for yourself, and massively level up your development skills in the process.
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="p-6 border-t border-gray-200 dark:border-gray-700">
-                            <div class="flex items-center">
-                                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" class="w-8 h-8 text-gray-500"><path d="M7 8h10M7 12h4m1 8l-4-4H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-3l-4 4z"></path></svg>
-                                <div class="ml-4 text-lg leading-7 font-semibold"><a href="https://laravel-news.com/" class="underline text-gray-900 dark:text-white">Laravel News</a></div>
-                            </div>
-
-                            <div class="ml-12">
-                                <div class="mt-2 text-gray-600 dark:text-gray-400 text-sm">
-                                    Laravel News is a community driven portal and newsletter aggregating all of the latest and most important news in the Laravel ecosystem, including new package releases and tutorials.
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="p-6 border-t border-gray-200 dark:border-gray-700 md:border-l">
-                            <div class="flex items-center">
-                                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" class="w-8 h-8 text-gray-500"><path d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
-                                <div class="ml-4 text-lg leading-7 font-semibold text-gray-900 dark:text-white">Vibrant Ecosystem</div>
-                            </div>
-
-                            <div class="ml-12">
-                                <div class="mt-2 text-gray-600 dark:text-gray-400 text-sm">
-                                    Laravel's robust library of first-party tools and libraries, such as <a href="https://forge.laravel.com" class="underline">Forge</a>, <a href="https://vapor.laravel.com" class="underline">Vapor</a>, <a href="https://nova.laravel.com" class="underline">Nova</a>, and <a href="https://envoyer.io" class="underline">Envoyer</a> help you take your projects to the next level. Pair them with powerful open source libraries like <a href="https://laravel.com/docs/billing" class="underline">Cashier</a>, <a href="https://laravel.com/docs/dusk" class="underline">Dusk</a>, <a href="https://laravel.com/docs/broadcasting" class="underline">Echo</a>, <a href="https://laravel.com/docs/horizon" class="underline">Horizon</a>, <a href="https://laravel.com/docs/sanctum" class="underline">Sanctum</a>, <a href="https://laravel.com/docs/telescope" class="underline">Telescope</a>, and more.
-                                </div>
-                            </div>
-                        </div>
+    <!-- Header Container  -->
+    <header id="header" class=" typeheader-1">
+        
+        <!-- Header Top -->
+        <div class="header-top hidden-compact">
+            <div class="container">
+                <div class="row">
+                    <div class="header-top-left col-lg-7 col-md-8 col-sm-6 col-xs-4">
+                        <div class="hidden-md hidden-sm hidden-xs welcome-msg">Welcome to Nonestop! Wrap new offers / gift every single day on Weekends - New Coupon code: <span>Happy2021</span> </div>
+                        <ul class="top-link list-inline hidden-lg ">
+                            <li class="account" id="my_account">
+                                <a href="#" title="My Account " class="btn-xs dropdown-toggle" data-toggle="dropdown"> <span class="hidden-xs">My Account </span>  <span class="fa fa-caret-down"></span>
+                                </a>
+                                <ul class="dropdown-menu ">
+                                    <li><a href="register.html"><i class="fa fa-user"></i> Register</a></li>
+                                    <li><a href="login.html"><i class="fa fa-pencil-square-o"></i> Login</a></li>
+                                </ul>
+                            </li>
+                        </ul>            
                     </div>
-                </div>
+                    <div class="header-top-right collapsed-block col-lg-5 col-md-4 col-sm-6 col-xs-8">
+                        <ul class="top-link list-inline lang-curr">
+                            <li class="currency">
+                                <div class="btn-group currencies-block">
+                                    <form action="https://demo.smartaddons.com/templates/html/supermarket/index.html" method="post" enctype="multipart/form-data" id="currency">
+                                        <a class="btn btn-link dropdown-toggle" data-toggle="dropdown">
+                                            <span class="icon icon-credit "></span> $ US Dollar  <span class="fa fa-angle-down"></span>
+                                        </a>
+                                        <ul class="dropdown-menu btn-xs">
+                                            <li> <a href="#">(€)&nbsp;Euro</a></li>
+                                            <li> <a href="#">(£)&nbsp;Pounds    </a></li>
+                                            <li> <a href="#">($)&nbsp;US Dollar </a></li>
+                                        </ul>
+                                    </form>
+                                </div>
+                            </li>   
+                            <li class="language">
+                                <div class="btn-group languages-block ">
+                                    <form action="https://demo.smartaddons.com/templates/html/supermarket/index.html" method="post" enctype="multipart/form-data" id="bt-language">
+                                        <a class="btn btn-link dropdown-toggle" data-toggle="dropdown">
+                                            <img src="{{asset('user-assets/image/catalog/flags/gb.png')}}" alt="English" title="English">
+                                            <span class="">English</span>
+                                            <span class="fa fa-angle-down"></span>
+                                        </a>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="index.html"><img class="image_flag" src="{{asset('user-assets/image/catalog/flags/gb.png')}}" alt="English" title="English" /> English </a></li>
+                                            <li> <a href="html_with_RTL/index.html"> <img class="image_flag" src="{{asset('user-assets/image/catalog/flags/ar.png')}}" alt="Arabic" title="Arabic" /> Arabic </a> </li>
+                                        </ul>
+                                    </form>
+                                </div>
+                                
+                            </li>
+                        </ul>
+                        
 
-                <div class="flex justify-center mt-4 sm:items-center sm:justify-between">
-                    <div class="text-center text-sm text-gray-500 sm:text-left">
-                        <div class="flex items-center">
-                            <svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor" class="-mt-px w-5 h-5 text-gray-400">
-                                <path d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"></path>
-                            </svg>
-
-                            <a href="https://laravel.bigcartel.com" class="ml-1 underline">
-                                Shop
-                            </a>
-
-                            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" class="ml-4 -mt-px w-5 h-5 text-gray-400">
-                                <path d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
-                            </svg>
-
-                            <a href="https://github.com/sponsors/taylorotwell" class="ml-1 underline">
-                                Sponsor
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="ml-4 text-center text-sm text-gray-500 sm:text-right sm:ml-0">
-                        Laravel v{{ Illuminate\Foundation\Application::VERSION }} (PHP v{{ PHP_VERSION }})
+                        
                     </div>
                 </div>
             </div>
         </div>
-    </body>
+        <!-- //Header Top -->
+
+        <!-- Header center -->
+        <div class="header-middle">
+            <div class="container">
+                <div class="row">
+                    <!-- Logo -->
+                    <div class="navbar-logo col-lg-2 col-md-3 col-sm-4 col-xs-12">
+                        <div class="logo"><a href="index.html"><img src="{{asset('user-assets/image/catalog/logo.png')}}" title="Your Store" alt="Your Store" /></a></div>
+                    </div>
+                    <!-- //end Logo -->
+
+                    
+                    <!-- Search -->
+                    <div class="col-lg-7 col-md-6 col-sm-5">
+                        <div class="search-header-w">
+                            <div class="icon-search hidden-lg hidden-md hidden-sm"><i class="fa fa-search"></i></div>                                
+                              
+                            <div id="sosearchpro" class="sosearchpro-wrapper so-search ">
+                                <form method="GET" action="https://demo.smartaddons.com/templates/html/supermarket/index.html">
+                                    <div id="search0" class="search input-group form-group">
+                                        <div class="select_category filter_type  icon-select hidden-sm hidden-xs">
+                                            <select class="no-border" name="category_id">
+                                                <option value="0">All Categories</option>
+                                                <option value="78">Apparel</option>
+                                                <option value="77">Cables &amp; Connectors</option>
+                                                <option value="82">Cameras &amp; Photo</option>
+                                                <option value="80">Flashlights &amp; Lamps</option>
+                                                <option value="81">Mobile Accessories</option>
+                                                <option value="79">Video Games</option>
+                                                <option value="20">Jewelry &amp; Watches</option>
+                                                <option value="76">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Earings</option>
+                                                <option value="26">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Wedding Rings</option>
+                                                <option value="27">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Men Watches</option>
+                                            </select>
+                                        </div>
+
+                                        <input class="autosearch-input form-control" type="text" value="" size="50" autocomplete="off" placeholder="Keyword here..." name="search">
+                                
+                                        <button type="submit" class="button-search btn btn-primary" name="submit_search"><i class="fa fa-search"></i></button>
+                                    
+                                    </div>
+                                    <input type="hidden" name="route" value="product/search" />
+                                </form>
+                            </div>
+                        </div>  
+                    </div>
+                    <!-- //end Search -->
+                    <div class="middle-right col-lg-3 col-md-3 col-sm-3">                  
+                        <!--cart-->
+                        <div class="shopping_cart">
+                            <div id="cart" class="btn-shopping-cart">
+
+                                <a data-loading-text="Loading... " class="btn-group top_cart dropdown-toggle" data-toggle="dropdown" aria-expanded="true">
+                                    <div class="shopcart">
+                                        <span class="icon-c">
+                                <i class="fa fa-shopping-bag"></i>
+                              </span>
+                                        <div class="shopcart-inner">
+                                            <p class="text-shopping-cart">
+
+                                                My cart
+                                            </p>
+
+                                            <span class="total-shopping-cart cart-total-full">
+                                   <span class="items_cart">02</span><span class="items_cart2"> item(s)</span><span class="items_carts">( $162.00 )</span>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </a>
+
+                                <ul class="dropdown-menu pull-right shoppingcart-box" role="menu">
+                                    <li>
+                                        <table class="table table-striped">
+                                            <tbody>
+                                                <tr>
+                                                    <td class="text-center" style="width:70px">
+                                                        <a href="product.html">
+                                                            <img src="{{asset('user-assets/image/catalog/demo/product/80/1.jpg')}}" style="width:70px" alt="Yutculpa ullamcon" title="Yutculpa ullamco" class="preview">
+                                                        </a>
+                                                    </td>
+                                                    <td class="text-left"> <a class="cart_product_name" href="product.html">Yutculpa ullamco</a> 
+                                                    </td>
+                                                    <td class="text-center">x1</td>
+                                                    <td class="text-center">$80.00</td>
+                                                    <td class="text-right">
+                                                        <a href="product.html" class="fa fa-edit"></a>
+                                                    </td>
+                                                    <td class="text-right">
+                                                        <a onclick="cart.remove('2');" class="fa fa-times fa-delete"></a>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="text-center" style="width:70px">
+                                                        <a href="product.html">
+                                                            <img src="{{asset('user-assets/image/catalog/demo/product/80/2.jpg')}}" style="width:70px" alt="Xancetta bresao" title="Xancetta bresao" class="preview">
+                                                        </a>
+                                                    </td>
+                                                    <td class="text-left"> <a class="cart_product_name" href="product.html">Xancetta bresao</a> 
+                                                    </td>
+                                                    <td class="text-center">x1</td>
+                                                    <td class="text-center">$60.00</td>
+                                                    <td class="text-right">
+                                                        <a href="product.html" class="fa fa-edit"></a>
+                                                    </td>
+                                                    <td class="text-right">
+                                                        <a onclick="cart.remove('1');" class="fa fa-times fa-delete"></a>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </li>
+                                    <li>
+                                        <div>
+                                            <table class="table table-bordered">
+                                                <tbody>
+                                                    <tr>
+                                                        <td class="text-left"><strong>Sub-Total</strong>
+                                                        </td>
+                                                        <td class="text-right">$140.00</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="text-left"><strong>Eco Tax (-2.00)</strong>
+                                                        </td>
+                                                        <td class="text-right">$2.00</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="text-left"><strong>VAT (20%)</strong>
+                                                        </td>
+                                                        <td class="text-right">$20.00</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="text-left"><strong>Total</strong>
+                                                        </td>
+                                                        <td class="text-right">$162.00</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                            <p class="text-right"> <a class="btn view-cart" href="cart.html"><i class="fa fa-shopping-cart"></i>View Cart</a>&nbsp;&nbsp;&nbsp; <a class="btn btn-mega checkout-cart" href="checkout.html"><i class="fa fa-share"></i>Checkout</a> 
+                                            </p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+
+                        </div>
+                        <!--//cart-->
+
+                        <ul class="wishlist-comp hidden-md hidden-sm hidden-xs">
+                            <li class="compare hidden-xs"><a href="#" class="top-link-compare" title="Compare "><i class="fa fa-refresh"></i></a>
+                            </li>
+                            <li class="wishlist hidden-xs"><a href="#" id="wishlist-total" class="top-link-wishlist" title="Wish List (0) "><i class="fa fa-heart"></i></a>
+                            </li>
+                        </ul>
+
+                                            
+                        
+                    </div>
+                    
+                </div>
+
+            </div>
+        </div>
+        <!-- //Header center -->
+
+        <!-- Header Bottom -->
+        <div class="header-bottom hidden-compact">
+            <div class="container">
+                <div class="row">
+                    
+                    <div class="bottom1 menu-vertical col-lg-2 col-md-3 col-sm-3">
+                        <div class="responsive so-megamenu megamenu-style-dev ">
+                            <div class="so-vertical-menu ">
+                                <nav class="navbar-default">    
+                                    
+                                    <div class="container-megamenu vertical">
+                                        <div id="menuHeading">
+                                            <div class="megamenuToogle-wrapper">
+                                                <div class="megamenuToogle-pattern">
+                                                    <div class="container">
+                                                        <div>
+                                                            <span></span>
+                                                            <span></span>
+                                                            <span></span>
+                                                        </div>
+                                                        All Categories                          
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                     
+                                        <div class="navbar-header">
+                                            <button type="button" id="show-verticalmenu" data-toggle="collapse" class="navbar-toggle">      
+                                                <i class="fa fa-bars"></i>
+                                                <span>  All Categories     </span>
+                                            </button>
+                                        </div>
+                                        <div class="vertical-wrapper" >
+                                            <span id="remove-verticalmenu" class="fa fa-times"></span>
+                                            <div class="megamenu-pattern">
+                                                <div class="container-mega">
+                                                    <ul class="megamenu">
+                                                        <li class="item-vertical  with-sub-menu hover">
+                                                            <p class="close-menu"></p>
+                                                            <a href="#" class="clearfix">
+                                                                <img src="{{asset('user-assets/image/catalog/menu/icons/ico10.png')}}" alt="icon">
+                                                                <span>Gifts & Toys</span>
+                                                                <b class="fa-angle-right"></b>
+                                                            </a>
+                                                            <div class="sub-menu" data-subwidth="60"  >
+                                                                <div class="content" >
+                                                                    <div class="row">
+                                                                        <div class="col-sm-12">
+                                                                            <div class="row">
+                                                                                <div class="col-md-4 static-menu">
+                                                                                    <div class="menu">
+                                                                                        <ul>
+                                                                                            <li>
+                                                                                                <a href="#"  class="main-menu">Apparel</a>
+                                                                                                <ul>
+                                                                                                    <li><a href="#" >Accessories for Tablet PC</a></li>
+                                                                                                    <li><a href="#" >Accessories for i Pad</a></li>
+                                                                                                    <li><a  href="#" >Accessories for iPhone</a></li>
+                                                                                                    <li><a href="#" >Bags, Holiday Supplies</a></li>
+                                                                                                    <li><a href="#" >Car Alarms and Security</a></li>
+                                                                                                    <li><a href="#" >Car Audio &amp; Speakers</a></li>
+                                                                                                </ul>
+                                                                                            </li>
+                                                                                            <li>
+                                                                                                <a href="#"  class="main-menu">Cables &amp; Connectors</a>
+                                                                                                <ul>
+                                                                                                    <li><a href="#" >Cameras &amp; Photo</a></li>
+                                                                                                    <li><a href="#" >Electronics</a></li>
+                                                                                                    <li><a href="#" >Outdoor &amp; Traveling</a></li>
+                                                                                                </ul>
+                                                                                            </li>
+                                                                                        </ul>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="col-md-4 static-menu">
+                                                                                    <div class="menu">
+                                                                                        <ul>
+                                                                                            <li>
+                                                                                                <a href="#"  class="main-menu">Camping &amp; Hiking</a>
+                                                                                                <ul>
+                                                                                                    <li><a href="#" >Earings</a></li>
+                                                                                                    <li><a href="#" >Shaving &amp; Hair Removal</a></li>
+                                                                                                    <li><a href="#" >Salon &amp; Spa Equipment</a></li>
+                                                                                                </ul>
+                                                                                            </li>
+                                                                                            <li>
+                                                                                                <a href="#" class="main-menu">Smartphone &amp; Tablets</a>
+                                                                                                <ul>
+                                                                                                    <li><a href="#" >Sports &amp; Outdoors</a></li>
+                                                                                                    <li><a href="#" >Bath &amp; Body</a></li>
+                                                                                                    <li><a href="#" >Gadgets &amp; Auto Parts</a></li>
+                                                                                                </ul>
+                                                                                            </li>
+                                                                                        </ul>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="col-md-4 static-menu">
+                                                                                    <div class="menu">
+                                                                                        <ul>
+                                                                                            <li>
+                                                                                                <a href="#"  class="main-menu">Bags, Holiday Supplies</a>
+                                                                                                <ul>
+                                                                                                    <li><a href="#" onclick="window.location = '18_46.html';">Battereries &amp; Chargers</a></li>
+                                                                                                    <li><a href="#" onclick="window.location = '24_64.html';">Bath &amp; Body</a></li>
+                                                                                                    <li><a href="#" onclick="window.location = '18_45.html';">Headphones, Headsets</a></li>
+                                                                                                    <li><a href="#" onclick="window.location = '18_30.html';">Home Audio</a></li>
+                                                                                                </ul>
+                                                                                            </li>
+                                                                                        </ul>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                        <li class="item-vertical">
+                                                            <p class="close-menu"></p>
+                                                            <a href="#" class="clearfix">
+                                                                <img src="{{asset('user-assets/image/catalog/menu/icons/ico1.png')}}" alt="icon">
+                                                                <span>Fashion & Accessories</span>
+                                                                
+                                                            </a>
+                                                        </li>
+                                                        <li class="item-vertical  style1 with-sub-menu hover">
+                                                            <p class="close-menu"></p>
+                                                            <a href="#" class="clearfix">
+                                                                <span class="label"></span>
+                                                                <img src="{{asset('user-assets/image/catalog/menu/icons/ico9.png')}}" alt="icon">
+                                                                <span>Electronic</span>
+                                                                 
+                                                                <b class="fa-angle-right"></b>
+                                                            </a>
+                                                            <div class="sub-menu" data-subwidth="40" >
+                                                                <div class="content">
+                                                                    <div class="row">
+                                                                        <div class="col-md-6">
+                                                                            <div class="row">
+                                                                                <div class="col-md-12 static-menu">
+                                                                                    <div class="menu">
+                                                                                        <ul>
+                                                                                            <li><a href="#" class="main-menu">Smartphone</a>
+                                                                                                <ul>
+                                                                                                    <li><a href="#">Esdipiscing</a>
+                                                                                                    </li>
+                                                                                                    <li><a href="#">Scanners</a>
+                                                                                                    </li>
+                                                                                                    <li><a href="#">Apple</a>
+                                                                                                    </li>
+                                                                                                    <li><a href="#">Dell</a>
+                                                                                                    </li>
+                                                                                                    <li><a href="#">Scanners</a>
+                                                                                                    </li>
+                                                                                                </ul>
+                                                                                            </li>
+                                                                                            <li><a href="#" class="main-menu">Electronics</a>
+                                                                                                <ul>
+                                                                                                    <li><a href="#">Asdipiscing</a>
+                                                                                                    </li>
+                                                                                                    <li><a href="#">Diam sit</a>
+                                                                                                    </li>
+                                                                                                    <li><a href="#">Labore et</a>
+                                                                                                    </li>
+                                                                                                    <li><a href="#">Monitors</a>
+                                                                                                    </li>
+                                                                                                </ul>
+                                                                                            </li>
+                                                                                        </ul>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-md-6">
+                                                                            <div class="row banner">
+                                                                                <a href="#">
+                                                                                    <img src="{{asset('user-assets/image/catalog/menu/megabanner/vbanner1.jpg')}}" alt="banner1">
+                                                                                    </a>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </li>
+                                                        <li class="item-vertical with-sub-menu hover">
+                                                            <p class="close-menu"></p>
+                                                            <a href="#" class="clearfix">
+                                                                 <img src="{{asset('user-assets/image/catalog/menu/icons/ico7.png')}}" alt="icon">
+                                                                <span>Health &amp; Beauty</span>
+                                                                <b class="fa-angle-right"></b>
+                                                            </a>
+                                                            <div class="sub-menu" data-subwidth="60" >
+                                                                <div class="content" >
+                                                                    <div class="row">
+                                                                        <div class="col-md-12">
+                                                                            <div class="row">
+                                                                                <div class="col-md-4 static-menu">
+                                                                                    <div class="menu">
+                                                                                        <ul>
+                                                                                            <li>
+                                                                                                <a href="#" class="main-menu">Car Alarms and Security</a>
+                                                                                                <ul>
+                                                                                                    <li><a href="#" >Car Audio &amp; Speakers</a></li>
+                                                                                                    <li><a href="#" >Gadgets &amp; Auto Parts</a></li>
+                                                                                                    <li><a href="#" >Gadgets &amp; Auto Parts</a></li>
+                                                                                                    <li><a href="#" >Headphones, Headsets</a></li>
+                                                                                                </ul>
+                                                                                            </li>
+                                                                                            <li>
+                                                                                                <a href="24.html" onclick="window.location = '24.html';" class="main-menu">Health &amp; Beauty</a>
+                                                                                                <ul>
+                                                                                                    <li>
+                                                                                                        <a href="#" >Home Audio</a>
+                                                                                                    </li>
+                                                                                                    <li>
+                                                                                                        <a href="#" >Helicopters &amp; Parts</a>
+                                                                                                    </li>
+                                                                                                    <li>
+                                                                                                        <a href="#" >Outdoor &amp; Traveling</a>
+                                                                                                    </li>
+                                                                                                    <li>
+                                                                                                        <a href="#">Toys &amp; Hobbies</a>
+                                                                                                    </li>
+                                                                                                </ul>
+                                                                                            </li>
+                                                                                        </ul>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="col-md-4 static-menu">
+                                                                                    <div class="menu">
+                                                                                        <ul>
+                                                                                            <li>
+                                                                                                <a href="#"  class="main-menu">Electronics</a>
+                                                                                                <ul>
+                                                                                                    <li>
+                                                                                                        <a href="#">Earings</a>
+                                                                                                    </li>
+                                                                                                    <li>
+                                                                                                        <a href="#" >Salon &amp; Spa Equipment</a>
+                                                                                                    </li>
+                                                                                                    <li>
+                                                                                                        <a href="#" >Shaving &amp; Hair Removal</a>
+                                                                                                    </li>
+                                                                                                    <li>
+                                                                                                        <a href="#">Smartphone &amp; Tablets</a>
+                                                                                                    </li>
+                                                                                                </ul>
+                                                                                            </li>
+                                                                                            <li>
+                                                                                                <a href="#"  class="main-menu">Sports &amp; Outdoors</a>
+                                                                                                <ul>
+                                                                                                    <li>
+                                                                                                        <a href="#" >Flashlights &amp; Lamps</a>
+                                                                                                    </li>
+                                                                                                    <li>
+                                                                                                        <a href="#" >Fragrances</a>
+                                                                                                    </li>
+                                                                                                    <li>
+                                                                                                        <a href="#" >Fishing</a>
+                                                                                                    </li>
+                                                                                                    <li>
+                                                                                                        <a href="#" >FPV System &amp; Parts</a>
+                                                                                                    </li>
+                                                                                                </ul>
+                                                                                            </li>
+                                                                                        </ul>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="col-md-4 static-menu">
+                                                                                    <div class="menu">
+                                                                                        <ul>
+                                                                                            <li>
+                                                                                                <a href="#" class="main-menu">More Car Accessories</a>
+                                                                                                <ul>
+                                                                                                    <li>
+                                                                                                        <a href="#" >Lighter &amp; Cigar Supplies</a>
+                                                                                                    </li>
+                                                                                                    <li>
+                                                                                                        <a href="#" >Mp3 Players &amp; Accessories</a>
+                                                                                                    </li>
+                                                                                                    <li>
+                                                                                                        <a href="#" >Men Watches</a>
+                                                                                                    </li>
+                                                                                                    <li>
+                                                                                                        <a href="#" >Mobile Accessories</a>
+                                                                                                    </li>
+                                                                                                </ul>
+                                                                                            </li>
+                                                                                            <li>
+                                                                                                <a href="#" class="main-menu">Gadgets &amp; Auto Parts</a>
+                                                                                                <ul>
+                                                                                                    <li>
+                                                                                                        <a href="#" >Gift &amp; Lifestyle Gadgets</a>
+                                                                                                    </li>
+                                                                                                    <li>
+                                                                                                        <a href="#" >Gift for Man</a>
+                                                                                                    </li>
+                                                                                                    <li>
+                                                                                                        <a href="#" >Gift for Woman</a>
+                                                                                                    </li>
+                                                                                                    <li>
+                                                                                                        <a href="#" >Gift for Woman</a>
+                                                                                                    </li>
+                                                                                                </ul>
+                                                                                            </li>
+                                                                                        </ul>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                        <li class="item-vertical css-menu with-sub-menu hover">
+                                                            <p class="close-menu"></p>
+                                                            <a href="#" class="clearfix">
+                                                                
+                                                                 <img src="{{asset('user-assets/image/catalog/menu/icons/ico6.png')}}" alt="icon">
+                                                                <span>Smartphone &amp; Tablets</span>
+                                                                <b class="fa-angle-right"></b>
+                                                            </a>
+                                                            <div class="sub-menu" data-subwidth="20">
+                                                                <div class="content" >
+                                                                    <div class="row">
+                                                                        <div class="col-sm-12">
+                                                                            <div class="row">
+                                                                                <div class="col-sm-12 hover-menu">
+                                                                                    <div class="menu">
+                                                                                        <ul>
+                                                                                            <li>
+                                                                                                <a href="#" class="main-menu">Headphones, Headsets</a>
+                                                                                            </li>
+                                                                                            <li>
+                                                                                                <a href="#" class="main-menu">Home Audio</a>
+                                                                                            </li>
+                                                                                            <li>
+                                                                                                <a href="#" class="main-menu">Health &amp; Beauty</a>
+                                                                                            </li>
+                                                                                            <li>
+                                                                                                <a href="#" class="main-menu">Helicopters &amp; Parts</a>
+                                                                                            </li>
+                                                                                            <li>
+                                                                                                <a href="#" class="main-menu">Helicopters &amp; Parts</a>
+                                                                                            </li>
+                                                                                        </ul>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                        <li class="item-vertical">
+                                                            <p class="close-menu"></p>
+                                                            <a href="#" class="clearfix">
+                                                                 <img src="{{asset('user-assets/image/catalog/menu/icons/ico5.png')}}" alt="icon">
+                                                                <span>Health & Beauty</span>
+                                                                
+                                                            </a>
+                                                        </li>
+                                                        <li class="item-vertical">
+                                                            <p class="close-menu"></p>
+                                                            <a href="#" class="clearfix">
+                                                                 <img src="{{asset('user-assets/image/catalog/menu/icons/ico4.png')}}" alt="icon">
+                                                                <span>Bathroom</span>
+                                                            </a>
+                                                        </li>
+                                                        <li class="item-vertical">
+                                                            <p class="close-menu"></p>
+                                                            <a href="#" class="clearfix">
+                                                                 <img src="{{asset('user-assets/image/catalog/menu/icons/ico3.png')}}" alt="icon">
+                                                                <span>Metallurgy</span>
+                                                            </a>
+                                                        </li>
+                                                        <li class="item-vertical" >
+                                                            <p class="close-menu"></p>
+                                                            <a href="#" class="clearfix">
+                                                                <img src="{{asset('user-assets/image/catalog/menu/icons/ico2.png')}}" alt="icon">
+                                                                <span>Bedroom</span>
+                                                            </a>
+                                                        </li>
+                                                        <li class="item-vertical" >
+                                                            <p class="close-menu"></p>
+                                                            
+                                                            <a href="#" class="clearfix">
+                                                                 <img src="{{asset('user-assets/image/catalog/menu/icons/ico1.png')}}" alt="icon">
+                                                                <span>Health &amp; Beauty</span>
+                                                            </a>
+                                                        </li>
+                                                        <li class="item-vertical" style="display: none;">
+                                                            <p class="close-menu"></p>
+                                                            <a href="#" class="clearfix">
+                                                                 <img src="{{asset('user-assets/image/catalog/menu/icons/ico11.png')}}" alt="icon">
+                                                                <span>Toys &amp; Hobbies </span>
+                                                            </a>
+                                                        </li>
+                                                        <li class="item-vertical" style="display: none;">
+                                                            <p class="close-menu"></p>
+                                                            <a href="#" class="clearfix">
+                                                                 <img src="{{asset('user-assets/image/catalog/menu/icons/ico12.png')}}" alt="icon">
+                                                                <span>Jewelry &amp; Watches</span>
+                                                            </a>
+                                                        </li>
+                                                        <li class="item-vertical" style="display: none;">
+                                                            <p class="close-menu"></p>
+                                                            <a href="#" class="clearfix">
+                                                                 <img src="{{asset('user-assets/image/catalog/menu/icons/ico9.png')}}" alt="icon">
+                                                                <span>Home &amp; Lights</span>
+                                                            </a>
+                                                        </li>
+                                                        <li class="item-vertical" style="display: none;">
+                                                            <p class="close-menu"></p>
+                                                            <a href="#" class="clearfix">
+                                                                 <img src="{{asset('user-assets/image/catalog/menu/icons/ico6.png')}}" alt="icon">
+                                                                <span>Metallurgy</span>
+                                                            </a>
+                                                        </li>
+                                                       
+                                                        <li class="loadmore">
+                                                            <i class="fa fa-plus-square-o"></i>
+                                                            <span class="more-view">More Categories</span>
+                                                        </li>
+                                                            
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </nav>
+                            </div>
+                        </div>
+
+                    </div>
+                    
+                    <!-- Main menu -->
+                    <div class="main-menu-w col-lg-10 col-md-9">
+                        <div class="responsive so-megamenu megamenu-style-dev">
+                            <nav class="navbar-default">
+                                <div class=" container-megamenu  horizontal open ">
+                                    <div class="navbar-header">
+                                        <button type="button" id="show-megamenu" data-toggle="collapse" class="navbar-toggle">
+                                            <span class="icon-bar"></span>
+                                            <span class="icon-bar"></span>
+                                            <span class="icon-bar"></span>
+                                        </button>
+                                    </div>
+                                    
+                                    <div class="megamenu-wrapper">
+                                        <span id="remove-megamenu" class="fa fa-times"></span>
+                                        <div class="megamenu-pattern">
+                                            <div class="container-mega">
+                                                <ul class="megamenu" data-transition="slide" data-animationtime="250">
+                                                    <li class="home hover">
+                                                        <a href="index.html">Home <b class="caret"></b></a>
+                                                        <div class="sub-menu" style="width:100%;" >
+                                                            <div class="content" >
+                                                                <div class="row">
+                                                                    <div class="col-md-3">
+                                                                        <a href="index.html" class="image-link"> 
+                                                                            <span class="thumbnail">
+                                                                                <img class="img-responsive img-border" src="{{asset('user-assets/image/catalog/menu/home-1.jpg')}}" alt="">
+                                                                                
+                                                                            </span> 
+                                                                            <h3 class="figcaption">Home page - (Default)</h3> 
+                                                                        </a> 
+                                                                        
+                                                                    </div>
+                                                                    <div class="col-md-3">
+                                                                        <a href="home2.html" class="image-link"> 
+                                                                            <span class="thumbnail">
+                                                                                <img class="img-responsive img-border" src="{{asset('user-assets/image/catalog/menu/home-2.jpg')}}" alt="">
+                                                                               
+                                                                            </span> 
+                                                                            <h3 class="figcaption">Home page - Layout 2</h3> 
+                                                                        </a> 
+                                                                        
+                                                                    </div>
+                                                                    <div class="col-md-3">
+                                                                        <a href="home3.html" class="image-link"> 
+                                                                            <span class="thumbnail">
+                                                                                <img class="img-responsive img-border" src="{{asset('user-assets/image/catalog/menu/home-3.jpg')}}" alt="">
+                                                                               
+                                                                            </span> 
+                                                                            <h3 class="figcaption">Home page - Layout 3</h3> 
+                                                                        </a> 
+                                                                        
+                                                                    </div>
+                                                                    <div class="col-md-3">
+                                                                        <a href="html_with_RTL/index.html" class="image-link"> 
+                                                                            <span class="thumbnail">
+                                                                                <img class="img-responsive img-border" src="{{asset('user-assets/image/catalog/menu/rtl.jpg')}}" alt="">
+                                                                                
+                                                                            </span> 
+                                                                            <h3 class="figcaption">Home page - RTL</h3> 
+                                                                        </a> 
+                                                                        
+                                                                    </div>
+                                                                    
+                                                                    <!-- <div class="col-md-15">
+                                                                        <a href="#" class="image-link"> 
+                                                                            <span class="thumbnail">
+                                                                                <img class="img-responsive img-border" src="image/demo/feature/comming-soon.png" alt="">
+                                                                                
+                                                                            </span> 
+                                                                            <h3 class="figcaption">Comming soon</h3> 
+                                                                        </a> 
+                                                                        
+                                                                    </div> -->
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li class="with-sub-menu hover">
+                                                        <p class="close-menu"></p>
+                                                        <a href="#" class="clearfix">
+                                                            <strong>Features</strong>
+                                                            <img class="label-hot" src="{{asset('user-assets/image/catalog/menu/new-icon.png')}}" alt="icon items">
+                                                            <b class="caret"></b>
+                                                        </a>
+                                                        <div class="sub-menu" style="width: 100%; right: auto;">
+                                                            <div class="content" >
+                                                                <div class="row">
+                                                                    <div class="col-md-3">
+                                                                        <div class="column">
+                                                                            <a href="#" class="title-submenu">Listing pages</a>
+                                                                            <div>
+                                                                                <ul class="row-list">
+                                                                                    <li><a href="category.html">Category Page 1 </a></li>
+                                                                                    <li><a href="category-v2.html">Category Page 2</a></li>
+                                                                                    <li><a href="category-v3.html">Category Page 3</a></li>
+                                                                                </ul>
+                                                                                
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-md-3">
+                                                                        <div class="column">
+                                                                            <a href="#" class="title-submenu">Product pages</a>
+                                                                            <div>
+                                                                                <ul class="row-list">
+                                                                                    <li><a href="product.html">Product page 1</a></li>
+                                                                                    <li><a href="product-v2.html">Product page 2</a></li>
+                                                                                    <!-- <li><a href="product-v3.html">Image size - small</a></li> -->
+                                                                                </ul>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-md-3">
+                                                                        <div class="column">
+                                                                            <a href="#" class="title-submenu">Shopping pages</a>
+                                                                            <div>
+                                                                                <ul class="row-list">
+                                                                                    <li><a href="cart.html">Shopping Cart Page</a></li>
+                                                                                    <li><a href="checkout.html">Checkout Page</a></li>
+                                                                                    <li><a href="compare.html">Compare Page</a></li>
+                                                                                    <li><a href="wishlist.html">Wishlist Page</a></li>
+                                                                                
+                                                                                </ul>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-md-3">
+                                                                        <div class="column">
+                                                                            <a href="#" class="title-submenu">My Account pages</a>
+                                                                            <div>
+                                                                                <ul class="row-list">
+                                                                                    <li><a href="login.html">Login Page</a></li>
+                                                                                    <li><a href="register.html">Register Page</a></li>
+                                                                                    <li><a href="my-account.html">My Account</a></li>
+                                                                                    <li><a href="order-history.html">Order History</a></li>
+                                                                                    <li><a href="order-information.html">Order Information</a></li>
+                                                                                    <li><a href="return.html">Product Returns</a></li>
+                                                                                    <li><a href="gift-voucher.html">Gift Voucher</a></li>
+                                                                                </ul>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li class="with-sub-menu hover">
+                                                        <p class="close-menu"></p>
+                                                        <a href="#" class="clearfix">
+                                                            <strong>Pages</strong>
+                                                            <b class="caret"></b>
+                                                        </a>
+                                                        <div class="sub-menu" style="width: 40%; ">
+                                                            <div class="content" >
+                                                                <div class="row">
+                                                                    <div class="col-md-6">
+                                                                        <ul class="row-list">
+                                                                            <li><a class="subcategory_item" href="faq.html">FAQ</a></li>
+                                                                            
+                                                                            <li><a class="subcategory_item" href="sitemap.html">Site Map</a></li>
+                                                                            <li><a class="subcategory_item" href="contact.html">Contact us</a></li>
+                                                                            <li><a class="subcategory_item" href="banner-effect.html">Banner Effect</a></li>
+                                                                        </ul>
+                                                                    </div>
+                                                                    <div class="col-md-6">
+                                                                        <ul class="row-list">
+                                                                            <li><a class="subcategory_item" href="about-us.html">About Us 1</a></li>
+                                                                            <li><a class="subcategory_item" href="about-us-2.html">About Us 2</a></li>
+                                                                            <li><a class="subcategory_item" href="about-us-3.html">About Us 3</a></li>
+                                                                            <li><a class="subcategory_item" href="about-us-4.html">About Us 4</a></li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li class="with-sub-menu hover">
+                                                        <p class="close-menu"></p>
+                                                        <a href="#" class="clearfix">
+                                                            <strong>Categories</strong>
+                                                            <img class="label-hot" src="{{asset('user-assets/image/catalog/menu/hot-icon.png')}}" alt="icon items">
+                                                  
+                                                            <b class="caret"></b>
+                                                        </a>
+                                                        <div class="sub-menu" style="width: 100%; display: none;">
+                                                            <div class="content">
+                                                                <div class="row">
+                                                                    <div class="col-sm-12">
+                                                                        <div class="row">
+                                                                            <div class="col-md-3 img img1">
+                                                                                <a href="#"><img src="{{asset('user-assets/image/catalog/menu/megabanner/image-1.jpg')}}" alt="banner1"></a>
+                                                                            </div>
+                                                                            <div class="col-md-3 img img2">
+                                                                                <a href="#"><img src="{{asset('user-assets/image/catalog/menu/megabanner/image-2.jpg')}}" alt="banner2"></a>
+                                                                            </div>
+                                                                            <div class="col-md-3 img img3">
+                                                                                <a href="#"><img src="{{asset('user-assets/image/catalog/menu/megabanner/image-3.jpg')}}" alt="banner3"></a>
+                                                                            </div>
+                                                                            <div class="col-md-3 img img4">
+                                                                                <a href="#"><img src="{{asset('user-assets/image/catalog/menu/megabanner/image-4.jpg')}}" alt="banner4"></a>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="row">
+                                                                    <div class="col-md-3">
+                                                                        <a href="#" class="title-submenu">Automotive</a>
+                                                                        <div class="row">
+                                                                            <div class="col-md-12 hover-menu">
+                                                                                <div class="menu">
+                                                                                    <ul>
+                                                                                        <li><a href="#"  class="main-menu">Car Alarms and Security</a></li>
+                                                                                        <li><a href="#"  class="main-menu">Car Audio &amp; Speakers</a></li>
+                                                                                        <li><a href="#"  class="main-menu">Gadgets &amp; Auto Parts</a></li>
+                                                                                        <li><a href="#"  class="main-menu">More Car Accessories</a></li>
+                                                                                    </ul>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-md-3">
+                                                                        <a href="#" class="title-submenu">Funitures</a>
+                                                                        <div class="row">
+                                                                            <div class="col-md-12 hover-menu">
+                                                                                <div class="menu">
+                                                                                    <ul>
+                                                                                        <li><a href="#"  class="main-menu">Bathroom</a></li>
+                                                                                        <li><a href="#"  class="main-menu">Bedroom</a></li>
+                                                                                        <li><a href="#"  class="main-menu">Decor</a></li>
+                                                                                        <li><a href="#"  class="main-menu">Living room</a></li>
+                                                                                    </ul>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-md-3">
+                                                                        <a href="#" class="title-submenu">Jewelry &amp; Watches</a>
+                                                                        <div class="row">
+                                                                            <div class="col-md-12 hover-menu">
+                                                                                <div class="menu">
+                                                                                    <ul>
+                                                                                        <li><a href="#"  class="main-menu">Earings</a></li>
+                                                                                        <li><a href="#"  class="main-menu">Wedding Rings</a></li>
+                                                                                        <li><a href="#"  class="main-menu">Men Watches</a></li>
+                                                                                    </ul>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-md-3">
+                                                                        <a href="#" class="title-submenu">Electronics</a>
+                                                                        <div class="row">
+                                                                            <div class="col-md-12 hover-menu">
+                                                                                <div class="menu">
+                                                                                    <ul>
+                                                                                        <li><a href="#"  class="main-menu">Computer</a></li>
+                                                                                        <li><a href="#"  class="main-menu">Smartphone</a></li>
+                                                                                        <li><a href="#"  class="main-menu">Tablets</a></li>
+                                                                                        <li><a href="#"  class="main-menu">Monitors</a></li>
+                                                                                    </ul>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    
+                                                    <li class="">
+                                                        <p class="close-menu"></p>
+                                                        <a href="#" class="clearfix">
+                                                            <strong>Accessories</strong>
+                                         
+                                                        </a>
+                                            
+                                                    </li>
+                                                    <li class="">
+                                                        <p class="close-menu"></p>
+                                                        <a href="blog-page.html" class="clearfix">
+                                                            <strong>Blog</strong>
+                                                            <span class="label"></span>
+                                                        </a>
+                                                    </li>
+                                                    
+                                                    
+                                                </ul>
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </nav>
+                        </div>
+                    </div>
+                    <!-- //end Main menu -->
+                                      
+                    <div class="bottom3">                        
+                        <div class="telephone hidden-xs hidden-sm hidden-md">
+                            <ul class="blank"> 
+                                <li><a href="#"><i class="fa fa-truck"></i>track your order</a></li> 
+                                <li><a href="#"><i class="fa fa-phone-square"></i>Hotline (+123)4 567 890</a></li> 
+                            </ul>
+                        </div>  
+                        <div class="signin-w hidden-md hidden-sm hidden-xs">
+                            <ul class="signin-link blank">                            
+                                <li class="log login"><i class="fa fa-lock"></i> <a class="link-lg" href="login.html">Login </a> or <a href="register.html">Register</a></li>                                
+                            </ul>                       
+                        </div>                  
+                    </div>
+                    
+                </div>
+            </div>
+
+        </div>
+    </header>
+    <!-- //Header Container  -->
+    
+   
+<!-- Main Container  -->
+<div class="main-container container">
+    <div id="content">
+        <div class="content-top-w">
+            
+            <div class="col-lg-2 col-md-12 col-sm-12 col-xs-12 main-left">
+                <div class="module col1 hidden-sm hidden-xs"></div>
+            </div>    
+            <div class="col-lg-10 col-md-12 col-sm-12 col-xs-12 main-right">
+                <div class="slider-container row"> 
+                                
+                    <div class="col-lg-9 col-md-12 col-sm-12 col-xs-12 col2">
+                        <div class="module sohomepage-slider ">
+                            <div class="yt-content-slider"  data-rtl="yes" data-autoplay="no" data-autoheight="no" data-delay="4" data-speed="0.6" data-margin="0" data-items_column00="1" data-items_column0="1" data-items_column1="1" data-items_column2="1"  data-items_column3="1" data-items_column4="1" data-arrows="no" data-pagination="yes" data-lazyload="yes" data-loop="no" data-hoverpause="yes">
+                                <div class="yt-content-slide">
+                                    <a href="#"><img src="image/catalog/slideshow/home1/slider-1.jpg" alt="slider1" class="img-responsive"></a>
+                                </div>
+                                <div class="yt-content-slide">
+                                    <a href="#"><img src="image/catalog/slideshow/home1/slider-2.jpg" alt="slider2" class="img-responsive"></a>
+                                </div>
+                                <div class="yt-content-slide">
+                                    <a href="#"><img src="image/catalog/slideshow/home1/slider-3.jpg" alt="slider3" class="img-responsive"></a>
+                                </div>
+                            </div>
+                            
+                            <div class="loadeding"></div>
+                        </div>
+                        
+                    </div>
+
+                    
+                    <div class="col-lg-3 col-md-12 col-sm-12 col-xs-12 col3">
+                        <div class="module product-simple extra-layout1">
+                            <h3 class="modtitle">
+                                <span>Best Selling</span>
+                            </h3>
+                            <div class="modcontent">
+                                <div id="so_extra_slider_1" class="so-extraslider" >
+                                    <!-- Begin extraslider-inner -->
+                                    <div class="yt-content-slider extraslider-inner" data-rtl="yes" data-pagination="yes" data-autoplay="no" data-delay="4" data-speed="0.6" data-margin="0" data-items_column00="1" data-items_column0="1" data-items_column1="1" data-items_column2="1" data-items_column3="1" data-items_column4="1" data-arrows="no" data-lazyload="yes" data-loop="no" data-buttonpage="top">
+                                        <div class="item ">
+                                            <div class="product-layout item-inner style1 ">
+                                                <div class="item-image">
+                                                    <div class="item-img-info">
+                                                        <a href="product.html" target="_self" title="Mandouille short ">
+                                                            <img src="image/catalog/demo/product/80/1.jpg" alt="Mandouille short">
+                                                            </a>
+                                                    </div>
+                                                    
+                                                </div>
+                                                <div class="item-info">
+                                                    <div class="item-title">
+                                                        <a href="product.html" target="_self" title="Mandouille short">Mandouille short </a>
+                                                    </div>
+                                                    <div class="rating">
+                                                        <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span>
+                                                        <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span>
+                                                        <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span>
+                                                        <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span>
+                                                        <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                                                    </div>
+                                                    <div class="content_price price">
+                                                        <span class="price-new product-price">$55.00 </span>&nbsp;&nbsp;
+
+                                                        <span class="price-old">$76.00 </span>&nbsp;
+
+                                                    </div>
+                                                </div>
+                                                <!-- End item-info -->
+                                                <!-- End item-wrap-inner -->
+                                            </div>
+                                            <!-- End item-wrap -->
+                                            <div class="product-layout item-inner style1 ">
+                                                <div class="item-image">
+                                                    <div class="item-img-info">
+                                                        <a href="product.html" target="_self" title="Xancetta bresao ">
+                                                                <img src="{{asset('user-assets/image/catalog/demo/product/80/2.jpg')}}" alt="Xancetta bresao">
+                                                                </a>
+                                                    </div>
+                                                    
+                                                </div>
+                                                <div class="item-info">
+                                                    <div class="item-title">
+                                                        <a href="product.html" target="_self" title="Xancetta bresao">
+                                                                    Xancetta bresao 
+                                                                </a>
+                                                    </div>
+                                                    <div class="rating">
+                                                        <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span>
+                                                        <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span>
+                                                        <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span>
+                                                        <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span>
+                                                        <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span>
+                                                    </div>
+                                                    <div class="content_price price">
+                                                        <span class="price-new product-price">$80.00 </span>&nbsp;&nbsp;
+
+                                                        <span class="price-old">$89.00 </span>&nbsp;
+
+
+
+                                                    </div>
+                                                </div>
+                                                <!-- End item-info -->
+                                                <!-- End item-wrap-inner -->
+                                            </div>
+                                            <!-- End item-wrap -->
+                                            <div class="product-layout item-inner style1 ">
+                                                <div class="item-image">
+                                                    <div class="item-img-info">
+                                                        <a href="product.html" target="_self" title="Sausage cowbee ">
+                                                                    <img src="{{asset('user-assets/image/catalog/demo/product/80/3.jpg')}}" alt="Sausage cowbee">
+                                                                    </a>
+                                                    </div>
+                                                   
+                                                </div>
+                                                <div class="item-info">
+                                                    <div class="item-title">
+                                                        <a href="product.html" target="_self" title="Sausage cowbee">
+                                                                    Sausage cowbee 
+                                                                </a>
+                                                    </div>
+                                                    <div class="rating">
+                                                        <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span>
+                                                        <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span>
+                                                        <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span>
+                                                        <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span>
+                                                        <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                                                    </div>
+                                                   
+                                                    <div class="content_price price">
+                                                        <span class="price product-price">
+                                                                        $66.00 
+                                                                    </span>
+                                                    </div>
+                                                </div>
+                                                <!-- End item-info -->
+                                                <!-- End item-wrap-inner -->
+                                            </div>
+                                            <!-- End item-wrap -->
+                                            <div class="product-layout item-inner style1 ">
+                                                <div class="item-image">
+                                                    <div class="item-img-info">
+                                                        <a href="#" target="_self" title="Chicken swinesha ">
+                                                                        <img src="{{asset('user-assets/image/catalog/demo/product/80/4.jpg')}}" alt="Chicken swinesha">
+                                                                        </a>
+                                                    </div>
+                                                   
+                                                </div>
+                                                <div class="item-info">
+                                                    <div class="item-title">
+                                                        <a href="#" target="_self" title="Chicken swinesha">
+                                                                    Chicken swinesha 
+                                                                </a>
+                                                    </div>
+                                                    <div class="rating">
+                                                        <span class="fa fa-stack">
+                                                                            <i class="fa fa-star fa-stack-2x"></i>
+                                                                        </span>
+                                                        <span class="fa fa-stack">
+                                                                            <i class="fa fa-star fa-stack-2x"></i>
+                                                                        </span>
+                                                        <span class="fa fa-stack">
+                                                                            <i class="fa fa-star fa-stack-2x"></i>
+                                                                        </span>
+                                                        <span class="fa fa-stack">
+                                                                            <i class="fa fa-star fa-stack-2x"></i>
+                                                                        </span>
+                                                        <span class="fa fa-stack">
+                                                                            <i class="fa fa-star fa-stack-2x"></i>
+                                                                        </span>
+                                                    </div>
+                                                    <div class="content_price price">
+                                                        <span class="price-new product-price">$45.00 </span>&nbsp;&nbsp;
+
+                                                        <span class="price-old">$56.00 </span>&nbsp;
+
+
+
+                                                    </div>
+                                                </div>
+                                                <!-- End item-info -->
+                                                <!-- End item-wrap-inner -->
+                                            </div>
+                                            <!-- End item-wrap -->
+                                        </div>
+                                        <div class="item ">
+                                            <div class="product-layout item-inner style1 ">
+                                                <div class="item-image">
+                                                    <div class="item-img-info">
+                                                        <a href="#" target="_self" title="Qeserunt shortloin ">
+                                                        <img src="{{asset('user-assets/image/catalog/demo/product/80/5.jpg')}}" alt="Qeserunt shortloin">
+                                                        </a>
+                                                    </div>
+                                                   
+                                                </div>
+                                                <div class="item-info">
+                                                    <div class="item-title">
+                                                        <a href="#" target="_self" title="Qeserunt shortloin">
+                                                Qeserunt shortloin 
+                                            </a>
+                                                    </div>
+                                                    <div class="rating">
+                                                        <span class="fa fa-stack">
+                                                <i class="fa fa-star fa-stack-2x"></i>
+                                            </span>
+                                                        <span class="fa fa-stack">
+                                                <i class="fa fa-star fa-stack-2x"></i>
+                                            </span>
+                                                        <span class="fa fa-stack">
+                                                <i class="fa fa-star fa-stack-2x"></i>
+                                            </span>
+                                                        <span class="fa fa-stack">
+                                                <i class="fa fa-star fa-stack-2x"></i>
+                                            </span>
+                                                        <span class="fa fa-stack">
+                                                <i class="fa fa-star fa-stack-2x"></i>
+                                            </span>
+                                                    </div>
+                                                    <div class="content_price price">
+                                                        <span class="price product-price">
+                                                    $88.00 
+                                                </span>
+                                                    </div>
+                                                </div>
+                                                <!-- End item-info -->
+                                                <!-- End item-wrap-inner -->
+                                            </div>
+                                            <!-- End item-wrap -->
+                                            <div class="product-layout item-inner style1 ">
+                                                <div class="item-image">
+                                                    <div class="item-img-info">
+                                                        <a href="#" target="_self" title="Consecte quichuck ">
+                                                        <img src="{{asset('user-assets/image/catalog/demo/product/80/6.jpg')}}" alt="Consecte quichuck">
+                                                        </a>
+                                                    </div>
+                                                    
+                                                </div>
+                                                <div class="item-info">
+                                                    <div class="item-title">
+                                                        <a href="#" target="_self" title="Consecte quichuck">
+                                                Consecte quichuck 
+                                            </a>
+                                                    </div>
+                                                    <div class="rating">
+                                                        <span class="fa fa-stack">
+                                                    <i class="fa fa-star fa-stack-2x"></i>
+                                                </span>
+                                                        <span class="fa fa-stack">
+                                                    <i class="fa fa-star fa-stack-2x"></i>
+                                                </span>
+                                                        <span class="fa fa-stack">
+                                                    <i class="fa fa-star fa-stack-2x"></i>
+                                                </span>
+                                                        <span class="fa fa-stack">
+                                                    <i class="fa fa-star fa-stack-2x"></i>
+                                                </span>
+                                                        <span class="fa fa-stack">
+                                                    <i class="fa fa-star fa-stack-2x"></i>
+                                                </span>
+                                                    </div>
+                                                    <div class="content_price price">
+                                                        <span class="price-new product-price">$55.00 </span>&nbsp;&nbsp;
+
+                                                        <span class="price-old">$61.00 </span>&nbsp;
+
+
+
+                                                    </div>
+                                                </div>
+                                                <!-- End item-info -->
+                                                <!-- End item-wrap-inner -->
+                                            </div>
+                                            <!-- End item-wrap -->
+                                            <div class="product-layout item-inner style1 ">
+                                                <div class="item-image">
+                                                    <div class="item-img-info">
+                                                        <a href="#" target="_self" title="Neatball bresaola ">
+                                                    <img src="{{asset('user-assets/image/catalog/demo/product/80/7.jpg')}}" alt="Neatball bresaola">
+                                                    </a>
+                                                    </div>
+                                                    
+                                                </div>
+                                                <div class="item-info">
+                                                    <div class="item-title">
+                                                        <a href="#" target="_self" title="Neatball bresaola">
+                                                Neatball bresaola 
+                                            </a>
+                                                    </div>
+                                                    <div class="rating">
+                                                        <span class="fa fa-stack">
+                                                        <i class="fa fa-star fa-stack-2x"></i>
+                                                    </span>
+                                                        <span class="fa fa-stack">
+                                                        <i class="fa fa-star fa-stack-2x"></i>
+                                                    </span>
+                                                        <span class="fa fa-stack">
+                                                        <i class="fa fa-star fa-stack-2x"></i>
+                                                    </span>
+                                                        <span class="fa fa-stack">
+                                                        <i class="fa fa-star fa-stack-2x"></i>
+                                                    </span>
+                                                        <span class="fa fa-stack">
+                                                        <i class="fa fa-star fa-stack-2x"></i>
+                                                    </span>
+                                                    </div>
+                                                    <div class="content_price price">
+                                                        <span class="price-new product-price">$65.00 </span>&nbsp;&nbsp;
+
+                                                        <span class="price-old">$71.00 </span>&nbsp;
+
+
+
+                                                    </div>
+                                                </div>
+                                                <!-- End item-info -->
+                                                <!-- End item-wrap-inner -->
+                                            </div>
+                                            <!-- End item-wrap -->
+                                            <div class="product-layout item-inner style1 ">
+                                                <div class="item-image">
+                                                    <div class="item-img-info">
+                                                        <a href="#" target="_self" title="Yutculpa ullamco ">
+                                                        <img src="{{asset('user-assets/image/catalog/demo/product/80/8.jpg')}}" alt="Yutculpa ullamco">
+                                                        </a>
+                                                    </div>
+                                                    
+                                                </div>
+                                                <div class="item-info">
+                                                    <div class="item-title">
+                                                        <a href="#" target="_self" title="Yutculpa ullamco">
+                                                            Yutculpa ullamco 
+                                                        </a>
+                                                    </div>
+                                                    <div class="rating">
+                                                        <span class="fa fa-stack">
+                                                            <i class="fa fa-star fa-stack-2x"></i>
+                                                        </span>
+                                                        <span class="fa fa-stack">
+                                                            <i class="fa fa-star fa-stack-2x"></i>
+                                                        </span>
+                                                        <span class="fa fa-stack">
+                                                            <i class="fa fa-star fa-stack-2x"></i>
+                                                        </span>
+                                                        <span class="fa fa-stack">
+                                                            <i class="fa fa-star fa-stack-2x"></i>
+                                                        </span>
+                                                        <span class="fa fa-stack">
+                                                            <i class="fa fa-star fa-stack-2x"></i>
+                                                        </span>
+                                                    </div>
+                                                    <div class="content_price price">
+                                                        <span class="price-new product-price">$60.00 </span>&nbsp;&nbsp;
+
+                                                        <span class="price-old">$77.00 </span>&nbsp;
+
+
+
+                                                    </div>
+                                                </div>
+                                                <!-- End item-info -->
+                                                <!-- End item-wrap-inner -->
+                                            </div>
+                                            <!-- End item-wrap -->
+                                        </div>
+                                    </div>
+                                    <!--End extraslider-inner -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>                
+                </div>
+            </div>                                        
+        </div>
+        <div class="row content-main-w">
+            
+            <div class="col-lg-2 col-md-3 col-sm-4 col-xs-12 main-left">
+                
+                <div class="module">
+                    <div class="banners banners2">
+                        <div class="banner">
+                            <a href="#"><img src="{{asset('user-assets/image/catalog/banners/banner1.jpg')}}" alt="image"></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="module product-simple extra-layout1">
+                    <h3 class="modtitle">
+                        <span>Latest Products</span>
+                    </h3>
+                    <div class="modcontent">
+                        <div id="so_extra_slider_1" class="so-extraslider" >
+                            <!-- Begin extraslider-inner -->
+                            <div class="yt-content-slider extraslider-inner" data-rtl="yes" data-pagination="yes" data-autoplay="no" data-delay="4" data-speed="0.6" data-margin="0" data-items_column00="1" data-items_column0="1" data-items_column1="1" data-items_column2="1" data-items_column3="1" data-items_column4="1" data-arrows="no" data-lazyload="yes" data-loop="no" data-buttonpage="top">
+                                <div class="item ">
+                                    <div class="product-layout item-inner style1 ">
+                                        <div class="item-image">
+                                            <div class="item-img-info">
+                                                <a href="product.html" target="_self" title="Mandouille short "><img src="image/catalog/demo/product/80/5.jpg" alt="Mandouille short"></a>
+                                            </div>                                        
+                                        </div>
+                                        <div class="item-info">
+                                            <div class="item-title">
+                                                <a href="product.html" target="_self" title="Mandouille short">Mandouille short </a>
+                                            </div>
+                                            <div class="rating">
+                                                <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span>
+                                                <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span>
+                                                <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span>
+                                                <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span>
+                                                <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                                            </div>
+                                            <div class="content_price price">
+                                                <span class="price-new product-price">$55.00 </span>&nbsp;&nbsp;
+
+                                                <span class="price-old">$76.00 </span>&nbsp;
+
+                                            </div>
+                                        </div>
+                                        <!-- End item-info -->
+                                        <!-- End item-wrap-inner -->
+                                    </div>
+                                    <!-- End item-wrap -->
+                                    <div class="product-layout item-inner style1 ">
+                                        <div class="item-image">
+                                            <div class="item-img-info">
+                                                <a href="product.html" target="_self" title="Xancetta bresao "><img src="image/catalog/demo/product/80/3.jpg" alt="Xancetta bresao"></a>
+                                            </div>
+                                            
+                                        </div>
+                                        <div class="item-info">
+                                            <div class="item-title">
+                                                <a href="product.html" target="_self" title="Xancetta bresao">Xancetta bresao</a>
+                                            </div>
+                                            <div class="rating">
+                                                <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span>
+                                                <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span>
+                                                <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span>
+                                                <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span>
+                                                <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span>
+                                            </div>
+                                            <div class="content_price price">
+                                                <span class="price-new product-price">$80.00 </span>&nbsp;&nbsp;
+
+                                                <span class="price-old">$89.00 </span>&nbsp;
+
+
+
+                                            </div>
+                                        </div>
+                                        <!-- End item-info -->
+                                        <!-- End item-wrap-inner -->
+                                    </div>
+                                    <!-- End item-wrap -->
+                                    <div class="product-layout item-inner style1 ">
+                                        <div class="item-image">
+                                            <div class="item-img-info">
+                                                <a href="product.html" target="_self" title="Sausage cowbee "><img src="image/catalog/demo/product/80/4.jpg" alt="Sausage cowbee"></a>
+                                            </div>
+                                           
+                                        </div>
+                                        <div class="item-info">
+                                            <div class="item-title">
+                                                <a href="product.html" target="_self" title="Sausage cowbee">Sausage cowbee</a>
+                                            </div>
+                                            <div class="rating">
+                                                <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span>
+                                                <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span>
+                                                <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span>
+                                                <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span>
+                                                <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                                            </div>
+                                           
+                                            <div class="content_price price">
+                                                <span class="price product-price">$66.00</span>
+                                            </div>
+                                        </div>
+                                        <!-- End item-info -->
+                                        <!-- End item-wrap-inner -->
+                                    </div>
+                                    <!-- End item-wrap -->
+                                    <div class="product-layout item-inner style1 ">
+                                        <div class="item-image">
+                                            <div class="item-img-info">
+                                                <a href="product.html" target="_self" title="Chicken swinesha "><img src="image/catalog/demo/product/80/7.jpg" alt="Chicken swinesha"></a>
+                                            </div>
+                                           
+                                        </div>
+                                        <div class="item-info">
+                                            <div class="item-title">
+                                                <a href="product.html" target="_self" title="Chicken swinesha">
+                                                            Chicken swinesha 
+                                                        </a>
+                                            </div>
+                                            <div class="rating">
+                                                <span class="fa fa-stack">
+                                                                    <i class="fa fa-star fa-stack-2x"></i>
+                                                                </span>
+                                                <span class="fa fa-stack">
+                                                                    <i class="fa fa-star fa-stack-2x"></i>
+                                                                </span>
+                                                <span class="fa fa-stack">
+                                                                    <i class="fa fa-star fa-stack-2x"></i>
+                                                                </span>
+                                                <span class="fa fa-stack">
+                                                                    <i class="fa fa-star fa-stack-2x"></i>
+                                                                </span>
+                                                <span class="fa fa-stack">
+                                                                    <i class="fa fa-star fa-stack-2x"></i>
+                                                                </span>
+                                            </div>
+                                            <div class="content_price price">
+                                                <span class="price-new product-price">$45.00 </span>&nbsp;&nbsp;
+
+                                                <span class="price-old">$56.00 </span>&nbsp;
+
+
+
+                                            </div>
+                                        </div>
+                                        <!-- End item-info -->
+                                        <!-- End item-wrap-inner -->
+                                    </div>
+                                    <!-- End item-wrap -->
+                                </div>
+                                <div class="item ">
+                                    <div class="product-layout item-inner style1 ">
+                                        <div class="item-image">
+                                            <div class="item-img-info">
+                                                <a href="#" target="_self" title="Qeserunt shortloin ">
+                                                <img src="{{asset('user-assets/image/catalog/demo/product/80/1.jpg')}}" alt="Qeserunt shortloin">
+                                                </a>
+                                            </div>
+                                           
+                                        </div>
+                                        <div class="item-info">
+                                            <div class="item-title">
+                                                <a href="#" target="_self" title="Qeserunt shortloin">
+                                        Qeserunt shortloin 
+                                    </a>
+                                            </div>
+                                            <div class="rating">
+                                                <span class="fa fa-stack">
+                                        <i class="fa fa-star fa-stack-2x"></i>
+                                    </span>
+                                                <span class="fa fa-stack">
+                                        <i class="fa fa-star fa-stack-2x"></i>
+                                    </span>
+                                                <span class="fa fa-stack">
+                                        <i class="fa fa-star fa-stack-2x"></i>
+                                    </span>
+                                                <span class="fa fa-stack">
+                                        <i class="fa fa-star fa-stack-2x"></i>
+                                    </span>
+                                                <span class="fa fa-stack">
+                                        <i class="fa fa-star fa-stack-2x"></i>
+                                    </span>
+                                            </div>
+                                            <div class="content_price price">
+                                                <span class="price product-price">
+                                            $88.00 
+                                        </span>
+                                            </div>
+                                        </div>
+                                        <!-- End item-info -->
+                                        <!-- End item-wrap-inner -->
+                                    </div>
+                                    <!-- End item-wrap -->
+                                    <div class="product-layout item-inner style1 ">
+                                        <div class="item-image">
+                                            <div class="item-img-info">
+                                                <a href="#" target="_self" title="Consecte quichuck ">
+                                                <img src="{{asset('user-assets/image/catalog/demo/product/80/3.jpg')}}" alt="Consecte quichuck">
+                                                </a>
+                                            </div>
+                                            
+                                        </div>
+                                        <div class="item-info">
+                                            <div class="item-title">
+                                                <a href="#" target="_self" title="Consecte quichuck">
+                                        Consecte quichuck 
+                                    </a>
+                                            </div>
+                                            <div class="rating">
+                                                <span class="fa fa-stack">
+                                            <i class="fa fa-star fa-stack-2x"></i>
+                                        </span>
+                                                <span class="fa fa-stack">
+                                            <i class="fa fa-star fa-stack-2x"></i>
+                                        </span>
+                                                <span class="fa fa-stack">
+                                            <i class="fa fa-star fa-stack-2x"></i>
+                                        </span>
+                                                <span class="fa fa-stack">
+                                            <i class="fa fa-star fa-stack-2x"></i>
+                                        </span>
+                                                <span class="fa fa-stack">
+                                            <i class="fa fa-star fa-stack-2x"></i>
+                                        </span>
+                                            </div>
+                                            <div class="content_price price">
+                                                <span class="price-new product-price">$55.00 </span>&nbsp;&nbsp;
+
+                                                <span class="price-old">$61.00 </span>&nbsp;
+
+
+
+                                            </div>
+                                        </div>
+                                        <!-- End item-info -->
+                                        <!-- End item-wrap-inner -->
+                                    </div>
+                                    <!-- End item-wrap -->
+                                    <div class="product-layout item-inner style1 ">
+                                        <div class="item-image">
+                                            <div class="item-img-info">
+                                                <a href="#" target="_self" title="Neatball bresaola ">
+                                            <img src="{{asset('user-assets/image/catalog/demo/product/80/6.jpg')}}" alt="Neatball bresaola">
+                                            </a>
+                                            </div>
+                                            
+                                        </div>
+                                        <div class="item-info">
+                                            <div class="item-title">
+                                                <a href="#" target="_self" title="Neatball bresaola">
+                                        Neatball bresaola 
+                                    </a>
+                                            </div>
+                                            <div class="rating">
+                                                <span class="fa fa-stack">
+                                                <i class="fa fa-star fa-stack-2x"></i>
+                                            </span>
+                                                <span class="fa fa-stack">
+                                                <i class="fa fa-star fa-stack-2x"></i>
+                                            </span>
+                                                <span class="fa fa-stack">
+                                                <i class="fa fa-star fa-stack-2x"></i>
+                                            </span>
+                                                <span class="fa fa-stack">
+                                                <i class="fa fa-star fa-stack-2x"></i>
+                                            </span>
+                                                <span class="fa fa-stack">
+                                                <i class="fa fa-star fa-stack-2x"></i>
+                                            </span>
+                                            </div>
+                                            <div class="content_price price">
+                                                <span class="price-new product-price">$65.00 </span>&nbsp;&nbsp;
+
+                                                <span class="price-old">$71.00 </span>&nbsp;
+
+
+
+                                            </div>
+                                        </div>
+                                        <!-- End item-info -->
+                                        <!-- End item-wrap-inner -->
+                                    </div>
+                                    <!-- End item-wrap -->
+                                    <div class="product-layout item-inner style1 ">
+                                        <div class="item-image">
+                                            <div class="item-img-info">
+                                                <a href="#" target="_self" title="Yutculpa ullamco ">
+                                                <img src="{{asset('user-assets/image/catalog/demo/product/80/8.jpg')}}" alt="Yutculpa ullamco">
+                                                </a>
+                                            </div>
+                                            
+                                        </div>
+                                        <div class="item-info">
+                                            <div class="item-title">
+                                                <a href="#" target="_self" title="Yutculpa ullamco">
+                                                    Yutculpa ullamco 
+                                                </a>
+                                            </div>
+                                            <div class="rating">
+                                                <span class="fa fa-stack">
+                                                    <i class="fa fa-star fa-stack-2x"></i>
+                                                </span>
+                                                <span class="fa fa-stack">
+                                                    <i class="fa fa-star fa-stack-2x"></i>
+                                                </span>
+                                                <span class="fa fa-stack">
+                                                    <i class="fa fa-star fa-stack-2x"></i>
+                                                </span>
+                                                <span class="fa fa-stack">
+                                                    <i class="fa fa-star fa-stack-2x"></i>
+                                                </span>
+                                                <span class="fa fa-stack">
+                                                    <i class="fa fa-star fa-stack-2x"></i>
+                                                </span>
+                                            </div>
+                                            <div class="content_price price">
+                                                <span class="price-new product-price">$60.00 </span>&nbsp;&nbsp;
+
+                                                <span class="price-old">$77.00 </span>&nbsp;
+
+
+
+                                            </div>
+                                        </div>
+                                        <!-- End item-info -->
+                                        <!-- End item-wrap-inner -->
+                                    </div>
+                                    <!-- End item-wrap -->
+                                </div>
+                            </div>
+                            <!--End extraslider-inner -->
+                        </div>
+                    </div>
+                </div>
+
+                <div class="module">
+                    <div class="policy-w">
+                        <a href="#"><img src="{{asset('user-assets/image/catalog/banners/call-us.jpg')}}" alt="image"></a>
+                        <ul class="block-infos">
+                            <li class="info1">
+                              <div class="inner">
+                              <i class="fa fa-file-text-o"></i>
+                              <div class="info-cont">
+                              <a href="#">free delivery</a>
+                              <p>On order over $49.86</p>
+                              </div>
+                              </div>
+                            </li>
+                            <li class="info2">
+                              <div class="inner">
+                              <i class="fa fa-shield"></i>
+                              <div class="info-cont">
+                              <a href="#">order protection</a>
+                              <p>secured information</p>
+                              </div>
+                              </div>
+                            </li>
+                            <li class="info3">
+                              <div class="inner">
+                              <i class="fa fa-gift"></i>
+                              <div class="info-cont">
+                              <a href="#">promotion gift</a>
+                              <p>special offers!</p>
+                              </div>
+                              </div>
+                            </li>
+                            <li class="info4">
+                              <div class="inner">
+                              <i class="fa fa-money"></i>
+                              <div class="info-cont">
+                              <a href="#">money back</a>
+                              <p>return over 30 days</p>
+                              </div>
+                              </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="module extra">
+                    <h3 class="modtitle">
+                        <span>Recommended</span>
+                    </h3>
+                    <div class="modcontent">
+                        <div id="so_extra_slider_1" class="so-extraslider" >
+                            <!-- Begin extraslider-inner -->
+                            <div class="products-list yt-content-slider extraslider-inner" data-rtl="yes" data-pagination="yes" data-autoplay="no" data-delay="4" data-speed="0.6" data-margin="0" data-items_column00="1" data-items_column0="1" data-items_column1="1" data-items_column2="1" data-items_column3="1" data-items_column4="1" data-arrows="no" data-lazyload="yes" data-loop="no" data-buttonpage="top">
+                                <div class="item">         
+                                    <div class="item-inner product-layout transition product-grid">
+                                        <div class="product-item-container">
+                                            <div class="left-block left-b">
+                                                
+                                                <div class="product-image-container second_img">
+                                                    <a href="product.html" target="_self" title="Duis aute irure ">
+                                                        <img src="{{asset('user-assets/image/catalog/demo/product/270/e10.jpg')}}" class="img-1 img-responsive" alt="image1">
+                                                        <img src="{{asset('user-assets/image/catalog/demo/product/270/e7.jpg')}}" class="img-2 img-responsive" alt="image2">
+                                                    </a>
+                                                </div>
+                                                <!--quickview--> 
+                                                <div class="so-quickview">
+                                                  <a class="iframe-link btn-button quickview quickview_handler visible-lg" href="quickview.html" title="Quick view" data-fancybox-type="iframe"><i class="fa fa-eye"></i><span>Quick view</span></a>
+                                                </div>                                                     
+                                                <!--end quickview-->
+
+                                                
+                                            </div>
+                                            <div class="right-block">
+                                                <div class="button-group so-quickview cartinfo--left">
+                                                    <button type="button" class="addToCart" title="Add to cart" onclick="cart.add('60 ');">
+                                                        <span>Add to cart </span>   
+                                                    </button>
+                                                    <button type="button" class="wishlist btn-button" title="Add to Wish List" onclick="wishlist.add('60');"><i class="fa fa-heart-o"></i><span>Add to Wish List</span>
+                                                    </button>
+                                                    <button type="button" class="compare btn-button" title="Compare this Product " onclick="compare.add('60');"><i class="fa fa-retweet"></i><span>Compare this Product</span>
+                                                    </button>
+                                                    
+                                                </div>
+                                                <div class="caption hide-cont">
+                                                    <div class="rating">    <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span>
+                                                        <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span>
+                                                        <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span>
+                                                        <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span>
+                                                        <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span>
+                                                    </div>
+                                                    <h4><a href="product.html" title="Pastrami bacon" target="_self">Duis aute irure </a></h4>
+                                                    
+                                                </div>
+                                                <p class="price">
+                                                  <span class="price-new">$48.00</span>
+
+                                                </p>
+                                            </div>
+
+                                            
+                                        </div>
+                                    </div>      
+                                </div>
+
+                                <div class="item">         
+                                    <div class="item-inner product-layout transition product-grid">
+                                        <div class="product-item-container">
+                                            <div class="left-block left-b">
+                                                
+                                                <div class="product-image-container second_img">
+                                                    <a href="product.html" target="_self" title="Excepteur sint occ">
+                                                        <img src="{{asset('user-assets/image/catalog/demo/product/270/f5.jpg')}}" class="img-1 img-responsive" alt="image1">
+                                                        <img src="{{asset('user-assets/image/catalog/demo/product/270/f6.jpg')}}" class="img-2 img-responsive" alt="image2">
+                                                    </a>
+                                                </div>
+                                                <!--quickview--> 
+                                                <div class="so-quickview">
+                                                  <a class="iframe-link btn-button quickview quickview_handler visible-lg" href="quickview.html" title="Quick view" data-fancybox-type="iframe"><i class="fa fa-eye"></i><span>Quick view</span></a>
+                                                </div>                                                     
+                                                <!--end quickview-->
+
+                                                
+                                            </div>
+                                            <div class="right-block">
+                                                <div class="button-group so-quickview cartinfo--left">
+                                                    <button type="button" class="addToCart" title="Add to cart" onclick="cart.add('60 ');">
+                                                        <span>Add to cart </span>   
+                                                    </button>
+                                                    <button type="button" class="wishlist btn-button" title="Add to Wish List" onclick="wishlist.add('60');"><i class="fa fa-heart-o"></i><span>Add to Wish List</span>
+                                                    </button>
+                                                    <button type="button" class="compare btn-button" title="Compare this Product " onclick="compare.add('60');"><i class="fa fa-retweet"></i><span>Compare this Product</span>
+                                                    </button>
+                                                    
+                                                </div>
+                                                <div class="caption hide-cont">
+                                                    <div class="rating">    <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span>
+                                                        <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span>
+                                                        <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span>
+                                                        <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span>
+                                                        <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span>
+                                                    </div>
+                                                    <h4><a href="product.html" title="Pastrami bacon" target="_self">Excepteur sint occ</a></h4>
+                                                    
+                                                </div>
+                                                <p class="price">
+                                                  <span class="price-new">$90.00</span>
+                                        
+                                                </p>
+                                            </div>
+
+                                        </div>
+                                    </div>      
+                                </div>
+
+                                <div class="item">         
+                                    <div class="item-inner product-layout transition product-grid">
+                                        <div class="product-item-container">
+                                            <div class="left-block left-b">
+                                               
+                                                <div class="product-image-container second_img">
+                                                    <a href="product.html" target="_self" title="Cenison meatloa">
+                                                        <img src="{{asset('user-assets/image/catalog/demo/product/270/e3.jpg')}}" class="img-1 img-responsive" alt="image1">
+                                                        <img src="{{asset('user-assets/image/catalog/demo/product/270/e4.jpg')}}" class="img-2 img-responsive" alt="image2">
+                                                    </a>
+                                                </div>
+                                                <!--quickview--> 
+                                                <div class="so-quickview">
+                                                  <a class="iframe-link btn-button quickview quickview_handler visible-lg" href="quickview.html" title="Quick view" data-fancybox-type="iframe"><i class="fa fa-eye"></i><span>Quick view</span></a>
+                                                </div>                                                     
+                                                <!--end quickview-->
+
+                                                
+                                            </div>
+                                            <div class="right-block">
+                                                <div class="button-group so-quickview cartinfo--left">
+                                                    <button type="button" class="addToCart" title="Add to cart" onclick="cart.add('60 ');">
+                                                        <span>Add to cart </span>   
+                                                    </button>
+                                                    <button type="button" class="wishlist btn-button" title="Add to Wish List" onclick="wishlist.add('60');"><i class="fa fa-heart-o"></i><span>Add to Wish List</span>
+                                                    </button>
+                                                    <button type="button" class="compare btn-button" title="Compare this Product " onclick="compare.add('60');"><i class="fa fa-retweet"></i><span>Compare this Product</span>
+                                                    </button>
+                                                    
+                                                </div>
+                                                <div class="caption hide-cont">
+                                                    <div class="rating">    <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span>
+                                                        <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span>
+                                                        <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span>
+                                                        <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span>
+                                                        <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span>
+                                                    </div>
+                                                    <h4><a href="product.html" title="Pastrami bacon" target="_self">Cenison meatloa</a></h4>
+                                                    
+                                                </div>
+                                                <p class="price">$42.00</p>
+                                            </div>
+                                           
+                                        </div>
+                                    </div>      
+                                </div>
+                            </div>
+                            <!--End extraslider-inner -->
+                        </div>
+                    </div>
+                </div>
+
+                <div class="module so-latest-blog blog-sidebar">
+
+                    <h3 class="modtitle"><span>Latest Posts</span></h3>
+                    <div class="modcontent clearfix">
+
+                        <div class="so-blog-external buttom-type1 button-type1">
+                            <div class="blog-external-simple">
+                                <div class="cat-wrap">
+                                    <div class="media">
+
+                                        <div class="item item-1">
+                                            <div class="media-left">
+                                                <a href="#" target="_self">
+                                                <img src="image/catalog/blog/1.jpg" alt="Biten demons lector in henderit in vulp" class="media-object">
+                                                </a>
+                                            </div>
+                                            <div class="media-body">
+                                                <h4 class="media-heading">
+                                                <a href="#" title="Biten demons lector in henderit in vulp" target="_self">Biten demons lector in henderit in vulp nemusa tumps</a>
+                                                </h4>
+                                                <div class="media-content">
+                                                    <div class="media-date-added"><i class="fa fa-calendar"></i> December 4th, 2017</div>         
+                                                    <div class="media-subcontent">
+                                                    <span class="media-comment"><i class="fa fa-comments"></i>0  Comment</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                         
+                                <div class="cat-wrap">
+                                    <div class="media">
+
+                                        <div class="item item-2">
+                                            <div class="media-left">
+                                                <a href="#" target="_self">
+                                                    <img src="{{asset('user-assets/image/catalog/blog/2.jpg')}}" alt="Commodo laoreet semper tincidun sit" class="media-object">
+                                                </a>
+                                            </div>
+                                            <div class="media-body">
+                                                <h4 class="media-heading">
+                                                <a href="#" title="Commodo laoreet semper tincidun sit" target="_self">Commodo laoreet semper tincidun sit dolor spums</a>
+                                                </h4>
+                                                <div class="media-content">
+                                                    <div class="media-date-added"><i class="fa fa-calendar"></i> November 15th, 2017</div>          
+                                                    <div class="media-subcontent">
+                                                        <span class="media-comment"><i class="fa fa-comments"></i>0  Comment</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                          
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                
+                <div class="module testimonials">
+                    <h3 class="modtitle"><span>Testimonials</span></h3>
+                    <div class="slider-testimonials">
+                        <div class="yt-content-slider contentslider" data-rtl="no" data-loop="yes" data-autoplay="no" data-autoheight="no" data-autowidth="no" data-delay="4" data-speed="0.6" data-margin="0" data-items_column00="1" data-items_column0="1" data-items_column1="1" data-items_column2="1" data-items_column3="1" data-items_column4="1" data-arrows="no" data-pagination="yes" data-lazyload="yes" data-hoverpause="yes">
+                            <div class="item">
+                                <div class="img"><img src="{{asset('user-assets/image/catalog/demo/client/user-1.jpg')}}" alt="Image"></div>
+                                <div class="name">Johny Walker</div>
+                                <p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore”</p>          
+                            </div>
+                            <div class="item">
+                                <div class="img"><img src="{{asset('user-assets/image/catalog/demo/client/user-2.jpg')}}" alt="Image"></div>
+                                <div class="name">Jen Nguyen</div>
+                                <p>“Ut enim ad minim veniam, lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incidi”</p>          
+                            </div>
+                            <div class="item">
+                                <div class="img"><img src="{{asset('user-assets/image/catalog/demo/client/user-3.jpg')}}" alt="Image"></div>
+                                <div class="name">Vin Jame</div>
+                                <p>“sed do eiusmod tempor incididunt ut labore et dolore magna aliqua, lorem ipsum dolor sit amet, consectetur adip”</p>          
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+
+                <div class="module">
+                    <div class="banners banners5">
+                        <div class="banner">
+                          <a href="#"><img src="{{asset('user-assets/image/catalog/banners/banner2.jpg')}}" alt="image"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-10 col-md-9 col-sm-8 col-xs-12 main-right">
+                
+
+                <div class="static-cates">
+                    <ul>
+                        <li>
+                            <a href="#"><img src="{{asset('user-assets/image/catalog/banners/cat1.jpg')}}" alt="image"></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="{{asset('user-assets/image/catalog/banners/cat2.jpg')}}" alt="image"></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="{{asset('user-assets/image/catalog/banners/cat3.jpg')}}" alt="image"></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="{{asset('user-assets/image/catalog/banners/cat4.jpg')}}" alt="image"></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="{{asset('user-assets/image/catalog/banners/cat5.jpg')}}" alt="image"></a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Deals -->
+                <div class="module deals-layout1">
+                    <div class="head-title">
+                        <div class="modtitle">
+                            <span>Flash Sale</span>
+                            <div class="cslider-item-timer">
+                              <div class="product_time_maxprice">
+                                
+                                <div class="item-time">
+                                  <div class="item-timer">
+                                    <div class="defaultCountdown-30"></div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                              
+                              <a class="viewall" href="indexf110.html?route=product/special">View All</a>
+                            
+                        </div>    
+                    </div>
+                    <div class="modcontent">
+                        <div id="so_deal_1" class="so-deal style1">
+                            <div class="extraslider-inner products-list yt-content-slider" data-rtl="yes" data-autoplay="no" data-autoheight="no" data-delay="4" data-speed="0.6" data-margin="30" data-items_column00="6" data-items_column0="5" data-items_column1="3" data-items_column2="2"  data-items_column3="2" data-items_column4="1" data-arrows="yes" data-pagination="no" data-lazyload="yes" data-loop="yes" data-hoverpause="yes">
+
+                                <div class="item">         
+                                    <div class="item-inner product-layout transition product-grid">
+                                        <div class="product-item-container">
+                                            <div class="left-block left-b">
+                                                <div class="box-label">
+                                                    <span class="label-product label-sale">-11%</span>
+                                                </div>
+                                                <div class="product-image-container second_img">
+                                                    <a href="product.html" target="_self" title="Pastrami bacon">
+                                                        <img src="{{asset('user-assets/image/catalog/demo/product/270/h1.jpg')}}" class="img-1 img-responsive" alt="image1">
+                                                        <img src="{{asset('user-assets/image/catalog/demo/product/270/h2.jpg')}}" class="img-2 img-responsive" alt="image2">
+                                                    </a>
+                                                </div>
+                                                <!--quickview--> 
+                                                <div class="so-quickview">
+                                                  <a class="iframe-link btn-button quickview quickview_handler visible-lg" href="quickview.html" title="Quick view" data-fancybox-type="iframe"><i class="fa fa-eye"></i><span>Quick view</span></a>
+                                                </div>                                                     
+                                                <!--end quickview-->
+
+                                                
+                                            </div>
+                                            <div class="right-block">
+                                                <div class="button-group so-quickview cartinfo--left">
+                                                    <button type="button" class="addToCart" title="Add to cart" onclick="cart.add('60 ');">
+                                                        <span>Add to cart </span>   
+                                                    </button>
+                                                    <button type="button" class="wishlist btn-button" title="Add to Wish List" onclick="wishlist.add('60');"><i class="fa fa-heart-o"></i><span>Add to Wish List</span>
+                                                    </button>
+                                                    <button type="button" class="compare btn-button" title="Compare this Product " onclick="compare.add('60');"><i class="fa fa-retweet"></i><span>Compare this Product</span>
+                                                    </button>
+                                                    
+                                                </div>
+                                                <div class="caption hide-cont">
+                                                    <div class="ratings">
+                                                        <div class="rating-box">    <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span>
+                                                            <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span>
+                                                            <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span>
+                                                            <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span>
+                                                            <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span>
+                                                        </div>
+                                                        <span class="rating-num">( 2 )</span>
+                                                    </div>
+                                                    <h4><a href="product.html" title="Pastrami bacon" target="_self">Pastrami bacon</a></h4>
+                                                    
+                                                </div>
+                                                <p class="price">
+                                                  <span class="price-new">$85.00</span>
+                                                  <span class="price-old">$96.00</span>
+                                                </p>
+                                            </div>
+
+                                            <div class="item-available">
+                                                <div class="available">
+                                                  <span class="color_width" data-title="77%" data-toggle='tooltip' style="width: 77%"></span>
+                                                </div>                          
+                                                <p class="a2">Sold: <b>51</b>  </p>
+                                            </div>
+                                        </div>
+                                    </div>      
+                                </div>
+
+                                <div class="item">         
+                                    <div class="item-inner product-layout transition product-grid">
+                                        <div class="product-item-container">
+                                            <div class="left-block left-b">
+                                                <div class="box-label">
+                                                    <span class="label-product label-sale">-15%</span>
+                                                </div>
+                                                <div class="product-image-container second_img">
+                                                    <a href="product.html" target="_self" title="Lommodo quiutvenia">
+                                                        <img src="{{asset('user-assets/image/catalog/demo/product/270/f1.jpg')}}" class="img-1 img-responsive" alt="image1">
+                                                        <img src="{{asset('user-assets/image/catalog/demo/product/270/f2.jpg')}}" class="img-2 img-responsive" alt="image2">
+                                                    </a>
+                                                </div>
+                                                <!--quickview--> 
+                                                <div class="so-quickview">
+                                                  <a class="iframe-link btn-button quickview quickview_handler visible-lg" href="quickview.html" title="Quick view" data-fancybox-type="iframe"><i class="fa fa-eye"></i><span>Quick view</span></a>
+                                                </div>                                                     
+                                                <!--end quickview-->
+
+                                                
+                                            </div>
+                                            <div class="right-block">
+                                                <div class="button-group so-quickview cartinfo--left">
+                                                    <button type="button" class="addToCart" title="Add to cart" onclick="cart.add('60 ');">
+                                                        <span>Add to cart </span>   
+                                                    </button>
+                                                    <button type="button" class="wishlist btn-button" title="Add to Wish List" onclick="wishlist.add('60');"><i class="fa fa-heart-o"></i><span>Add to Wish List</span>
+                                                    </button>
+                                                    <button type="button" class="compare btn-button" title="Compare this Product " onclick="compare.add('60');"><i class="fa fa-retweet"></i><span>Compare this Product</span>
+                                                    </button>
+                                                    
+                                                </div>
+                                                <div class="caption hide-cont">
+                                                    <div class="ratings">
+                                                        <div class="rating-box">    <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span>
+                                                            <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span>
+                                                            <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span>
+                                                            <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span>
+                                                            <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span>
+                                                        </div>
+                                                        <span class="rating-num">( 3 )</span>
+                                                    </div>
+                                                    <h4><a href="product.html" title="Pastrami bacon" target="_self">Lommodo quiutvenia</a></h4>
+                                                    
+                                                </div>
+                                                <p class="price">
+                                                  <span class="price-new">$50.00</span>
+                                                  <span class="price-old">$59.00</span>
+                                                </p>
+                                            </div>
+
+                                            <div class="item-available">
+                                                <div class="available">
+                                                  <span class="color_width" data-title="65%" data-toggle='tooltip' style="width: 65%"></span>
+                                                </div>                          
+                                                <p class="a2">Sold: <b>62</b>  </p>
+                                            </div>
+                                        </div>
+                                    </div>      
+                                </div>
+
+                                <div class="item">         
+                                    <div class="item-inner product-layout transition product-grid">
+                                        <div class="product-item-container">
+                                            <div class="left-block left-b">
+                                                <div class="box-label">
+                                                    <span class="label-product label-sale">-12%</span>
+                                                </div>
+                                                <div class="product-image-container second_img">
+                                                    <a href="product.html" target="_self" title="Mapicola incidid">
+                                                        <img src="{{asset('user-assets/image/catalog/demo/product/270/fu1.jpg')}}" class="img-1 img-responsive" alt="image1">
+                                                        <img src="{{asset('user-assets/image/catalog/demo/product/270/fu2.jpg')}}" class="img-2 img-responsive" alt="image2">
+                                                    </a>
+                                                </div>
+                                                <!--quickview--> 
+                                                <div class="so-quickview">
+                                                  <a class="iframe-link btn-button quickview quickview_handler visible-lg" href="quickview.html" title="Quick view" data-fancybox-type="iframe"><i class="fa fa-eye"></i><span>Quick view</span></a>
+                                                </div>                                                     
+                                                <!--end quickview-->
+
+                                                
+                                            </div>
+                                            <div class="right-block">
+                                                <div class="button-group so-quickview cartinfo--left">
+                                                    <button type="button" class="addToCart" title="Add to cart" onclick="cart.add('60 ');">
+                                                        <span>Add to cart </span>   
+                                                    </button>
+                                                    <button type="button" class="wishlist btn-button" title="Add to Wish List" onclick="wishlist.add('60');"><i class="fa fa-heart-o"></i><span>Add to Wish List</span>
+                                                    </button>
+                                                    <button type="button" class="compare btn-button" title="Compare this Product " onclick="compare.add('60');"><i class="fa fa-retweet"></i><span>Compare this Product</span>
+                                                    </button>
+                                                    
+                                                </div>
+                                                <div class="caption hide-cont">
+                                                    <div class="ratings">
+                                                        <div class="rating-box">    <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span>
+                                                            <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span>
+                                                            <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span>
+                                                            <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span>
+                                                            <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                                                        </div>
+                                                        <span class="rating-num">( 1 )</span>
+                                                    </div>
+                                                    <h4><a href="product.html" title="Pastrami bacon" target="_self">Mapicola incidid</a></h4>
+                                                    
+                                                </div>
+                                                <p class="price">
+                                                  <span class="price-new">$90.00</span>
+                                                  <span class="price-old">$102.00</span>
+                                                </p>
+                                            </div>
+
+                                            <div class="item-available">
+                                                <div class="available">
+                                                  <span class="color_width" data-title="67%" data-toggle='tooltip' style="width: 67%"></span>
+                                                </div>                          
+                                                <p class="a2">Sold: <b>45</b>  </p>
+                                            </div>
+                                        </div>
+                                    </div>      
+                                </div>
+
+                                <div class="item">         
+                                    <div class="item-inner product-layout transition product-grid">
+                                        <div class="product-item-container">
+                                            <div class="left-block left-b">
+                                                <div class="box-label">
+                                                    <span class="label-product label-sale">-8%</span>
+                                                </div>
+                                                <div class="product-image-container second_img">
+                                                    <a href="product.html" target="_self" title="Duis aute irure">
+                                                        <img src="{{asset('user-assets/image/catalog/demo/product/270/f3.jpg')}}" class="img-1 img-responsive" alt="image1">
+                                                        <img src="{{asset('user-assets/image/catalog/demo/product/270/f4.jpg')}}" class="img-2 img-responsive" alt="image2">
+                                                    </a>
+                                                </div>
+                                                <!--quickview--> 
+                                                <div class="so-quickview">
+                                                  <a class="iframe-link btn-button quickview quickview_handler visible-lg" href="quickview.html" title="Quick view" data-fancybox-type="iframe"><i class="fa fa-eye"></i><span>Quick view</span></a>
+                                                </div>                                                     
+                                                <!--end quickview-->
+
+                                                
+                                            </div>
+                                            <div class="right-block">
+                                                <div class="button-group so-quickview cartinfo--left">
+                                                    <button type="button" class="addToCart" title="Add to cart" onclick="cart.add('60 ');">
+                                                        <span>Add to cart </span>   
+                                                    </button>
+                                                    <button type="button" class="wishlist btn-button" title="Add to Wish List" onclick="wishlist.add('60');"><i class="fa fa-heart-o"></i><span>Add to Wish List</span>
+                                                    </button>
+                                                    <button type="button" class="compare btn-button" title="Compare this Product " onclick="compare.add('60');"><i class="fa fa-retweet"></i><span>Compare this Product</span>
+                                                    </button>
+                                                    
+                                                </div>
+                                                <div class="caption hide-cont">
+                                                    <div class="ratings">
+                                                        <div class="rating-box">    <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span>
+                                                            <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span>
+                                                            <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span>
+                                                            <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span>
+                                                            <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span>
+                                                        </div>
+                                                        <span class="rating-num">( 5 )</span>
+                                                    </div>
+                                                    <h4><a href="product.html" title="Pastrami bacon" target="_self">Duis aute irure </a></h4>
+                                                    
+                                                </div>
+                                                <p class="price">
+                                                  <span class="price-new">$48.00</span>
+                                                  <span class="price-old">$52.00</span>
+                                                </p>
+                                            </div>
+
+                                            <div class="item-available">
+                                                <div class="available">
+                                                  <span class="color_width" data-title="37%" data-toggle='tooltip' style="width: 37%"></span>
+                                                </div>                          
+                                                <p class="a2">Sold: <b>30</b>  </p>
+                                            </div>
+                                        </div>
+                                    </div>      
+                                </div>
+
+                                <div class="item">         
+                                    <div class="item-inner product-layout transition product-grid">
+                                        <div class="product-item-container">
+                                            <div class="left-block left-b">
+                                                <div class="box-label">
+                                                    <span class="label-product label-sale">-10%</span>
+                                                </div>
+                                                <div class="product-image-container second_img">
+                                                    <a href="product.html" target="_self" title="Excepteur sint occ">
+                                                        <img src="{{asset('user-assets/image/catalog/demo/product/270/e1.jpg')}}" class="img-1 img-responsive" alt="image1">
+                                                        <img src="{{asset('user-assets/image/catalog/demo/product/270/e2.jpg')}}" class="img-2 img-responsive" alt="image2">
+                                                    </a>
+                                                </div>
+                                                <!--quickview--> 
+                                                <div class="so-quickview">
+                                                  <a class="iframe-link btn-button quickview quickview_handler visible-lg" href="quickview.html" title="Quick view" data-fancybox-type="iframe"><i class="fa fa-eye"></i><span>Quick view</span></a>
+                                                </div>                                                     
+                                                <!--end quickview-->
+
+                                                
+                                            </div>
+                                            <div class="right-block">
+                                                <div class="button-group so-quickview cartinfo--left">
+                                                    <button type="button" class="addToCart" title="Add to cart" onclick="cart.add('60 ');">
+                                                        <span>Add to cart </span>   
+                                                    </button>
+                                                    <button type="button" class="wishlist btn-button" title="Add to Wish List" onclick="wishlist.add('60');"><i class="fa fa-heart-o"></i><span>Add to Wish List</span>
+                                                    </button>
+                                                    <button type="button" class="compare btn-button" title="Compare this Product " onclick="compare.add('60');"><i class="fa fa-retweet"></i><span>Compare this Product</span>
+                                                    </button>
+                                                    
+                                                </div>
+                                                <div class="caption hide-cont">
+                                                    <div class="ratings">
+                                                        <div class="rating-box">    <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span>
+                                                            <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span>
+                                                            <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span>
+                                                            <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span>
+                                                            <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                                                        </div>
+                                                        <span class="rating-num">( 2 )</span>
+                                                    </div>
+                                                    <h4><a href="product.html" title="Pastrami bacon" target="_self">Excepteur sint occ</a></h4>
+                                                    
+                                                </div>
+                                                <p class="price">
+                                                  <span class="price-new">$90.00</span>
+                                                  <span class="price-old">$100.00</span>
+                                                </p>
+                                            </div>
+
+                                            <div class="item-available">
+                                                <div class="available">
+                                                  <span class="color_width" data-title="38%" data-toggle='tooltip' style="width: 38%"></span>
+                                                </div>                          
+                                                <p class="a2">Sold: <b>40</b>  </p>
+                                            </div>
+                                        </div>
+                                    </div>      
+                                </div>
+
+                                <div class="item">         
+                                    <div class="item-inner product-layout transition product-grid">
+                                        <div class="product-item-container">
+                                            <div class="left-block left-b">
+                                                <div class="box-label">
+                                                    <span class="label-product label-sale">-11%</span>
+                                                </div>
+                                                <div class="product-image-container second_img">
+                                                    <a href="product.html" target="_self" title="Cenison meatloa">
+                                                        <img src="{{asset('user-assets/image/catalog/demo/product/270/h3.jpg')}}" class="img-1 img-responsive" alt="image1">
+                                                        <img src="{{asset('user-assets/image/catalog/demo/product/270/h4.jpg')}}" class="img-2 img-responsive" alt="image2">
+                                                    </a>
+                                                </div>
+                                                <!--quickview--> 
+                                                <div class="so-quickview">
+                                                  <a class="iframe-link btn-button quickview quickview_handler visible-lg" href="quickview.html" title="Quick view" data-fancybox-type="iframe"><i class="fa fa-eye"></i><span>Quick view</span></a>
+                                                </div>                                                     
+                                                <!--end quickview-->
+
+                                                
+                                            </div>
+                                            <div class="right-block">
+                                                <div class="button-group so-quickview cartinfo--left">
+                                                    <button type="button" class="addToCart" title="Add to cart" onclick="cart.add('60 ');">
+                                                        <span>Add to cart </span>   
+                                                    </button>
+                                                    <button type="button" class="wishlist btn-button" title="Add to Wish List" onclick="wishlist.add('60');"><i class="fa fa-heart-o"></i><span>Add to Wish List</span>
+                                                    </button>
+                                                    <button type="button" class="compare btn-button" title="Compare this Product " onclick="compare.add('60');"><i class="fa fa-retweet"></i><span>Compare this Product</span>
+                                                    </button>
+                                                    
+                                                </div>
+                                                <div class="caption hide-cont">
+                                                    <div class="ratings">
+                                                        <div class="rating-box">    <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span>
+                                                            <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span>
+                                                            <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span>
+                                                            <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span>
+                                                            <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span>
+                                                        </div>
+                                                        <span class="rating-num">( 1 )</span>
+                                                    </div>
+                                                    <h4><a href="product.html" title="Pastrami bacon" target="_self">Cenison meatloa</a></h4>
+                                                    
+                                                </div>
+                                                <p class="price">
+                                                  <span class="price-new">$70.00</span>
+                                                  <span class="price-old">$80.00</span>
+                                                </p>
+                                            </div>
+
+                                            <div class="item-available">
+                                                <div class="available">
+                                                  <span class="color_width" data-title="77%" data-toggle='tooltip' style="width: 77%"></span>
+                                                </div>                          
+                                                <p class="a2">Sold: <b>51</b>  </p>
+                                            </div>
+                                        </div>
+                                    </div>      
+                                </div>
+
+                                <div class="item">         
+                                    <div class="item-inner product-layout transition product-grid">
+                                        <div class="product-item-container">
+                                            <div class="left-block left-b">
+                                                <div class="box-label">
+                                                    <span class="label-product label-sale">-9%</span>
+                                                </div>
+                                                <div class="product-image-container second_img">
+                                                    <a href="product.html" target="_self" title="Ninim spareri sed">
+                                                        <img src="{{asset('user-assets/image/catalog/demo/product/270/e3.jpg')}}" class="img-1 img-responsive" alt="image1">
+                                                        <img src="{{asset('user-assets/image/catalog/demo/product/270/e4.jpg')}}" class="img-2 img-responsive" alt="image2">
+                                                    </a>
+                                                </div>
+                                                <!--quickview--> 
+                                                <div class="so-quickview">
+                                                  <a class="iframe-link btn-button quickview quickview_handler visible-lg" href="quickview.html" title="Quick view" data-fancybox-type="iframe"><i class="fa fa-eye"></i><span>Quick view</span></a>
+                                                </div>                                                     
+                                                <!--end quickview-->
+
+                                                
+                                            </div>
+                                            <div class="right-block">
+                                                <div class="button-group so-quickview cartinfo--left">
+                                                    <button type="button" class="addToCart" title="Add to cart" onclick="cart.add('60 ');">
+                                                        <span>Add to cart </span>   
+                                                    </button>
+                                                    <button type="button" class="wishlist btn-button" title="Add to Wish List" onclick="wishlist.add('60');"><i class="fa fa-heart-o"></i><span>Add to Wish List</span>
+                                                    </button>
+                                                    <button type="button" class="compare btn-button" title="Compare this Product " onclick="compare.add('60');"><i class="fa fa-retweet"></i><span>Compare this Product</span>
+                                                    </button>
+                                                    
+                                                </div>
+                                                <div class="caption hide-cont">
+                                                    <div class="ratings">
+                                                        <div class="rating-box">    <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span>
+                                                            <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span>
+                                                            <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span>
+                                                            <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span>
+                                                            <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                                                        </div>
+                                                        <span class="rating-num">( 3 )</span>
+                                                    </div>
+                                                    <h4><a href="product.html" title="Pastrami bacon" target="_self">Ninim spareri sed</a></h4>
+                                                    
+                                                </div>
+                                                <p class="price">
+                                                  <span class="price-new">$90.00</span>
+                                                  <span class="price-old">$99.00</span>
+                                                </p>
+                                            </div>
+
+                                            <div class="item-available">
+                                                <div class="available">
+                                                  <span class="color_width" data-title="77%" data-toggle='tooltip' style="width: 77%"></span>
+                                                </div>                          
+                                                <p class="a2">Sold: <b>51</b>  </p>
+                                            </div>
+                                        </div>
+                                    </div>      
+                                </div>
+
+                            </div>
+                        </div>
+                      </div>
+                </div>
+                <!-- End Deals -->
+
+                <!-- Banners -->
+                <div class="banners3 banners">
+                    <div class="item1">
+                        <a href="#"><img src="{{asset('user-assets/image/catalog/banners/banner3.jpg')}}" alt="image"></a>
+                    </div>
+                    <div class="item2">
+                        <a href="#"><img src="{{asset('user-assets/image/catalog/banners/banner4.jpg')}}" alt="image"></a>
+                    </div>
+                    <div class="item3">
+                        <a href="#"><img src="{{asset('user-assets/image/catalog/banners/banner5.jpg')}}" alt="image"></a>
+                    </div>
+                </div>
+                <!-- end Banners -->
+
+                <!-- Category Slider 1 -->
+                <div id="so_category_slider_1" class="so-category-slider container-slider module cateslider1">
+                    <div class="modcontent">                                                                
+                        <div class="page-top">
+                            <div class="page-title-categoryslider">Technology</div>
+                            <div class="item-sub-cat">
+                                <ul>
+                                    <li><a href="#" title="Smartphone" target="_self">Smartphone</a></li>
+                                    <li><a href="#" title="Tablets" target="_self">Tablets</a></li>
+                                    <li><a href="#" title="Computer" target="_self">Computer</a></li>
+                                    <li><a href="#" title="Accessories" target="_self">Accessories</a></li>
+                                    <li><a href="#" title="Hitech" target="_self">Hitech</a></li>
+                                </ul>
+                            </div> 
+                        </div>
+
+                        <div class="categoryslider-content">
+                            <div class="item-cat-image" style="min-height: 351px;">
+                                <a href="#" title="Technology" target="_self">
+                                  <img class="categories-loadimage" alt="Technology" src="image/catalog/demo/category/tab1.jpg">
+                                </a>
+                            </div>
+                            <div class="slider category-slider-inner products-list yt-content-slider" data-rtl="yes" data-autoplay="no" data-autoheight="no" data-delay="4" data-speed="0.6" data-margin="30" data-items_column00="4" data-items_column0="4" data-items_column1="2" data-items_column2="1"  data-items_column3="2" data-items_column4="1" data-arrows="yes" data-pagination="no" data-lazyload="yes" data-loop="yes" data-hoverpause="yes">
+
+                                    <div class="item">         
+                                        <div class="item-inner product-layout transition product-grid">
+                                            <div class="product-item-container">
+                                                <div class="left-block left-b">
+                                                    
+                                                    <div class="product-image-container second_img">
+                                                        <a href="product.html" target="_self" title="Lastrami bacon">
+                                                            <img src="{{asset('user-assets/image/catalog/demo/product/270/e1.jpg')}}" class="img-1 img-responsive" alt="image1">
+                                                            <img src="{{asset('user-assets/image/catalog/demo/product/270/e10.jpg')}}" class="img-2 img-responsive" alt="image2">
+                                                        </a>
+                                                    </div>
+                                                    <!--quickview--> 
+                                                    <div class="so-quickview">
+                                                      <a class="iframe-link btn-button quickview quickview_handler visible-lg" href="quickview.html" title="Quick view" data-fancybox-type="iframe"><i class="fa fa-eye"></i><span>Quick view</span></a>
+                                                    </div>                                                     
+                                                    <!--end quickview-->
+
+                                                    
+                                                </div>
+                                                <div class="right-block">
+                                                    <div class="button-group so-quickview cartinfo--left">
+                                                        <button type="button" class="addToCart" title="Add to cart" onclick="cart.add('60 ');">
+                                                            <span>Add to cart </span>   
+                                                        </button>
+                                                        <button type="button" class="wishlist btn-button" title="Add to Wish List" onclick="wishlist.add('60');"><i class="fa fa-heart-o"></i><span>Add to Wish List</span>
+                                                        </button>
+                                                        <button type="button" class="compare btn-button" title="Compare this Product " onclick="compare.add('60');"><i class="fa fa-retweet"></i><span>Compare this Product</span>
+                                                        </button>
+                                                        
+                                                    </div>
+                                                    <div class="caption hide-cont">
+                                                        <div class="ratings">
+                                                            <div class="rating-box">    <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span>
+                                                                <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span>
+                                                                <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span>
+                                                                <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span>
+                                                                <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span>
+                                                            </div>
+                                                            <span class="rating-num">( 2 )</span>
+                                                        </div>
+                                                        <h4><a href="product.html" title="Pastrami bacon" target="_self">Lastrami bacon</a></h4>
+                                                        
+                                                    </div>
+                                                    <p class="price">
+                                                      <span class="price-new">$80.00</span>
+                                                      
+                                                    </p>
+                                                </div>
+
+                                            </div>
+                                        </div>      
+                                    </div>
+
+                                    <div class="item">         
+                                        <div class="item-inner product-layout transition product-grid">
+                                            <div class="product-item-container">
+                                                <div class="left-block left-b">
+                                                    <div class="box-label">
+                                                        <span class="label-product label-sale">-15%</span>
+                                                    </div>
+                                                    <div class="product-image-container second_img">
+                                                        <a href="product.html" target="_self" title="Exceeur sint occaecat">
+                                                            <img src="{{asset('user-assets/image/catalog/demo/product/270/e2.jpg')}}" class="img-1 img-responsive" alt="image1">
+                                                            <img src="{{asset('user-assets/image/catalog/demo/product/270/e9.jpg')}}" class="img-2 img-responsive" alt="image2">
+                                                        </a>
+                                                    </div>
+                                                    <!--quickview--> 
+                                                    <div class="so-quickview">
+                                                      <a class="iframe-link btn-button quickview quickview_handler visible-lg" href="quickview.html" title="Quick view" data-fancybox-type="iframe"><i class="fa fa-eye"></i><span>Quick view</span></a>
+                                                    </div>                                                     
+                                                    <!--end quickview-->
+                                                    
+                                                </div>
+                                                <div class="right-block">
+                                                    <div class="button-group so-quickview cartinfo--left">
+                                                        <button type="button" class="addToCart" title="Add to cart" onclick="cart.add('60 ');">
+                                                            <span>Add to cart </span>   
+                                                        </button>
+                                                        <button type="button" class="wishlist btn-button" title="Add to Wish List" onclick="wishlist.add('60');"><i class="fa fa-heart-o"></i><span>Add to Wish List</span>
+                                                        </button>
+                                                        <button type="button" class="compare btn-button" title="Compare this Product " onclick="compare.add('60');"><i class="fa fa-retweet"></i><span>Compare this Product</span>
+                                                        </button>
+                                                        
+                                                    </div>
+                                                    <div class="caption hide-cont">
+                                                        <div class="ratings">
+                                                            <div class="rating-box">    <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span>
+                                                                <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span>
+                                                                <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span>
+                                                                <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span>
+                                                                <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span>
+                                                            </div>
+                                                            <span class="rating-num">( 3 )</span>
+                                                        </div>
+                                                        <h4><a href="product.html" title="Pastrami bacon" target="_self">Exceeur sint occaecat</a></h4>
+                                                        
+                                                    </div>
+                                                    <p class="price">
+                                                      <span class="price-new">$50.00</span>
+                                                      <span class="price-old">$59.00</span>
+                                                    </p>
+                                                </div>                                                
+                                            </div>
+                                        </div>      
+                                    </div>
+
+                                    <div class="item">         
+                                        <div class="item-inner product-layout transition product-grid">
+                                            <div class="product-item-container">
+                                                <div class="left-block left-b">
+                                                    
+                                                    <div class="product-image-container second_img">
+                                                        <a href="product.html" target="_self" title="Mapicola incidid">
+                                                            <img src="image/catalog/demo/product/270/e3.jpg" class="img-1 img-responsive" alt="image1">
+                                                            <img src="image/catalog/demo/product/270/e8.jpg" class="img-2 img-responsive" alt="image2">
+                                                        </a>
+                                                    </div>
+                                                    <!--quickview--> 
+                                                    <div class="so-quickview">
+                                                      <a class="iframe-link btn-button quickview quickview_handler visible-lg" href="quickview.html" title="Quick view" data-fancybox-type="iframe"><i class="fa fa-eye"></i><span>Quick view</span></a>
+                                                    </div>                                                     
+                                                    <!--end quickview-->
+
+                                                    
+                                                </div>
+                                                <div class="right-block">
+                                                    <div class="button-group so-quickview cartinfo--left">
+                                                        <button type="button" class="addToCart" title="Add to cart" onclick="cart.add('60 ');">
+                                                            <span>Add to cart </span>   
+                                                        </button>
+                                                        <button type="button" class="wishlist btn-button" title="Add to Wish List" onclick="wishlist.add('60');"><i class="fa fa-heart-o"></i><span>Add to Wish List</span>
+                                                        </button>
+                                                        <button type="button" class="compare btn-button" title="Compare this Product " onclick="compare.add('60');"><i class="fa fa-retweet"></i><span>Compare this Product</span>
+                                                        </button>
+                                                        
+                                                    </div>
+                                                    <div class="caption hide-cont">
+                                                        <div class="ratings">
+                                                            <div class="rating-box">    <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span>
+                                                                <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span>
+                                                                <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span>
+                                                                <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span>
+                                                                <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                                                            </div>
+                                                            <span class="rating-num">( 5 )</span>
+                                                        </div>
+                                                        <h4><a href="product.html" title="Pastrami bacon" target="_self">Mapicola incidid</a></h4>
+                                                        
+                                                    </div>
+                                                    <p class="price">
+                                                      <span class="price-new">$60.00</span>
+                          
+                                                    </p>
+                                                </div>                                            
+                                            </div>
+                                        </div>      
+                                    </div>
+
+                                    <div class="item">         
+                                        <div class="item-inner product-layout transition product-grid">
+                                            <div class="product-item-container">
+                                                <div class="left-block left-b">
+                                                    <div class="box-label">
+                                                        <span class="label-product label-new">New</span>
+                                                    </div>
+                                                    <div class="product-image-container second_img">
+                                                        <a href="product.html" target="_self" title="Duis aute irure ">
+                                                            <img src="image/catalog/demo/product/270/e4.jpg" class="img-1 img-responsive" alt="image1">
+                                                            <img src="image/catalog/demo/product/270/e7.jpg" class="img-2 img-responsive" alt="image2">
+                                                        </a>
+                                                    </div>
+                                                    <!--quickview--> 
+                                                    <div class="so-quickview">
+                                                      <a class="iframe-link btn-button quickview quickview_handler visible-lg" href="quickview.html" title="Quick view" data-fancybox-type="iframe"><i class="fa fa-eye"></i><span>Quick view</span></a>
+                                                    </div>                                                     
+                                                    <!--end quickview-->
+
+                                                    
+                                                </div>
+                                                <div class="right-block">
+                                                    <div class="button-group so-quickview cartinfo--left">
+                                                        <button type="button" class="addToCart" title="Add to cart" onclick="cart.add('60 ');">
+                                                            <span>Add to cart </span>   
+                                                        </button>
+                                                        <button type="button" class="wishlist btn-button" title="Add to Wish List" onclick="wishlist.add('60');"><i class="fa fa-heart-o"></i><span>Add to Wish List</span>
+                                                        </button>
+                                                        <button type="button" class="compare btn-button" title="Compare this Product " onclick="compare.add('60');"><i class="fa fa-retweet"></i><span>Compare this Product</span>
+                                                        </button>
+                                                        
+                                                    </div>
+                                                    <div class="caption hide-cont">
+                                                        <div class="ratings">
+                                                            <div class="rating-box">    <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span>
+                                                                <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span>
+                                                                <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span>
+                                                                <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span>
+                                                                <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span>
+                                                            </div>
+                                                            <span class="rating-num">( 2 )</span>
+                                                        </div>
+                                                        <h4><a href="product.html" title="Pastrami bacon" target="_self">Duis aute irure </a></h4>
+                                                        
+                                                    </div>
+                                                    <p class="price">
+                                                      <span class="price-new">$48.00</span>
+                              
+                                                    </p>
+                                                </div>                                        
+                                            </div>
+                                        </div>      
+                                    </div>
+
+                                    <div class="item">         
+                                        <div class="item-inner product-layout transition product-grid">
+                                            <div class="product-item-container">
+                                                <div class="left-block left-b">
+                                                    
+                                                    <div class="product-image-container second_img">
+                                                        <a href="product.html" target="_self" title="Excepteur sint occ">
+                                                            <img src="image/catalog/demo/product/270/e5.jpg" class="img-1 img-responsive" alt="image1">
+                                                            <img src="image/catalog/demo/product/270/e6.jpg" class="img-2 img-responsive" alt="image2">
+                                                        </a>
+                                                    </div>
+                                                    <!--quickview--> 
+                                                    <div class="so-quickview">
+                                                      <a class="iframe-link btn-button quickview quickview_handler visible-lg" href="quickview.html" title="Quick view" data-fancybox-type="iframe"><i class="fa fa-eye"></i><span>Quick view</span></a>
+                                                    </div>                                                     
+                                                    <!--end quickview-->
+
+                                                    
+                                                </div>
+                                                <div class="right-block">
+                                                    <div class="button-group so-quickview cartinfo--left">
+                                                        <button type="button" class="addToCart" title="Add to cart" onclick="cart.add('60 ');">
+                                                            <span>Add to cart </span>   
+                                                        </button>
+                                                        <button type="button" class="wishlist btn-button" title="Add to Wish List" onclick="wishlist.add('60');"><i class="fa fa-heart-o"></i><span>Add to Wish List</span>
+                                                        </button>
+                                                        <button type="button" class="compare btn-button" title="Compare this Product " onclick="compare.add('60');"><i class="fa fa-retweet"></i><span>Compare this Product</span>
+                                                        </button>
+                                                        
+                                                    </div>
+                                                    <div class="caption hide-cont">
+                                                        <div class="ratings">
+                                                            <div class="rating-box">    <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span>
+                                                                <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span>
+                                                                <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span>
+                                                                <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span>
+                                                                <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span>
+                                                            </div>
+                                                            <span class="rating-num">( 4 )</span>
+                                                        </div>
+                                                        <h4><a href="product.html" title="Pastrami bacon" target="_self">Excepteur sint occ</a></h4>
+                                                        
+                                                    </div>
+                                                    <p class="price">
+                                                      <span class="price-new">$90.00</span>
+                                            
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>      
+                                    </div>
+
+                                    <div class="item">         
+                                        <div class="item-inner product-layout transition product-grid">
+                                            <div class="product-item-container">
+                                                <div class="left-block left-b">
+                                                   
+                                                    <div class="product-image-container second_img">
+                                                        <a href="product.html" target="_self" title="PCenison meatloa">
+                                                            <img src="image/catalog/demo/product/270/e6.jpg" class="img-1 img-responsive" alt="image1">
+                                                            <img src="image/catalog/demo/product/270/e2.jpg" class="img-2 img-responsive" alt="image2">
+                                                        </a>
+                                                    </div>
+                                                    <!--quickview--> 
+                                                    <div class="so-quickview">
+                                                      <a class="iframe-link btn-button quickview quickview_handler visible-lg" href="quickview.html" title="Quick view" data-fancybox-type="iframe"><i class="fa fa-eye"></i><span>Quick view</span></a>
+                                                    </div>                                                     
+                                                    <!--end quickview-->
+
+                                                    
+                                                </div>
+                                                <div class="right-block">
+                                                    <div class="button-group so-quickview cartinfo--left">
+                                                        <button type="button" class="addToCart" title="Add to cart" onclick="cart.add('60 ');">
+                                                            <span>Add to cart </span>   
+                                                        </button>
+                                                        <button type="button" class="wishlist btn-button" title="Add to Wish List" onclick="wishlist.add('60');"><i class="fa fa-heart-o"></i><span>Add to Wish List</span>
+                                                        </button>
+                                                        <button type="button" class="compare btn-button" title="Compare this Product " onclick="compare.add('60');"><i class="fa fa-retweet"></i><span>Compare this Product</span>
+                                                        </button>
+                                                        
+                                                    </div>
+                                                    <div class="caption hide-cont">
+                                                        <div class="ratings">
+                                                            <div class="rating-box">    <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span>
+                                                                <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span>
+                                                                <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span>
+                                                                <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span>
+                                                                <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                                                            </div>
+                                                            <span class="rating-num">( 6 )</span>
+                                                        </div>
+                                                        <h4><a href="product.html" title="Pastrami bacon" target="_self">Cenison meatloa</a></h4>
+                                                        
+                                                    </div>
+                                                    <p class="price">$42.00</p>
+                                                </div>
+                                               
+                                            </div>
+                                        </div>      
+                                    </div>
+
+                                    
+                               
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- end Category Slider 1 -->
+
+                <!-- Category Slider 2 -->
+                <div id="so_category_slider_1" class="so-category-slider container-slider module cateslider2">
+                    <div class="modcontent">                                                                
+                        <div class="page-top">
+                            <div class="page-title-categoryslider">Funiture & Decor</div>
+                            <div class="item-sub-cat">
+                                <ul>
+                                    <li><a href="#" title="Smartphone" target="_self">Living room</a></li>
+                                    <li><a href="#" title="Tablets" target="_self">Bathroom</a></li>
+                                    <li><a href="#" title="Computer" target="_self">Bedroom</a></li>
+                                    <li><a href="#" title="Accessories" target="_self">Accessories</a></li>
+                                    <li><a href="#" title="Hitech" target="_self">Decor</a></li>
+                                </ul>
+                            </div> 
+                        </div>
+
+                        <div class="categoryslider-content">
+                            <div class="item-cat-image" style="min-height: 351px;">
+                                <a href="#" title="Funiture & Decor" target="_self">
+                                  <img class="categories-loadimage" alt="Funiture & Decor" src="image/catalog/demo/category/tab2.jpg">
+                                </a>
+                            </div>
+                            <div class="slider category-slider-inner products-list yt-content-slider" data-rtl="yes" data-autoplay="no" data-autoheight="no" data-delay="4" data-speed="0.6" data-margin="30" data-items_column00="4" data-items_column0="4" data-items_column1="2" data-items_column2="1"  data-items_column3="2" data-items_column4="1" data-arrows="yes" data-pagination="no" data-lazyload="yes" data-loop="yes" data-hoverpause="yes">
+
+                                    <div class="item">         
+                                        <div class="item-inner product-layout transition product-grid">
+                                            <div class="product-item-container">
+                                                <div class="left-block left-b">
+                                                    <div class="box-label">
+                                                        <span class="label-product label-new">New</span>
+                                                    </div>
+                                                    <div class="product-image-container second_img">
+                                                        <a href="product.html" target="_self" title="Sunt inculpa qui">
+                                                            <img src="image/catalog/demo/product/270/fu1.jpg" class="img-1 img-responsive" alt="image1">
+                                                            <img src="image/catalog/demo/product/270/fu10.jpg" class="img-2 img-responsive" alt="image2">
+                                                        </a>
+                                                    </div>
+                                                    <!--quickview--> 
+                                                    <div class="so-quickview">
+                                                      <a class="iframe-link btn-button quickview quickview_handler visible-lg" href="quickview.html" title="Quick view" data-fancybox-type="iframe"><i class="fa fa-eye"></i><span>Quick view</span></a>
+                                                    </div>                                                     
+                                                    <!--end quickview-->
+
+                                                    
+                                                </div>
+                                                <div class="right-block">
+                                                    <div class="button-group so-quickview cartinfo--left">
+                                                        <button type="button" class="addToCart" title="Add to cart" onclick="cart.add('60 ');">
+                                                            <span>Add to cart </span>   
+                                                        </button>
+                                                        <button type="button" class="wishlist btn-button" title="Add to Wish List" onclick="wishlist.add('60');"><i class="fa fa-heart-o"></i><span>Add to Wish List</span>
+                                                        </button>
+                                                        <button type="button" class="compare btn-button" title="Compare this Product " onclick="compare.add('60');"><i class="fa fa-retweet"></i><span>Compare this Product</span>
+                                                        </button>
+                                                        
+                                                    </div>
+                                                    <div class="caption hide-cont">
+                                                        <div class="ratings">
+                                                            <div class="rating-box">    <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span>
+                                                                <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span>
+                                                                <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span>
+                                                                <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span>
+                                                                <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span>
+                                                            </div>
+                                                            <span class="rating-num">( 2 )</span>
+                                                        </div>
+                                                        <h4><a href="product.html" title="Pastrami bacon" target="_self">Sunt inculpa qui</a></h4>
+                                                        
+                                                    </div>
+                                                    <p class="price">
+                                                      <span class="price-new">$60.00</span>
+                                                      
+                                                    </p>
+                                                </div>
+
+                                            </div>
+                                        </div>      
+                                    </div>
+
+                                    <div class="item">         
+                                        <div class="item-inner product-layout transition product-grid">
+                                            <div class="product-item-container">
+                                                <div class="left-block left-b">
+                                                    
+                                                    <div class="product-image-container second_img">
+                                                        <a href="product.html" target="_self" title="Chicken swinesha">
+                                                            <img src="image/catalog/demo/product/270/fu2.jpg" class="img-1 img-responsive" alt="image1">
+                                                            <img src="image/catalog/demo/product/270/fu9.jpg" class="img-2 img-responsive" alt="image2">
+                                                        </a>
+                                                    </div>
+                                                    <!--quickview--> 
+                                                    <div class="so-quickview">
+                                                      <a class="iframe-link btn-button quickview quickview_handler visible-lg" href="quickview.html" title="Quick view" data-fancybox-type="iframe"><i class="fa fa-eye"></i><span>Quick view</span></a>
+                                                    </div>                                                     
+                                                    <!--end quickview-->
+                                                    
+                                                </div>
+                                                <div class="right-block">
+                                                    <div class="button-group so-quickview cartinfo--left">
+                                                        <button type="button" class="addToCart" title="Add to cart" onclick="cart.add('60 ');">
+                                                            <span>Add to cart </span>   
+                                                        </button>
+                                                        <button type="button" class="wishlist btn-button" title="Add to Wish List" onclick="wishlist.add('60');"><i class="fa fa-heart-o"></i><span>Add to Wish List</span>
+                                                        </button>
+                                                        <button type="button" class="compare btn-button" title="Compare this Product " onclick="compare.add('60');"><i class="fa fa-retweet"></i><span>Compare this Product</span>
+                                                        </button>
+                                                        
+                                                    </div>
+                                                    <div class="caption hide-cont">
+                                                        <div class="ratings">
+                                                            <div class="rating-box">    <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span>
+                                                                <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span>
+                                                                <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span>
+                                                                <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span>
+                                                                <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span>
+                                                            </div>
+                                                            <span class="rating-num">( 2 )</span>
+                                                        </div>
+                                                        <h4><a href="product.html" title="Pastrami bacon" target="_self">Chicken swinesha</a></h4>
+                                                        
+                                                    </div>
+                                                    <p class="price">
+                                                      <span class="price-new">$55.00</span>
+                                            
+                                                    </p>
+                                                </div> 
+                                            </div>
+                                        </div>      
+                                    </div>
+
+                                    <div class="item">         
+                                        <div class="item-inner product-layout transition product-grid">
+                                            <div class="product-item-container">
+                                                <div class="left-block left-b">
+                                                    <div class="box-label">
+                                                        <span class="label-product label-sale">-10%</span>
+                                                    </div>
+                                                    <div class="product-image-container second_img">
+                                                        <a href="product.html" target="_self" title="Mapicola incidid">
+                                                            <img src="image/catalog/demo/product/270/fu3.jpg" class="img-1 img-responsive" alt="image1">
+                                                            <img src="image/catalog/demo/product/270/fu8.jpg" class="img-2 img-responsive" alt="image2">
+                                                        </a>
+                                                    </div>
+                                                    <!--quickview--> 
+                                                    <div class="so-quickview">
+                                                      <a class="iframe-link btn-button quickview quickview_handler visible-lg" href="quickview.html" title="Quick view" data-fancybox-type="iframe"><i class="fa fa-eye"></i><span>Quick view</span></a>
+                                                    </div>                                                     
+                                                    <!--end quickview-->
+
+                                                    
+                                                </div>
+                                                <div class="right-block">
+                                                    <div class="button-group so-quickview cartinfo--left">
+                                                        <button type="button" class="addToCart" title="Add to cart" onclick="cart.add('60 ');">
+                                                            <span>Add to cart </span>   
+                                                        </button>
+                                                        <button type="button" class="wishlist btn-button" title="Add to Wish List" onclick="wishlist.add('60');"><i class="fa fa-heart-o"></i><span>Add to Wish List</span>
+                                                        </button>
+                                                        <button type="button" class="compare btn-button" title="Compare this Product " onclick="compare.add('60');"><i class="fa fa-retweet"></i><span>Compare this Product</span>
+                                                        </button>
+                                                        
+                                                    </div>
+                                                    <div class="caption hide-cont">
+                                                        <div class="ratings">
+                                                            <div class="rating-box">    <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span>
+                                                                <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span>
+                                                                <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span>
+                                                                <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span>
+                                                                <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span>
+                                                            </div>
+                                                            <span class="rating-num">( 2 )</span>
+                                                        </div>
+                                                        <h4><a href="product.html" title="Pastrami bacon" target="_self">Mapicola incidid</a></h4>
+                                                        
+                                                    </div>
+                                                    <p class="price">
+                                                      <span class="price-new">$90.00</span>
+                                                      <span class="price-old">$100.00</span>
+                                                    </p>
+                                                </div>                                        
+                                            </div>
+                                        </div>      
+                                    </div>
+
+                                    <div class="item">         
+                                        <div class="item-inner product-layout transition product-grid">
+                                            <div class="product-item-container">
+                                                <div class="left-block left-b">
+                                                    
+                                                    <div class="product-image-container second_img">
+                                                        <a href="product.html" target="_self" title="Dormd dea irure">
+                                                            <img src="{{asset('user-assets/image/catalog/demo/product/270/fu4.jpg')}}" class="img-1 img-responsive" alt="image1">
+                                                            <img src="{{asset('user-assets/image/catalog/demo/product/270/fu7.jpg')}}" class="img-2 img-responsive" alt="image2">
+                                                        </a>
+                                                    </div>
+                                                    <!--quickview--> 
+                                                    <div class="so-quickview">
+                                                      <a class="iframe-link btn-button quickview quickview_handler visible-lg" href="quickview.html" title="Quick view" data-fancybox-type="iframe"><i class="fa fa-eye"></i><span>Quick view</span></a>
+                                                    </div>                                                     
+                                                    <!--end quickview-->
+
+                                                    
+                                                </div>
+                                                <div class="right-block">
+                                                    <div class="button-group so-quickview cartinfo--left">
+                                                        <button type="button" class="addToCart" title="Add to cart" onclick="cart.add('60 ');">
+                                                            <span>Add to cart </span>   
+                                                        </button>
+                                                        <button type="button" class="wishlist btn-button" title="Add to Wish List" onclick="wishlist.add('60');"><i class="fa fa-heart-o"></i><span>Add to Wish List</span>
+                                                        </button>
+                                                        <button type="button" class="compare btn-button" title="Compare this Product " onclick="compare.add('60');"><i class="fa fa-retweet"></i><span>Compare this Product</span>
+                                                        </button>
+                                                        
+                                                    </div>
+                                                    <div class="caption hide-cont">
+                                                        <div class="ratings">
+                                                            <div class="rating-box">    <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span>
+                                                                <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span>
+                                                                <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span>
+                                                                <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span>
+                                                                <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span>
+                                                            </div>
+                                                            <span class="rating-num">( 2 )</span>
+                                                        </div>
+                                                        <h4><a href="product.html" title="Pastrami bacon" target="_self">Dormd dea irure </a></h4>
+                                                        
+                                                    </div>
+                                                    <p class="price">
+                                                      <span class="price-new">$48.00</span>
+                              
+                                                    </p>
+                                                </div>                                        
+                                            </div>
+                                        </div>      
+                                    </div>
+
+                                    <div class="item">         
+                                        <div class="item-inner product-layout transition product-grid">
+                                            <div class="product-item-container">
+                                                <div class="left-block left-b">
+                                                    
+                                                    <div class="product-image-container second_img">
+                                                        <a href="product.html" target="_self" title="Mecepteur sint rew">
+                                                            <img src="{{asset('user-assets/image/catalog/demo/product/270/fu5.jpg')}}" class="img-1 img-responsive" alt="image1">
+                                                            <img src="{{asset('user-assets/image/catalog/demo/product/270/fu6.jpg')}}" class="img-2 img-responsive" alt="image2">
+                                                        </a>
+                                                    </div>
+                                                    <!--quickview--> 
+                                                    <div class="so-quickview">
+                                                      <a class="iframe-link btn-button quickview quickview_handler visible-lg" href="quickview.html" title="Quick view" data-fancybox-type="iframe"><i class="fa fa-eye"></i><span>Quick view</span></a>
+                                                    </div>                                                     
+                                                    <!--end quickview-->
+
+                                                    
+                                                </div>
+                                                <div class="right-block">
+                                                    <div class="button-group so-quickview cartinfo--left">
+                                                        <button type="button" class="addToCart" title="Add to cart" onclick="cart.add('60 ');">
+                                                            <span>Add to cart </span>   
+                                                        </button>
+                                                        <button type="button" class="wishlist btn-button" title="Add to Wish List" onclick="wishlist.add('60');"><i class="fa fa-heart-o"></i><span>Add to Wish List</span>
+                                                        </button>
+                                                        <button type="button" class="compare btn-button" title="Compare this Product " onclick="compare.add('60');"><i class="fa fa-retweet"></i><span>Compare this Product</span>
+                                                        </button>
+                                                        
+                                                    </div>
+                                                    <div class="caption hide-cont">
+                                                        <div class="ratings">
+                                                            <div class="rating-box">    <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span>
+                                                                <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span>
+                                                                <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span>
+                                                                <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span>
+                                                                <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span>
+                                                            </div>
+                                                            <span class="rating-num">( 2 )</span>
+                                                        </div>
+                                                        <h4><a href="product.html" title="Pastrami bacon" target="_self">Mecepteur sint rew</a></h4>
+                                                        
+                                                    </div>
+                                                    <p class="price">
+                                                      <span class="price-new">$90.00</span>
+                                            
+                                                    </p>
+                                                </div>
+
+                                            </div>
+                                        </div>      
+                                    </div>
+
+                                    <div class="item">         
+                                        <div class="item-inner product-layout transition product-grid">
+                                            <div class="product-item-container">
+                                                <div class="left-block left-b">
+                                                   
+                                                    <div class="product-image-container second_img">
+                                                        <a href="product.html" target="_self" title="Sed ut perspicia">
+                                                            <img src="{{asset('user-assets/image/catalog/demo/product/270/fu6.jpg')}}" class="img-1 img-responsive" alt="image1">
+                                                            <img src="{{asset('user-assets/image/catalog/demo/product/270/fu2.jpg')}}" class="img-2 img-responsive" alt="image2">
+                                                        </a>
+                                                    </div>
+                                                    <!--quickview--> 
+                                                    <div class="so-quickview">
+                                                      <a class="iframe-link btn-button quickview quickview_handler visible-lg" href="quickview.html" title="Quick view" data-fancybox-type="iframe"><i class="fa fa-eye"></i><span>Quick view</span></a>
+                                                    </div>                                                     
+                                                    <!--end quickview-->
+
+                                                    
+                                                </div>
+                                                <div class="right-block">
+                                                    <div class="button-group so-quickview cartinfo--left">
+                                                        <button type="button" class="addToCart" title="Add to cart" onclick="cart.add('60 ');">
+                                                            <span>Add to cart </span>   
+                                                        </button>
+                                                        <button type="button" class="wishlist btn-button" title="Add to Wish List" onclick="wishlist.add('60');"><i class="fa fa-heart-o"></i><span>Add to Wish List</span>
+                                                        </button>
+                                                        <button type="button" class="compare btn-button" title="Compare this Product " onclick="compare.add('60');"><i class="fa fa-retweet"></i><span>Compare this Product</span>
+                                                        </button>
+                                                        
+                                                    </div>
+                                                    <div class="caption hide-cont">
+                                                        <div class="ratings">
+                                                            <div class="rating-box">    <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span>
+                                                                <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span>
+                                                                <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span>
+                                                                <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span>
+                                                                <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span>
+                                                            </div>
+                                                            <span class="rating-num">( 1 )</span>
+                                                        </div>
+                                                        <h4><a href="product.html" title="Pastrami bacon" target="_self">Sed ut perspicia</a></h4>
+                                                        
+                                                    </div>
+                                                    <p class="price">$42.00</p>
+                                                </div>                                               
+                                            </div>
+                                        </div>      
+                                    </div>
+
+                                    
+                               
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- end Category Slider 2 -->
+
+                <!-- Category Slider 3 -->
+                <div id="so_category_slider_1" class="so-category-slider container-slider module cateslider1">
+                    <div class="modcontent">                                                                
+                        <div class="page-top">
+                            <div class="page-title-categoryslider">Fashion & Accessories</div>
+                            <div class="item-sub-cat">
+                                <ul>
+                                    <li><a href="#" title="Smartphone" target="_self">Smartphone</a></li>
+                                    <li><a href="#" title="Tablets" target="_self">Tablets</a></li>
+                                    <li><a href="#" title="Computer" target="_self">Computer</a></li>
+                                    <li><a href="#" title="Accessories" target="_self">Accessories</a></li>
+                                    <li><a href="#" title="Hitech" target="_self">Hitech</a></li>
+                                </ul>
+                            </div> 
+                        </div>
+
+                        <div class="categoryslider-content">
+                            <div class="item-cat-image" style="min-height: 351px;">
+                                <a href="#" title="Fashion & Accessories" target="_self">
+                                  <img class="categories-loadimage" alt="Fashion & Accessories" src="image/catalog/demo/category/tab3.jpg">
+                                </a>
+                            </div>
+                            <div class="slider category-slider-inner products-list yt-content-slider" data-rtl="yes" data-autoplay="no" data-autoheight="no" data-delay="4" data-speed="0.6" data-margin="30" data-items_column00="4" data-items_column0="4" data-items_column1="2" data-items_column2="1"  data-items_column3="2" data-items_column4="1" data-arrows="yes" data-pagination="no" data-lazyload="yes" data-loop="yes" data-hoverpause="yes">
+
+                                    <div class="item">         
+                                        <div class="item-inner product-layout transition product-grid">
+                                            <div class="product-item-container">
+                                                <div class="left-block left-b">
+                                                    
+                                                    <div class="product-image-container second_img">
+                                                        <a href="product.html" target="_self" title="Lastrami bacon">
+                                                            <img src="{{asset('user-assets/image/catalog/demo/product/270/f1.jpg')}}" class="img-1 img-responsive" alt="image1">
+                                                            <img src="{{asset('user-assets/image/catalog/demo/product/270/f7.jpg')}}" class="img-2 img-responsive" alt="image2">
+                                                        </a>
+                                                    </div>
+                                                    <!--quickview--> 
+                                                    <div class="so-quickview">
+                                                      <a class="iframe-link btn-button quickview quickview_handler visible-lg" href="quickview.html" title="Quick view" data-fancybox-type="iframe"><i class="fa fa-eye"></i><span>Quick view</span></a>
+                                                    </div>                                                     
+                                                    <!--end quickview-->
+
+                                                    
+                                                </div>
+                                                <div class="right-block">
+                                                    <div class="button-group so-quickview cartinfo--left">
+                                                        <button type="button" class="addToCart" title="Add to cart" onclick="cart.add('60 ');">
+                                                            <span>Add to cart </span>   
+                                                        </button>
+                                                        <button type="button" class="wishlist btn-button" title="Add to Wish List" onclick="wishlist.add('60');"><i class="fa fa-heart-o"></i><span>Add to Wish List</span>
+                                                        </button>
+                                                        <button type="button" class="compare btn-button" title="Compare this Product " onclick="compare.add('60');"><i class="fa fa-retweet"></i><span>Compare this Product</span>
+                                                        </button>
+                                                        
+                                                    </div>
+                                                    <div class="caption hide-cont">
+                                                        <div class="ratings">
+                                                            <div class="rating-box">    <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span>
+                                                                <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span>
+                                                                <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span>
+                                                                <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span>
+                                                                <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span>
+                                                            </div>
+                                                            <span class="rating-num">( 3 )</span>
+                                                        </div>
+                                                        <h4><a href="product.html" title="Pastrami bacon" target="_self">Lastrami bacon</a></h4>
+                                                        
+                                                    </div>
+                                                    <p class="price">
+                                                      <span class="price-new">$80.00</span>
+                                                      
+                                                    </p>
+                                                </div>
+
+                                            </div>
+                                        </div>      
+                                    </div>
+
+                                    <div class="item">         
+                                        <div class="item-inner product-layout transition product-grid">
+                                            <div class="product-item-container">
+                                                <div class="left-block left-b">
+                                                    <div class="box-label">
+                                                        <span class="label-product label-sale">-15%</span>
+                                                    </div>
+                                                    <div class="product-image-container second_img">
+                                                        <a href="product.html" target="_self" title="Exceeur sint occaecat">
+                                                            <img src="{{asset('user-assets/image/catalog/demo/product/270/f2.jpg')}}" class="img-1 img-responsive" alt="image1">
+                                                            <img src="{{asset('user-assets/image/catalog/demo/product/270/f4.jpg')}}" class="img-2 img-responsive" alt="image2">
+                                                        </a>
+                                                    </div>
+                                                    <!--quickview--> 
+                                                    <div class="so-quickview">
+                                                      <a class="iframe-link btn-button quickview quickview_handler visible-lg" href="quickview.html" title="Quick view" data-fancybox-type="iframe"><i class="fa fa-eye"></i><span>Quick view</span></a>
+                                                    </div>                                                     
+                                                    <!--end quickview-->
+                                                    
+                                                </div>
+                                                <div class="right-block">
+                                                    <div class="button-group so-quickview cartinfo--left">
+                                                        <button type="button" class="addToCart" title="Add to cart" onclick="cart.add('60 ');">
+                                                            <span>Add to cart </span>   
+                                                        </button>
+                                                        <button type="button" class="wishlist btn-button" title="Add to Wish List" onclick="wishlist.add('60');"><i class="fa fa-heart-o"></i><span>Add to Wish List</span>
+                                                        </button>
+                                                        <button type="button" class="compare btn-button" title="Compare this Product " onclick="compare.add('60');"><i class="fa fa-retweet"></i><span>Compare this Product</span>
+                                                        </button>
+                                                        
+                                                    </div>
+                                                    <div class="caption hide-cont">
+                                                        <div class="ratings">
+                                                            <div class="rating-box">    <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span>
+                                                                <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span>
+                                                                <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span>
+                                                                <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span>
+                                                                <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                                                            </div>
+                                                            <span class="rating-num">( 7 )</span>
+                                                        </div>
+                                                        <h4><a href="product.html" title="Pastrami bacon" target="_self">Exceeur sint occaecat</a></h4>
+                                                        
+                                                    </div>
+                                                    <p class="price">
+                                                      <span class="price-new">$50.00</span>
+                                                      <span class="price-old">$59.00</span>
+                                                    </p>
+                                                </div>
+
+                                                
+                                            </div>
+                                        </div>      
+                                    </div>
+
+                                    <div class="item">         
+                                        <div class="item-inner product-layout transition product-grid">
+                                            <div class="product-item-container">
+                                                <div class="left-block left-b">
+                                                    
+                                                    <div class="product-image-container second_img">
+                                                        <a href="product.html" target="_self" title="Mapicola incidid">
+                                                            <img src="{{asset('user-assets/image/catalog/demo/product/270/f3.jpg')}}" class="img-1 img-responsive" alt="image1">
+                                                            <img src="{{asset('user-assets/image/catalog/demo/product/270/f8.jpg')}}" class="img-2 img-responsive" alt="image2">
+                                                        </a>
+                                                    </div>
+                                                    <!--quickview--> 
+                                                    <div class="so-quickview">
+                                                      <a class="iframe-link btn-button quickview quickview_handler visible-lg" href="quickview.html" title="Quick view" data-fancybox-type="iframe"><i class="fa fa-eye"></i><span>Quick view</span></a>
+                                                    </div>                                                     
+                                                    <!--end quickview-->
+
+                                                    
+                                                </div>
+                                                <div class="right-block">
+                                                    <div class="button-group so-quickview cartinfo--left">
+                                                        <button type="button" class="addToCart" title="Add to cart" onclick="cart.add('60 ');">
+                                                            <span>Add to cart </span>   
+                                                        </button>
+                                                        <button type="button" class="wishlist btn-button" title="Add to Wish List" onclick="wishlist.add('60');"><i class="fa fa-heart-o"></i><span>Add to Wish List</span>
+                                                        </button>
+                                                        <button type="button" class="compare btn-button" title="Compare this Product " onclick="compare.add('60');"><i class="fa fa-retweet"></i><span>Compare this Product</span>
+                                                        </button>
+                                                        
+                                                    </div>
+                                                    <div class="caption hide-cont">
+                                                        <div class="ratings">
+                                                            <div class="rating-box">    <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span>
+                                                                <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span>
+                                                                <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span>
+                                                                <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span>
+                                                                <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span>
+                                                            </div>
+                                                            <span class="rating-num">( 2 )</span>
+                                                        </div>
+                                                        <h4><a href="product.html" title="Pastrami bacon" target="_self">Mapicola incidid</a></h4>
+                                                        
+                                                    </div>
+                                                    <p class="price">
+                                                      <span class="price-new">$60.00</span>
+                          
+                                                    </p>
+                                                </div>
+
+                                               
+                                            </div>
+                                        </div>      
+                                    </div>
+
+                                    <div class="item">         
+                                        <div class="item-inner product-layout transition product-grid">
+                                            <div class="product-item-container">
+                                                <div class="left-block left-b">
+                                                    <div class="box-label">
+                                                        <span class="label-product label-new">New</span>
+                                                    </div>
+                                                    <div class="product-image-container second_img">
+                                                        <a href="product.html" target="_self" title="Duis aute irure ">
+                                                            <img src="{{asset('user-assets/image/catalog/demo/product/270/f4.jpg')}}" class="img-1 img-responsive" alt="image1">
+                                                            <img src="{{asset('user-assets/image/catalog/demo/product/270/f7.jpg')}}" class="img-2 img-responsive" alt="image2">
+                                                        </a>
+                                                    </div>
+                                                    <!--quickview--> 
+                                                    <div class="so-quickview">
+                                                      <a class="iframe-link btn-button quickview quickview_handler visible-lg" href="quickview.html" title="Quick view" data-fancybox-type="iframe"><i class="fa fa-eye"></i><span>Quick view</span></a>
+                                                    </div>                                                     
+                                                    <!--end quickview-->
+
+                                                    
+                                                </div>
+                                                <div class="right-block">
+                                                    <div class="button-group so-quickview cartinfo--left">
+                                                        <button type="button" class="addToCart" title="Add to cart" onclick="cart.add('60 ');">
+                                                            <span>Add to cart </span>   
+                                                        </button>
+                                                        <button type="button" class="wishlist btn-button" title="Add to Wish List" onclick="wishlist.add('60');"><i class="fa fa-heart-o"></i><span>Add to Wish List</span>
+                                                        </button>
+                                                        <button type="button" class="compare btn-button" title="Compare this Product " onclick="compare.add('60');"><i class="fa fa-retweet"></i><span>Compare this Product</span>
+                                                        </button>
+                                                        
+                                                    </div>
+                                                    <div class="caption hide-cont">
+                                                        <div class="ratings">
+                                                            <div class="rating-box">    <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span>
+                                                                <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span>
+                                                                <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span>
+                                                                <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span>
+                                                                <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span>
+                                                            </div>
+                                                            <span class="rating-num">( 8 )</span>
+                                                        </div>
+                                                        <h4><a href="product.html" title="Pastrami bacon" target="_self">Duis aute irure </a></h4>
+                                                        
+                                                    </div>
+                                                    <p class="price">
+                                                      <span class="price-new">$48.00</span>
+                              
+                                                    </p>
+                                                </div>
+
+                                                
+                                            </div>
+                                        </div>      
+                                    </div>
+
+                                    <div class="item">         
+                                        <div class="item-inner product-layout transition product-grid">
+                                            <div class="product-item-container">
+                                                <div class="left-block left-b">
+                                                    
+                                                    <div class="product-image-container second_img">
+                                                        <a href="product.html" target="_self" title="Excepteur sint occ">
+                                                            <img src="{{asset('user-assets/image/catalog/demo/product/270/f5.jpg')}}" class="img-1 img-responsive" alt="image1">
+                                                            <img src="{{asset('user-assets/image/catalog/demo/product/270/f6.jpg')}}" class="img-2 img-responsive" alt="image2">
+                                                        </a>
+                                                    </div>
+                                                    <!--quickview--> 
+                                                    <div class="so-quickview">
+                                                      <a class="iframe-link btn-button quickview quickview_handler visible-lg" href="quickview.html" title="Quick view" data-fancybox-type="iframe"><i class="fa fa-eye"></i><span>Quick view</span></a>
+                                                    </div>                                                     
+                                                    <!--end quickview-->
+
+                                                    
+                                                </div>
+                                                <div class="right-block">
+                                                    <div class="button-group so-quickview cartinfo--left">
+                                                        <button type="button" class="addToCart" title="Add to cart" onclick="cart.add('60 ');">
+                                                            <span>Add to cart </span>   
+                                                        </button>
+                                                        <button type="button" class="wishlist btn-button" title="Add to Wish List" onclick="wishlist.add('60');"><i class="fa fa-heart-o"></i><span>Add to Wish List</span>
+                                                        </button>
+                                                        <button type="button" class="compare btn-button" title="Compare this Product " onclick="compare.add('60');"><i class="fa fa-retweet"></i><span>Compare this Product</span>
+                                                        </button>
+                                                        
+                                                    </div>
+                                                    <div class="caption hide-cont">
+                                                        <div class="ratings">
+                                                            <div class="rating-box">    <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span>
+                                                                <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span>
+                                                                <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span>
+                                                                <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span>
+                                                                <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span>
+                                                            </div>
+                                                            <span class="rating-num">( 2 )</span>
+                                                        </div>
+                                                        <h4><a href="product.html" title="Pastrami bacon" target="_self">Excepteur sint occ</a></h4>
+                                                        
+                                                    </div>
+                                                    <p class="price">
+                                                      <span class="price-new">$90.00</span>
+                                            
+                                                    </p>
+                                                </div>
+
+                                            </div>
+                                        </div>      
+                                    </div>
+
+                                    <div class="item">         
+                                        <div class="item-inner product-layout transition product-grid">
+                                            <div class="product-item-container">
+                                                <div class="left-block left-b">
+                                                   
+                                                    <div class="product-image-container second_img">
+                                                        <a href="product.html" target="_self" title="PCenison meatloa">
+                                                            <img src="{{asset('user-assets/image/catalog/demo/product/270/f6.jpg')}}" class="img-1 img-responsive" alt="image1">
+                                                            <img src="{{asset('user-assets/image/catalog/demo/product/270/f2.jpg')}}" class="img-2 img-responsive" alt="image2">
+                                                        </a>
+                                                    </div>
+                                                    <!--quickview--> 
+                                                    <div class="so-quickview">
+                                                      <a class="iframe-link btn-button quickview quickview_handler visible-lg" href="quickview.html" title="Quick view" data-fancybox-type="iframe"><i class="fa fa-eye"></i><span>Quick view</span></a>
+                                                    </div>                                                     
+                                                    <!--end quickview-->
+
+                                                    
+                                                </div>
+                                                <div class="right-block">
+                                                    <div class="button-group so-quickview cartinfo--left">
+                                                        <button type="button" class="addToCart" title="Add to cart" onclick="cart.add('60 ');">
+                                                            <span>Add to cart </span>   
+                                                        </button>
+                                                        <button type="button" class="wishlist btn-button" title="Add to Wish List" onclick="wishlist.add('60');"><i class="fa fa-heart-o"></i><span>Add to Wish List</span>
+                                                        </button>
+                                                        <button type="button" class="compare btn-button" title="Compare this Product " onclick="compare.add('60');"><i class="fa fa-retweet"></i><span>Compare this Product</span>
+                                                        </button>
+                                                        
+                                                    </div>
+                                                    <div class="caption hide-cont">
+                                                        <div class="ratings">
+                                                            <div class="rating-box">    <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span>
+                                                                <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span>
+                                                                <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span>
+                                                                <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span>
+                                                                <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span>
+                                                            </div>
+                                                            <span class="rating-num">( 2 )</span>
+                                                        </div>
+                                                        <h4><a href="product.html" title="Pastrami bacon" target="_self">Cenison meatloa</a></h4>
+                                                        
+                                                    </div>
+                                                    <p class="price">$42.00</p>
+                                                </div>
+                                               
+                                            </div>
+                                        </div>      
+                                    </div>
+
+                                    <div class="item">         
+                                        <div class="item-inner product-layout transition product-grid">
+                                            <div class="product-item-container">
+                                                <div class="left-block left-b">
+                                                    
+                                                    <div class="product-image-container second_img">
+                                                        <a href="product.html" target="_self" title="Chicken swinesha">
+                                                            <img src="{{asset('user-assets/image/catalog/demo/product/270/fu2.jpg')}}" class="img-1 img-responsive" alt="image1">
+                                                            <img src="{{asset('user-assets/image/catalog/demo/product/270/fu9.jpg')}}" class="img-2 img-responsive" alt="image2">
+                                                        </a>
+                                                    </div>
+                                                    <!--quickview--> 
+                                                    <div class="so-quickview">
+                                                      <a class="iframe-link btn-button quickview quickview_handler visible-lg" href="quickview.html" title="Quick view" data-fancybox-type="iframe"><i class="fa fa-eye"></i><span>Quick view</span></a>
+                                                    </div>                                                     
+                                                    <!--end quickview-->
+                                                    
+                                                </div>
+                                                <div class="right-block">
+                                                    <div class="button-group so-quickview cartinfo--left">
+                                                        <button type="button" class="addToCart" title="Add to cart" onclick="cart.add('60 ');">
+                                                            <span>Add to cart </span>   
+                                                        </button>
+                                                        <button type="button" class="wishlist btn-button" title="Add to Wish List" onclick="wishlist.add('60');"><i class="fa fa-heart-o"></i><span>Add to Wish List</span>
+                                                        </button>
+                                                        <button type="button" class="compare btn-button" title="Compare this Product " onclick="compare.add('60');"><i class="fa fa-retweet"></i><span>Compare this Product</span>
+                                                        </button>
+                                                        
+                                                    </div>
+                                                    <div class="caption hide-cont">
+                                                        <div class="ratings">
+                                                            <div class="rating-box">    <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span>
+                                                                <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span>
+                                                                <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span>
+                                                                <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span>
+                                                                <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span>
+                                                            </div>
+                                                            <span class="rating-num">( 2 )</span>
+                                                        </div>
+                                                        <h4><a href="product.html" title="Pastrami bacon" target="_self">Chicken swinesha</a></h4>
+                                                        
+                                                    </div>
+                                                    <p class="price">
+                                                      <span class="price-new">$55.00</span>
+                                            
+                                                    </p>
+                                                </div>
+
+                                                
+                                            </div>
+                                        </div>      
+                                    </div>
+                               
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- end Category Slider 3 -->
+
+                <!-- Banners -->
+                <div class="banners4 banners">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                            <a href="#"><img src="{{asset('user-assets/image/catalog/banners/bn1.jpg')}}" alt="image"></a>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                            <a href="#"><img src="{{asset('user-assets/image/catalog/banners/bn2.jpg')}}" alt="image"></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- end Banners -->
+
+                <!-- Listing tabs -->
+                <div class="module listingtab-layout1">
+                    
+                    <div id="so_listing_tabs_1" class="so-listing-tabs first-load">
+                        <div class="loadeding"></div>
+                        <div class="ltabs-wrap">
+                            <div class="ltabs-tabs-container" data-delay="300" data-duration="600" data-effect="starwars" data-ajaxurl="" data-type_source="0" data-lg="5" data-md="3" data-sm="2" data-xs="1" data-margin="30">
+                                <!--Begin Tabs-->
+                                <div class="ltabs-tabs-wrap"> 
+                                <span class="ltabs-tab-selected">Bathroom</span> <span class="ltabs-tab-arrow">▼</span>
+                                    <div class="item-sub-cat">
+                                        <ul class="ltabs-tabs cf">
+                                            <li class="ltabs-tab tab-sel" data-category-id="20" data-active-content=".items-category-20"> <span class="ltabs-tab-label">Best Seller</span> </li>
+                                            <li class="ltabs-tab " data-category-id="18" data-active-content=".items-category-18"> <span class="ltabs-tab-label">New Arrivals</span> </li>
+                                            <li class="ltabs-tab " data-category-id="25" data-active-content=".items-category-25"> <span class="ltabs-tab-label">Most Rating</span> </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!-- End Tabs-->
+                            </div>
+                        
+                            <div class="ltabs-items-container products-list grid">
+                                <!--Begin Items-->
+                                <div class="ltabs-items ltabs-items-selected items-category-20" data-total="16">
+                                    <div class="ltabs-items-inner ltabs-slider">
+                                        <div class="item">         
+                                            <div class="item-inner product-layout transition product-grid">
+                                                <div class="product-item-container">
+                                                    <div class="left-block left-b">
+                                                        
+                                                        <div class="product-image-container second_img">
+                                                            <a href="product.html" target="_self" title="Ullamco occaeca">
+                                                                <img src="{{asset('user-assets/image/catalog/demo/product/270/h1.jpg')}}" class="img-1 img-responsive" alt="image1">
+                                                                <img src="{{asset('user-assets/image/catalog/demo/product/270/h7.jpg')}}" class="img-2 img-responsive" alt="image2">
+                                                            </a>
+                                                        </div>
+                                                        <!--quickview--> 
+                                                        <div class="so-quickview">
+                                                          <a class="iframe-link btn-button quickview quickview_handler visible-lg" href="quickview.html" title="Quick view" data-fancybox-type="iframe"><i class="fa fa-eye"></i><span>Quick view</span></a>
+                                                        </div>                                                     
+                                                        <!--end quickview-->
+
+                                                        
+                                                    </div>
+                                                    <div class="right-block">
+                                                        <div class="button-group so-quickview cartinfo--left">
+                                                            <button type="button" class="addToCart" title="Add to cart" onclick="cart.add('60 ');">
+                                                                <span>Add to cart </span>   
+                                                            </button>
+                                                            <button type="button" class="wishlist btn-button" title="Add to Wish List" onclick="wishlist.add('60');"><i class="fa fa-heart-o"></i><span>Add to Wish List</span>
+                                                            </button>
+                                                            <button type="button" class="compare btn-button" title="Compare this Product " onclick="compare.add('60');"><i class="fa fa-retweet"></i><span>Compare this Product</span>
+                                                            </button>
+                                                            
+                                                        </div>
+                                                        <div class="caption hide-cont">
+                                                            <div class="rating">    <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span>
+                                                                <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span>
+                                                                <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span>
+                                                                <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span>
+                                                                <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                                                            </div>
+                                                            <h4><a href="product.html" title="Pastrami bacon" target="_self">Ullamco occaeca </a></h4>
+                                                            
+                                                        </div>
+                                                        <p class="price">
+                                                          <span class="price-new">$45.00</span>
+                                                          
+                                                        </p>
+                                                    </div>
+
+                                                </div>
+                                            </div>      
+                                        </div>
+                                        
+                                        <div class="item">         
+                                            <div class="item-inner product-layout transition product-grid">
+                                                <div class="product-item-container">
+                                                    <div class="left-block left-b">
+                                                        
+                                                        <div class="product-image-container second_img">
+                                                            <a href="product.html" target="_self" title="Eiusmod tempor incid">
+                                                                <img src="{{asset('user-assets/image/catalog/demo/product/270/e3.jpg')}}" class="img-1 img-responsive" alt="image1">
+                                                                <img src="{{asset('user-assets/image/catalog/demo/product/270/e8.jpg')}}" class="img-2 img-responsive" alt="image2">
+                                                            </a>
+                                                        </div>
+                                                        <!--quickview--> 
+                                                        <div class="so-quickview">
+                                                          <a class="iframe-link btn-button quickview quickview_handler visible-lg" href="quickview.html" title="Quick view" data-fancybox-type="iframe"><i class="fa fa-eye"></i><span>Quick view</span></a>
+                                                        </div>                                                     
+                                                        <!--end quickview-->
+
+                                                        
+                                                    </div>
+                                                    <div class="right-block">
+                                                        <div class="button-group so-quickview cartinfo--left">
+                                                            <button type="button" class="addToCart" title="Add to cart" onclick="cart.add('60 ');">
+                                                                <span>Add to cart </span>   
+                                                            </button>
+                                                            <button type="button" class="wishlist btn-button" title="Add to Wish List" onclick="wishlist.add('60');"><i class="fa fa-heart-o"></i><span>Add to Wish List</span>
+                                                            </button>
+                                                            <button type="button" class="compare btn-button" title="Compare this Product " onclick="compare.add('60');"><i class="fa fa-retweet"></i><span>Compare this Product</span>
+                                                            </button>
+                                                            
+                                                        </div>
+                                                        <div class="caption hide-cont">
+                                                            <div class="rating">    <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span>
+                                                                <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span>
+                                                                <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span>
+                                                                <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span>
+                                                                <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                                                            </div>
+                                                            <h4><a href="product.html" title="Pastrami bacon" target="_self">Eiusmod tempor incid</a></h4>
+                                                            
+                                                        </div>
+                                                        <p class="price">
+                                                          <span class="price-new">$76.00</span>
+                              
+                                                        </p>
+                                                    </div>
+
+                                                   
+                                                </div>
+                                            </div>      
+                                        </div>
+
+                                        <div class="item">         
+                                            <div class="item-inner product-layout transition product-grid">
+                                                <div class="product-item-container">
+                                                    <div class="left-block left-b">
+                                                        
+                                                        <div class="product-image-container second_img">
+                                                            <a href="product.html" target="_self" title="Duis aute irure ">
+                                                                <img src="{{asset('user-assets/image/catalog/demo/product/270/e4.jpg')}}" class="img-1 img-responsive" alt="image1">
+                                                                <img src="{{asset('user-assets/image/catalog/demo/product/270/e7.jpg')}}" class="img-2 img-responsive" alt="image2">
+                                                            </a>
+                                                        </div>
+                                                        <!--quickview--> 
+                                                        <div class="so-quickview">
+                                                          <a class="iframe-link btn-button quickview quickview_handler visible-lg" href="quickview.html" title="Quick view" data-fancybox-type="iframe"><i class="fa fa-eye"></i><span>Quick view</span></a>
+                                                        </div>                                                     
+                                                        <!--end quickview-->
+
+                                                        
+                                                    </div>
+                                                    <div class="right-block">
+                                                        <div class="button-group so-quickview cartinfo--left">
+                                                            <button type="button" class="addToCart" title="Add to cart" onclick="cart.add('60 ');">
+                                                                <span>Add to cart </span>   
+                                                            </button>
+                                                            <button type="button" class="wishlist btn-button" title="Add to Wish List" onclick="wishlist.add('60');"><i class="fa fa-heart-o"></i><span>Add to Wish List</span>
+                                                            </button>
+                                                            <button type="button" class="compare btn-button" title="Compare this Product " onclick="compare.add('60');"><i class="fa fa-retweet"></i><span>Compare this Product</span>
+                                                            </button>
+                                                            
+                                                        </div>
+                                                        <div class="caption hide-cont">
+                                                            <div class="rating">    <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span>
+                                                                <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span>
+                                                                <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span>
+                                                                <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span>
+                                                                <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                                                            </div>
+                                                            <h4><a href="product.html" title="Pastrami bacon" target="_self">Duis aute irure </a></h4>
+                                                            
+                                                        </div>
+                                                        <p class="price">
+                                                          <span class="price-new">$85.00</span>
+                                  
+                                                        </p>
+                                                    </div>
+
+                                                    
+                                                </div>
+                                            </div>      
+                                        </div>
+
+                                        <div class="item">         
+                                            <div class="item-inner product-layout transition product-grid">
+                                                <div class="product-item-container">
+                                                    <div class="left-block left-b">
+                                                        
+                                                        <div class="product-image-container second_img">
+                                                            <a href="product.html" target="_self" title="Excepteur sint occ">
+                                                                <img src="{{asset('user-assets/image/catalog/demo/product/270/fu5.jpg')}}" class="img-1 img-responsive" alt="image1">
+                                                                <img src="{{asset('user-assets/image/catalog/demo/product/270/fu6.jpg')}}" class="img-2 img-responsive" alt="image2">
+                                                            </a>
+                                                        </div>
+                                                        <!--quickview--> 
+                                                        <div class="so-quickview">
+                                                          <a class="iframe-link btn-button quickview quickview_handler visible-lg" href="quickview.html" title="Quick view" data-fancybox-type="iframe"><i class="fa fa-eye"></i><span>Quick view</span></a>
+                                                        </div>                                                     
+                                                        <!--end quickview-->
+
+                                                        
+                                                    </div>
+                                                    <div class="right-block">
+                                                        <div class="button-group so-quickview cartinfo--left">
+                                                            <button type="button" class="addToCart" title="Add to cart" onclick="cart.add('60 ');">
+                                                                <span>Add to cart </span>   
+                                                            </button>
+                                                            <button type="button" class="wishlist btn-button" title="Add to Wish List" onclick="wishlist.add('60');"><i class="fa fa-heart-o"></i><span>Add to Wish List</span>
+                                                            </button>
+                                                            <button type="button" class="compare btn-button" title="Compare this Product " onclick="compare.add('60');"><i class="fa fa-retweet"></i><span>Compare this Product</span>
+                                                            </button>
+                                                            
+                                                        </div>
+                                                        <div class="caption hide-cont">
+                                                            <div class="rating">    <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span>
+                                                                <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span>
+                                                                <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span>
+                                                                <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span>
+                                                                <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                                                            </div>
+                                                            <h4><a href="product.html" title="Pastrami bacon" target="_self">Excepteur sint occ</a></h4>
+                                                            
+                                                        </div>
+                                                        <p class="price">
+                                                          <span class="price-new">$90.00</span>
+                                                
+                                                        </p>
+                                                    </div>
+
+                                                </div>
+                                            </div>      
+                                        </div>
+
+                                        <div class="item">         
+                                            <div class="item-inner product-layout transition product-grid">
+                                                <div class="product-item-container">
+                                                    <div class="left-block left-b">
+                                                       
+                                                        <div class="product-image-container second_img">
+                                                            <a href="product.html" target="_self" title="PCenison meatloa">
+                                                                <img src="{{asset('user-assets/image/catalog/demo/product/270/f6.jpg')}}" class="img-1 img-responsive" alt="image1">
+                                                                <img src="{{asset('user-assets/image/catalog/demo/product/270/f2.jpg')}}" class="img-2 img-responsive" alt="image2">
+                                                            </a>
+                                                        </div>
+                                                        <!--quickview--> 
+                                                        <div class="so-quickview">
+                                                          <a class="iframe-link btn-button quickview quickview_handler visible-lg" href="quickview.html" title="Quick view" data-fancybox-type="iframe"><i class="fa fa-eye"></i><span>Quick view</span></a>
+                                                        </div>                                                     
+                                                        <!--end quickview-->
+
+                                                        
+                                                    </div>
+                                                    <div class="right-block">
+                                                        <div class="button-group so-quickview cartinfo--left">
+                                                            <button type="button" class="addToCart" title="Add to cart" onclick="cart.add('60 ');">
+                                                                <span>Add to cart </span>   
+                                                            </button>
+                                                            <button type="button" class="wishlist btn-button" title="Add to Wish List" onclick="wishlist.add('60');"><i class="fa fa-heart-o"></i><span>Add to Wish List</span>
+                                                            </button>
+                                                            <button type="button" class="compare btn-button" title="Compare this Product " onclick="compare.add('60');"><i class="fa fa-retweet"></i><span>Compare this Product</span>
+                                                            </button>
+                                                            
+                                                        </div>
+                                                        <div class="caption hide-cont">
+                                                            <div class="rating">    <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span>
+                                                                <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span>
+                                                                <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span>
+                                                                <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span>
+                                                                <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                                                            </div>
+                                                            <h4><a href="product.html" title="Pastrami bacon" target="_self">Cenison meatloa</a></h4>
+                                                            
+                                                        </div>
+                                                        <p class="price">$42.00</p>
+                                                    </div>
+                                                   
+                                                </div>
+                                            </div>      
+                                        </div>
+                                        <div class="item">         
+                                            <div class="item-inner product-layout transition product-grid">
+                                                <div class="product-item-container">
+                                                    <div class="left-block left-b">
+                                                        <div class="box-label">
+                                                            <span class="label-product label-sale">-10%</span>
+                                                        </div>
+                                                        <div class="product-image-container second_img">
+                                                            <a href="product.html" target="_self" title="Quis nostrud exercita">
+                                                                <img src="{{asset('user-assets/image/catalog/demo/product/270/f2.jpg')}}" class="img-1 img-responsive" alt="image1">
+                                                                <img src="{{asset('user-assets/image/catalog/demo/product/270/f4.jpg')}}" class="img-2 img-responsive" alt="image2">
+                                                            </a>
+                                                        </div>
+                                                        <!--quickview--> 
+                                                        <div class="so-quickview">
+                                                          <a class="iframe-link btn-button quickview quickview_handler visible-lg" href="quickview.html" title="Quick view" data-fancybox-type="iframe"><i class="fa fa-eye"></i><span>Quick view</span></a>
+                                                        </div>                                                     
+                                                        <!--end quickview-->
+                                                        
+                                                    </div>
+                                                    <div class="right-block">
+                                                        <div class="button-group so-quickview cartinfo--left">
+                                                            <button type="button" class="addToCart" title="Add to cart" onclick="cart.add('60 ');">
+                                                                <span>Add to cart </span>   
+                                                            </button>
+                                                            <button type="button" class="wishlist btn-button" title="Add to Wish List" onclick="wishlist.add('60');"><i class="fa fa-heart-o"></i><span>Add to Wish List</span>
+                                                            </button>
+                                                            <button type="button" class="compare btn-button" title="Compare this Product " onclick="compare.add('60');"><i class="fa fa-retweet"></i><span>Compare this Product</span>
+                                                            </button>
+                                                            
+                                                        </div>
+                                                        <div class="caption hide-cont">
+                                                            <div class="rating">    <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span>
+                                                                <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span>
+                                                                <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span>
+                                                                <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i></span>
+                                                                <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                                                            </div>
+                                                            <h4><a href="product.html" title="Pastrami bacon" target="_self">Quis nostrud exercita</a></h4>
+                                                            
+                                                        </div>
+                                                        <p class="price">
+                                                          <span class="price-new">$50.00</span>
+                                                          <span class="price-old">$59.00</span>
+                                                        </p>
+                                                    </div>
+
+                                                    
+                                                </div>
+                                            </div>      
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                                <div class="ltabs-items items-category-18 grid" data-total="16">
+                                    <div class="ltabs-loading"></div>
+                                    
+                                </div>
+                                <div class="ltabs-items  items-category-25 grid" data-total="16">
+                                    <div class="ltabs-loading"></div>
+                                </div>
+                                <!--End Items-->
+                            </div>
+                            
+                        </div>   
+                    </div>
+                </div>
+                <!-- end Listing tabs -->
+                
+                <!-- Slider Brands -->
+                <div class="slider-brands col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div class="yt-content-slider contentslider" data-autoplay="no" data-delay="4" data-speed="0.6" data-margin="0" data-items_column00="7" data-items_column0="7" data-items_column1="5" data-items_column2="3" data-items_column3="2" data-items_column4="1" data-arrows="yes"
+                            data-pagination="no" data-lazyload="yes" data-loop="yes">
+                        <div class="item">
+                            <a href="#">
+                                <img src="{{asset('user-assets/image/catalog/brands/b1.png')}}" alt="brand">
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="#">
+                                <img src="{{asset('user-assets/image/catalog/brands/b2.png')}}" alt="brand">
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="#">
+                                <img src="{{asset('user-assets/image/catalog/brands/b3.png')}}" alt="brand">
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="#">
+                                <img src="{{asset('user-assets/image/catalog/brands/b4.png')}}" alt="brand">
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="#">
+                                <img src="{{asset('user-assets/image/catalog/brands/b5.png')}}" alt="brand">
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="#">
+                                <img src="{{asset('user-assets/image/catalog/brands/b6.png')}}" alt="brand">
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="#">
+                                <img src="{{asset('user-assets/image/catalog/brands/b4.png')}}" alt="brand">
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="#">
+                                <img src="image/catalog/brands/b5.png" alt="brand">
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="#">
+                                <img src="{{asset('user-assets/image/catalog/brands/b6.png')}}" alt="brand">
+                            </a>
+                        </div>
+                    </div>
+                </div> 
+                <!-- Slider Brands -->
+
+
+            </div>
+            
+        </div>
+        
+    </div>
+</div>
+<!-- //Main Container -->
+   
+   
+
+    <!-- Footer Container -->
+    <footer class="footer-container typefooter-1">
+        <!-- Footer Top Container -->
+ 
+            <div class="container">
+                <div class="row footer-top">
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                        <div class="socials-w">
+                          <h2>Follow socials</h2>
+                          <ul class="socials">
+                            <li class="facebook"><a href="https://www.facebook.com/MagenTech" target="_blank"><i class="fa fa-facebook"></i><span>Facebook</span></a></li>
+                            <li class="twitter"><a href="https://twitter.com/smartaddons" target="_blank"><i class="fa fa-twitter"></i><span>Twitter</span></a></li>
+                            <li class="google_plus"><a href="https://plus.google.com/u/0/+Smartaddons/posts" target="_blank"><i class="fa fa-google-plus"></i><span>Google Plus</span></a></li>
+                            <li class="pinterest"><a href="https://www.pinterest.com/smartaddons/" target="_blank"><i class="fa fa-pinterest"></i><span>Pinterest</span></a></li>
+                            <li class="youtube"><a href="#" target="_blank"><i class="fa fa-youtube-play"></i><span>Youtube</span></a></li>
+                            <li class="linkedin"><a href="#" target="_blank"><i class="fa fa-linkedin"></i><span>linkedin</span></a></li>
+                            <li class="skype"><a href="#" target="_blank"><i class="fa fa-skype"></i><span>skype</span></a></li>
+                          </ul>
+                        </div>
+                        
+
+
+
+
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                        <div class="module newsletter-footer1">
+                            <div class="newsletter">
+
+                                <div class="title-block">
+                                    <div class="page-heading font-title">
+                                        Signup for Newsletter
+                                    </div>
+                                    
+                                </div>
+
+                                <div class="block_content">
+                                    <form method="post" id="signup" name="signup" class="form-group form-inline signup send-mail">
+                                        <div class="form-group">
+                                            <div class="input-box">
+                                                <input type="email" placeholder="Your email address..." value="" class="form-control" id="txtemail" name="txtemail" size="55">
+                                            </div>
+                                            <div class="subcribe">
+                                                <button class="btn btn-primary btn-default font-title" type="submit" onclick="return subscribe_newsletter();" name="submit">
+                                            Subscribe
+                                        </button>
+                                            </div>
+                                        </div>
+                                    </form>
+
+
+                                </div>
+                                <!--/.modcontent-->
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+      
+        <!-- /Footer Top Container -->
+        
+        <div class="footer-middle ">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-2 col-md-4 col-sm-4 col-xs-12 col-infos">
+                        <div class="infos-footer">
+                            <a href="#"><img src="{{asset('user-assets/image/catalog/logo-footer.png')}}" alt="image"></a>
+                            <ul class="menu">
+                                <li class="adres">
+                                    San Luis potosí, centro historico, 78000 san luis potosí, SPL, Mexico
+                                </li>
+                                <li class="phone">
+                                    (+0214)0 315 215 - (+0214)0 315 215
+                                </li>
+                                <li class="mail">
+                                    <a href="mailto:contact@opencartworks.com">contact@opencartworks.com</a>
+                                </li>
+                                <li class="time">
+                                    Open time: 8:00AM - 6:00PM
+                                </li>
+                            </ul>
+                        </div>
+
+
+                    </div>
+                    <div class="col-lg-2 col-md-4 col-sm-4 col-xs-12 col-style">
+                        <div class="box-information box-footer">
+                            <div class="module clearfix">
+                                <h3 class="modtitle">Information</h3>
+                                <div class="modcontent">
+                                    <ul class="menu">
+                                        <li><a href="#">About Us</a></li>
+                                        <li><a href="#">FAQ</a></li>
+                                        <li><a href="#">Warranty And Services</a></li>
+                                        <li><a href="#">Support 24/7 page</a></li>
+                                        <li><a href="#">Product Registration</a></li>
+                                        <li><a href="#">Product Support</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-lg-2 col-md-4 col-sm-4 col-xs-12 col-style">
+                        <div class="box-account box-footer">
+                            <div class="module clearfix">
+                                <h3 class="modtitle">My Account</h3>
+                                <div class="modcontent">
+                                    <ul class="menu">
+                                        <li><a href="#">Brands</a></li>
+                                        <li><a href="#">Gift Certificates</a></li>
+                                        <li><a href="#">Affiliates</a></li>
+                                        <li><a href="#">Specials</a></li>
+                                        <li><a href="#">FAQs</a></li>
+                                        <li><a href="#">Custom Link</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-4 col-sm-4 col-xs-12 col-clear">
+                        <div class="box-service box-footer">
+                          <div class="module clearfix">
+                            <h3 class="modtitle">Categories</h3>
+                            <div class="modcontent">
+                              <ul class="menu">
+                                <li><a href="#">Event & Party Supplies</a></li>
+                                <li><a href="#">Home Improvement</a></li>
+                                <li><a href="#">Lamps & Light Fixtures</a></li>
+                                <li><a href="#">Kitchen & Bath Fixtures</a></li>
+                                <li><a href="#">Customer Service</a></li>
+                                <li><a href="#">Kitchen & Dining</a></li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-4 col-sm-4 col-xs-12 col-style">
+                        <div class="box-service box-footer">
+                            <div class="module clearfix">
+                                <h3 class="modtitle">Services</h3>
+                                <div class="modcontent">
+                                    <ul class="menu">
+                                        <li><a href="#">Contact Us</a></li>
+                                        <li><a href="#">Returns</a></li>
+                                        <li><a href="#">Support</a></li>
+                                        <li><a href="#">Site Map</a></li>
+                                        <li><a href="#">Customer Service</a></li>
+                                        <li><a href="#">Custom Link</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-lg-2 col-md-4 col-sm-4 col-xs-12 col-style">
+                        <div class="box-service box-footer">
+                          <div class="module clearfix">
+                            <h3 class="modtitle">Categories</h3>
+                            <div class="modcontent">
+                              <ul class="menu">
+                                <li><a href="#">Event & Party Supplies</a></li>
+                                <li><a href="#">Home Improvement</a></li>
+                                <li><a href="#">Lamps & Light Fixtures</a></li>
+                                <li><a href="#">Kitchen & Bath Fixtures</a></li>
+                                <li><a href="#">Customer Service</a></li>
+                                <li><a href="#">Kitchen & Dining</a></li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+
+
+                    
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                        <div class="footer-b">
+                            <div class="bottom-cont">
+                                <a href="#"><img src="{{asset('user-assets/image/catalog/demo/payment/pay1.jpg')}}" alt="image"></a>
+                                <ul class="footer-links">
+                                    <li><a href="#">About Us</a></li>
+                                    <li><a href="#">Customer Service</a></li>
+                                    <li><a href="#">Privacy Policy</a></li>
+                                    <li><a href="#">Site Map</a></li>
+                                    <li><a href="#">Orders and Returns</a></li>
+                                    <li><a href="#">Contact Us</a></li>
+                                </ul>  
+                                <p>**$50 off orders $350+ with the code BOO50. $75 off orders $500+ with the code BOO75. $150 off orders $1000+ with the code BOO150. Valid from October 28, 2016 to October 31, 2016. Offer may not be combined with any other offers or promotions, is non-exchangeable and non-refundable. Offer valid within the US only.</p>
+                            </div>
+                        </div>
+            </div>
+        </div>
+        <!-- Footer Bottom Container -->
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="col-lg-12 col-xs-12 payment-w">
+                <img src="{{asset('user-assets/image/catalog/demo/payment/payment.png')}}" alt="imgpayment">
+                </div>
+            </div>
+            <div class="copyright-w">
+                <div class="container">
+                    <div class="copyright">
+                    NonestopAd © 2021. All Rights Reserved. Designed by <a href="https://megabytetech.com/" target="_blank">Megabyte</a>
+                    </div>
+                </div>
+            </div>            
+        </div>
+        <!-- /Footer Bottom Container -->
+        
+        
+            <!--Back To Top-->
+        <div class="back-to-top"><i class="fa fa-angle-up"></i></div>
+    </footer>
+    <!-- //end Footer Container -->
+
+    </div>
+   
+
+<!-- End Color Scheme
+============================================ -->
+
+
+
+<!-- Include Libs & Plugins
+============================================ -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script type="text/javascript" src="{{asset('user-assets/js/jquery-2.2.4.min.js')}}"></script>
+<script type="text/javascript" src="{{asset('user-assets/js/bootstrap.min.js')}}"></script>
+<script type="text/javascript" src="{{asset('user-assets/js/owl-carousel/owl.carousel.js')}}"></script>
+<script type="text/javascript" src="{{asset('user-assets/js/slick-slider/slick.js')}}"></script>
+<script type="text/javascript" src="{{asset('user-assets/js/themejs/libs.js')}}"></script>
+<script type="text/javascript" src="{{asset('user-assets/js/unveil/jquery.unveil.js')}}"></script>
+<script type="text/javascript" src="{{asset('user-assets/js/countdown/jquery.countdown.min.js')}}"></script>
+<script type="text/javascript" src="{{asset('user-assets/js/dcjqaccordion/jquery.dcjqaccordion.2.8.min.js')}}"></script>
+<script type="text/javascript" src="{{asset('user-assets/js/datetimepicker/moment.js')}}"></script>
+<script type="text/javascript" src="{{asset('user-assets/js/datetimepicker/bootstrap-datetimepicker.min.js')}}"></script>
+<script type="text/javascript" src="{{asset('user-assets/js/jquery-ui/jquery-ui.min.js')}}"></script>
+<script type="text/javascript" src="{{asset('user-assets/js/modernizr/modernizr-2.6.2.min.js')}}"></script>
+<script type="text/javascript" src="{{asset('user-assets/js/minicolors/jquery.miniColors.min.js')}}"></script>
+
+<!-- Theme files
+============================================ -->
+
+<script type="text/javascript" src="{{asset('user-assets/js/themejs/application.js')}}"></script>
+
+<script type="text/javascript" src="{{asset('user-assets/js/themejs/homepage.js')}}"></script>
+
+<script type="text/javascript" src="{{asset('user-assets/js/themejs/toppanel.js')}}"></script>
+<script type="text/javascript" src="{{asset('user-assets/js/themejs/so_megamenu.js')}}"></script>
+<script type="text/javascript" src="{{asset('user-assets/js/themejs/addtocart.js')}}"></script>  
+
+
+
+
+</body>
 </html>
