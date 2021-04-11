@@ -23,6 +23,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+
 Route::get('admin',[AdminController::class,'index']);
 Route::get('admin/auth',[AdminController::class,'auth'])->name('admin.auth');
 Route::group(['middleware'=>'admin_auth'],function()
@@ -31,6 +32,7 @@ Route::group(['middleware'=>'admin_auth'],function()
     Route::get('admin/banner',[BannerController::class,'index']);
     Route::get('admin/vendor',[VendorController::class,'adminvendor']);
     Route::get('admin/category',[CategoryController::class,'index']);
+    Route::get('admin/category/{id}/child',[CategoryController::class,'getChildParentID']); 
     Route::post('admin/category',[CategoryController::class,'insert'])->name('category.store');
     Route::get('admin/category',[CategoryController::class,'showCategory']);
     Route::get('del-category/{id}',[CategoryController::class,'delCategory']);
@@ -63,11 +65,13 @@ Route::post('vendor',[VendorController::class,'login'])->name('login');
 Route::group(['middleware'=>'vendor_auth'],function ()
 {
     Route::get('vendor/vendordash',[VendorController::class,'dashboard']);
-    Route::get('vendor/products',[ProductsController::class,'index']);
-    Route::post('vendor/products',[ProductsController::class,'insertProduct'])->name('product.insert');
-    Route::get('vendor/showproducts',[ProductsController::class,'showProducts']);
+    // Route::get('vendor/products',[ProductsController::class,'index']);
+    // Route::post('vendor/products/',[ProductsController::class,'insertProduct'])->name('product.insert');
+    // Route::get('vendor/showproducts',[ProductsController::class,'showProducts']);
     Route::get('vendor/logout',[VendorController::class,'logout'] );
        
- 
+    Route::resource('/vendor/products', ProductsController::class);
+    
+    Route::post('vendor/{vendor}',[ProductsController::class,'vendor']);
 });
 

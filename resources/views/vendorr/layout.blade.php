@@ -40,11 +40,11 @@
                         </li>
                        
                         <li>
-                            <a href="products">
+                            <a href="product">
                                 <i class="fas fa-tachometer-alt"></i>Products</a>
                         </li>
                         <li>
-                            <a href="showproducts">
+                            <a href="show">
                                 <i class="fas fa-tachometer-alt"></i>Edit Products</a>
                         </li>
                     </ul>
@@ -139,7 +139,11 @@
     <script src="{{asset('admin-assets/vendor/jquery-3.2.1.min.js')}}"></script>
     <script src="{{asset('admin-assets/vendor/bootstrap-4.1/popper.min.js')}}"></script>
     <script src="{{asset('admin-assets/vendor/bootstrap-4.1/bootstrap.min.js')}}"></script>
+    
     <script src="{{asset('admin-assets/vendor/wow/wow.min.js')}}"></script>
     <script src="{{asset('admin-assets/js/main.js')}}"></script>
+    <script src= "https://cdnjs.cloudflare.com/ajax/libs/animsition/4.0.2/js/animsition.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.8.0.min.js"></script>
+"
 </body>
 </html>

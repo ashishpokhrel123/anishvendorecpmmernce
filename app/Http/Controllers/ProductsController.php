@@ -4,10 +4,25 @@ namespace App\Http\Controllers;
 
 use App\Models\Products;
 use App\Models\Category;
+use App\Models\vendor;
 use Illuminate\Http\Request;
+use App\Http\Requests\StoreProduct;
+use Auth;
+use Str;
+use  DB;
+use Illuminate\Support\Facades\Validator;
 
 class ProductsController extends Controller
 {
+    private $vendor;
+    protected $vendor_id;
+    public function __construct(vendor $vendor)
+    {
+    //    $this->vendor_id = Products::select('id')->with('vendor')->(get();
+    //    dd($this->vendor_id);
+
+
+    }
     /**
      * Display a listing of the resource.
      *
@@ -15,60 +30,13 @@ class ProductsController extends Controller
      */
     public function index()
     {
-       $category = Products::with('category')->first();
-        return view('vendorr.products',compact('category'));
+        dd(Auth::user -> id);
+       $product = Products::with('category')->first();
+       $category = Category::all();
+
+        return view('vendorr.products',compact('category','product'));
     }
 
-    public function insertProduct(Request $request)
-    {
-       $category=Category::all();
-        $category_id = Products::with('category')->first();
-        $vendor_id=Products::with('vendor')->first();
-        $product_name=$request->product_name;
-        $product_slug=$request->product_slug;
-        $description=$request->description;
-        $warranty=$request->warranty;
-        $product_image=$request->file('image');
-        $imageName=time().'.'.$product_image->Extension();
-        $product_image->move(public_path('images'),$imageName);
-        $stock=$request->stock;
-        $price=$request->price;
-        $offer_price=$request->offer_price;
-        $discount_price=$request->discount_price;
-        $weight=$request->weight;
-        $size=$request->size;
-        $colours=$request->colours;
-        $status=$request->status;
-        $date=$request->date;
-        $category_id=$request->category_id;
-        $vendor_id=$vendor_id->id;
-        $product = new Products();
-        $product->product_name=$product_name;
-        $product->product_slug=$product_slug;
-        $product->description=$description;
-        $product->warranty=$warranty;
-        $product->product_image=$imageName;
-        $product->stock=$stock;
-        $product->price=$price;
-        $product->offer_price=$offer_price;
-        $product->discount_price=$discount_price;
-        $product->weight=$weight;
-        $product->size=$size;
-        $product->colours=$colours;
-        $product->status=$status;
-        $product->date=$date;
-        $product->category_id=$category_id;
-
-        $product->vendor_id=$vendor_id;
-        $product->save();
-        return view('vendorr.products',compact('category'));
-        return back()->with('product_added','product has been added');
-    }
-    public function showProducts()
-    {
-        $product=Products::all();
-        return view('vendorr.show-products',compact('product'));
-    }
 
     /**
      * Show the form for creating a new resource.
@@ -77,7 +45,7 @@ class ProductsController extends Controller
      */
     public function create()
     {
-        //
+        return view('vendor.products');
     }
 
     /**
@@ -87,8 +55,97 @@ class ProductsController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function store(Request $request)
-    {
-        //
+    {       
+
+        // dd(Products::with('vendor_id')->get());
+        // $order=Products::geAllvendor($request->id);
+        // dd($order);
+
+        // $id = DB::table('vendors')->pluck('id')->get();
+        // $id = array();
+        // $id = DB::table('vendor')->insertGetId([
+        //     'vendor_id' => $vendor_id
+        // ]);
+
+        // $vendor_id = auth()->user()->id;
+        // dd($vendor_id);
+
+        //  $data=  ();
+
+
+
+        //  $data = Validator::make($request->all(),[
+        //     'product_name'=>'string|required',
+        //     'description'=>'string|required',
+        //     'warranty'=>'nullable',
+        //     'product_image'=>'sometimes',
+        //     'stock'=>'nullable|numeric',
+        //     'price'=>'nullable|numeric',
+        //     'offer_price'=>'nullable|numeric',
+        //     'discount_price'=>'nullable|numeric',
+        //     'weight'=>'string|required',
+        //     'size'=>'string|required',
+        //     'colours'=>'string|required',
+        //     'status'=>'sometimes',
+        //     'date'=>'string|required',
+        //     'category_id'=>'required|exists:categories,id',
+        //     'child_cat_id'=>'nullable|exists:categories,id',
+        //     'vendor_id'=>'sometimes|exists:vendor,id'
+        // ])->validate();
+
+        // if($data->fails())
+        // {
+        //     return response()->json(['errors' => $validator->errors()]);
+
+        // }
+        // dd($req
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        dd($request->all());
+
+        // dd($vendor);
+        $data = array();
+        dd($data);
+        $data['id'] = $vendor->id;
+        dd($data['id']);
+        $slug=Str::slug($request->input('product_name'));
+        $slug_count=Products::where('product_slug',$slug)->count();
+        if($slug_count>0)
+        {
+            $slug=time(). '-'.$slug;
+        }
+        $data['produuct_slug']=$slug;
+        $data['offer_price']=($request->price-(($request->price*$request->discount_price)/100));
+        $status=Products::create($data);
+        
+        if($status)
+        {
+            return back()->with('product-added','record has been inserted');
+        }
+        else
+        {
+            return back()->with('error','Something went wrong');
+        }
+        
     }
 
     /**
@@ -99,7 +156,8 @@ class ProductsController extends Controller
      */
     public function show(Products $products)
     {
-        //
+        $product=Products::all();
+        return view('vendorr.show-products',compact('product'));
     }
 
     /**

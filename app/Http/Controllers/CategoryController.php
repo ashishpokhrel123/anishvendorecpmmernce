@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Category;
 use Illuminate\Http\Request;
-
+use Str;
 class CategoryController extends Controller
 {
     /**
@@ -14,30 +14,77 @@ class CategoryController extends Controller
      */
     public function index()
     {
-        return view('admin.category');
+        $parent_cats=Category::where('is_parent',1)->orderBy('category_name','ASC')->get();
+        return view('admin.category',compact('parent_cats'));
     }
     public function insert(Request $request)
     {
         
-        $category_name = $request->category_name;
-        $category_slug=$request->category_slug;
-        $description=$request->description;
-        $image=$request->file('file');
-        $imageName=time().'.'.$image->extension();
-        $image->move(public_path('images'),$imageName);
-        $category= new Category();
-        $category->category_name=$category_name;
-        $category->category_slug=$category_slug;
-        $category->description=$description;
-        $category->image=$imageName;
+        // $category_name = $request->category_name;
+        // $category_slug=$request->category_slug;
+        // $description=$request->description;
+        // $image=$request->file('file');
+        // $imageName=time().'.'.$image->extension();
+        // $image->move(public_path('images'),$imageName);
+        // $category= new Category();
+        // $category->category_name=$category_name;
+        // $category->category_slug=$category_slug;
+        // $category->description=$description;
+        // $category->image=$imageName;
         
-        $category->save();
-        return back()->with('category-added','record has been inserted');
+        // $category->save();
+        $this->validate($request,[
+            'category_name'=>'string|required',
+            'is_parent'=>'sometimes|in:1',
+            'description'=>'string|nullable',
+            'status'=>'required|in:active,inactive',
+            'parent_id'=>'nullable'
+        ]);
+        $data=$request->all();
+        $slug=Str::slug($request->input('category_name'));
+        $slug_count=Category::where('category_slug',$slug)->count();
+        if($slug_count>0)
+        {
+            $slug=time(). '-'.$slug;
+        }
+        $data['category_slug']=$slug;
+        $status=Category::create($data);
+        if($status)
+        {
+            return back()->with('category-added','record has been inserted');
+        }
+        else
+        {
+            return back()->with('error','Something went wrong');
+        }
+        
+    }
+    public function getChildParentID(Request $request,$id)
+    {
+       
+        $category=Category::find($request->id);
+        if($category)
+        {
+            $child_id=Category::getChildParentID($request->id);
+        if(count($child_id)<=0)
+        {
+            return response()->json(['status'=>false,'data'=>null,'msg'=>'']);
+        }
+        return response()->json(['status'=>true,'data'=>$child_id,'msg'=>'']);
+
+        }
+        else
+        {
+            return response()->json(['status'=>false,'data'=>null,'msg'=>'Category not found']);
+        }
+        
+        
     }
     public function showCategory()
     {
+        $parent_cats=Category::where('is_parent',1)->orderBy('category_name','ASC')->get();
         $category=Category::all();
-        return view('admin/category',compact('category'));
+        return view('admin/category',compact('category','parent_cats'));
     }
     public function delCategory($id)
     {

@@ -8,6 +8,7 @@ use Illuminate\Database\Eloquent\Model;
 class vendor extends Model
 {
     use HasFactory;
+   
     protected $fillable = [
         'vendor_name',
         'email',
@@ -16,4 +17,6 @@ class vendor extends Model
         'phone',
         'status',
     ];
+
+
 }

@@ -30,8 +30,10 @@ class CreateProductsTable extends Migration
             $table->enum('status',['active','inactive'])->default('inactive');
             $table->date('date');
             $table->unsignedBigInteger('category_id');
+            $table->unsignedBigInteger('child_cat_id');
             $table->unsignedBigInteger('vendor_id');
             $table->foreign('category_id')->references('id')->on('categories');
+            $table->foreign('child_cat_id')->references('id')->on('categories');
             $table->foreign('vendor_id')->references('id')->on('vendors');
             $table->timestamps();
         });
