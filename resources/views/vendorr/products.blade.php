@@ -16,15 +16,19 @@
         </ul>
     </div>
 @endif
+
+
 <div class="col-lg-6">
 
                                 <div class="card">
                                     
                                     <div class="card-body">
                                         <div class="card-title">
+                                        
                                             <h3 class="text-center title-2">Add Products</h3>
                                         </div>
                                         <hr>
+                                        
                                         <form action="{{url('vendor/products')}}" method="post" enctype="multipart/form-data">
                                         @csrf
                                         
@@ -152,7 +156,7 @@
                                                 <span class="help-block" data-valmsg-for="cc-number" data-valmsg-replace="true"></span>
                                             </div>
                                                 <button id="payment-button" type="submit" class="btn btn-lg btn-info btn-block">
-                                                <input type="hidden" name="vendor_id" >
+                                                <input type="hidden" name="vendor_id" value={{ Session::get('VENDOR_ID') }} >
                                                     <span id="payment-button-amount">Add Product</span>
                                                     <span id="payment-button-sending" style="display:none;">Sending…</span>
                                                 </button>

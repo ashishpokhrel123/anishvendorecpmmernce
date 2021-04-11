@@ -30,7 +30,7 @@ class ProductsController extends Controller
      */
     public function index()
     {
-        dd(Auth::user -> id);
+       
        $product = Products::with('category')->first();
        $category = Category::all();
 

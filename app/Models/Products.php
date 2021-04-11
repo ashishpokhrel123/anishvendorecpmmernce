@@ -30,8 +30,9 @@ class Products extends Model
         return $this->hasMany('App\Models\vendor','vendor_id','id');
     }
     
-    public static function geAllvendor($id){
-        return Products::with('vendor_id')->find($id);
+    public  function geAllvendor($id){
+        $vid = Products::with('vendor_id')->find($id);
+        dd($vid);
     }
 
    

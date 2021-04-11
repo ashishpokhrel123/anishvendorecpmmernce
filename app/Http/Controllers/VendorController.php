@@ -32,10 +32,12 @@ class VendorController extends Controller
     }
     public function dashboard()
     {
+        
         return view('vendorr.vendordash');
     }
     public function products()
     {
+        
         return view('vendorr.products');
     }
     public function status(Request $request,$id)
